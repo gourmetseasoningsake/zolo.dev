@@ -17,9 +17,9 @@
     },
     data() {
       return {
-        title: "Ahoi",
+        title: "",
         intro: [
-          "Mein Name ist Jérôme. Ich bin Web-Entwickler und denke mir für Unternehmungen Lösungen aus, wo die Ressourcen bescheiden sind. Ich tue das seit 7 Jahren und kann alles innerhalb von Internetpräsenzen bis Mobile- oder Desktop-Applikationen in Angriff nehmen, als Teil eines bestehenden Teams oder als Lieferant einer einzelnen Sache."
+          "Ahoi, ich bin Jérôme Imfeld. Ich bin Web-Entwickler und denke mir für Unternehmungen Lösungen aus, wo die Ressourcen bescheiden sind. Ich tue das seit 7 Jahren und kann alles innerhalb von Internetpräsenzen bis Mobile- oder Desktop-Applikationen in Angriff nehmen, als Teil eines bestehenden Teams oder als Lieferant einer einzelnen Sache."
         ]
       }
     }
