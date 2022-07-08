@@ -1,5 +1,5 @@
 <template>
-  <p class="font-sans font-light text-base">{{ content }}</p>
+  <p class="font-sans font-extralight text-base">{{ content }}</p>
 </template>
 
 <script>
