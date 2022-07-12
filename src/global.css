@@ -5,6 +5,24 @@
 
 
 @layer base {
+  @font-face {
+    font-family: 'JetBrains Mono';
+    font-display: auto;
+    font-weight: 100 900;
+    font-style: normal;
+    font-optical-sizing: auto;
+    src: url('JetBrainsMono-VariableFont_wght.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: 'JetBrains Mono';
+    font-display: auto;
+    font-weight: 100 900;
+    font-style: italic;
+    font-optical-sizing: auto;
+    src: url('JetBrainsMono-Italic-VariableFont_wght.woff2') format('woff2');
+  }
+
   /* light mode */
   :root {
     --system-bg: #fbfbfb;

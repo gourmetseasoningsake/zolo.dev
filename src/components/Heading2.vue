@@ -1,15 +1,11 @@
 <template>
-  <h2 class="font-sans font-extralight text-2xl mb-4">{{ content }}</h2>
+  <h2 class="mb-4 font-mono font-normal text-xl uppercase tracking-widest">
+    <slot></slot>
+  </h2>
 </template>
 
 <script>
   export default {
-    name: "Heading2",
-    props: {
-      content: {
-        type: String,
-        required: true
-      } 
-    }
+    name: "Heading2"
   }
 </script>

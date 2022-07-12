@@ -1,15 +1,9 @@
 <template>
-  <p class="font-sans font-extralight text-base">{{ content }}</p>
+  <p class="font-mono font-thin text-base"><slot></slot></p>
 </template>
 
 <script>
   export default {
     name: "Paragraph",
-    props: {
-      content: {
-        type: String,
-        required: true
-      }
-    }
   }
 </script>

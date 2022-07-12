@@ -4,29 +4,30 @@
 
 Diese Allgemeinen Geschäftsbedingungen (AGB) regeln die Geschäftsbeziehung zwischen der Auftraggeberin (nachfolgend auch Auftrageber) und Jérôme Imfeld (nachfolgend JI). Auftrageber, die eine Dienstleistung oder ein Produkt von JI in Anspruch nehmen, anerkennen damit die vorliegenden AGB. Änderungen dieser AGB und Nebenabreden sind nur wirksam, sofern sie von den Parteien schriftlich vereinbart werden.
 
-JI bietet umfassende Dienstleistungen und Produkte in den Bereichen Erstellung und Wartung von Web-, Mobile- und Desktop-Applikationen, allgemeine Beratung und Support.
+JI bietet erbringt Dienstleistungen in den Bereichen Erstellung und Wartung von Web-, Mobile- und Desktop-Applikationen, sowie allgemeine Beratung und Support.
 
-Die Einzelheiten zu den angebotenen Dienstleistungen und Produkten von JI und deren Umfang ergeben sich aus der jeweiligen Offerte.
+Die Einzelheiten zu den angebotenen Dienstleistungen und Produkten von JI und deren Umfang ergeben sich aus dem jeweiligen Vertrag.
 
 ## 2. Preise und Zahlungskonditionen
 
 ### 2.1 Stundenansätze
 
-Sofern nichts anderes vereinbart wurde, gelten folgende Stundansätze zwischen 06:00 und 19:00:
+Sofern nichts anderes vereinbart wurde, gelten folgende Stundansätze von Montag bis Freitag ohne Feiertage (Kanton Zürich) zwischen 06:00 und 19:00:
 
-- Support Level 1 (Grundlegende Help- und Service-Desk-Leistungen): CHF 90
+- Support Level 1 (Grundlegende Hilfe- und Service-Desk-Leistungen): CHF 90
 - Support Level 2 (Eingehende technische Unterstützung): CHF 120
 - Reisen: CHF 70
 - Alles andere: CHF 120
 
-Falls die Auftraggeberin ausdrücklich Dienstleisungten ausserhalb dieser Zeiten beansprucht, gelten folgende prozentuale Zuschläge der oben aufgeführten Stundenansätze:
+Falls die Auftraggeberin ausdrücklich Dienstleistungen ausserhalb dieser Zeiten beansprucht, gelten folgende prozentuale Zuschläge auf die oben aufgeführten Stundenansätze:
 
-- An Samstagen: 50%
-- An Sonntagen: 100%
-- An jedem Tag von 19:00 bis 22:00: 50% 
-- An jedem Tag von 22:00 bis 06:00: 100%
+- Abend (19:00 bis 22:00): 50%
+- Nacht (22:00 bis 06:00): 100%
+- Samstag: 50%
+- Sonntag: 100%
+- Feiertage (Kanton Zürich): 150%
 
-Die prozentualen Zuschläge sind kummulativ. So ist beispielsweise eine Dienstleistung am Sonntag ab 19.00 mit 150% Zuschlag auf den Stundensatz zu vergüten.
+Die prozentualen Zuschläge sind kummulativ. So ist beispielsweise eine Dienstleistung am Sonntag Abend mit 150% Zuschlag auf den Stundensatz zu vergüten.
 
 ### 2.2 Vorbesprechung
 
@@ -44,7 +45,7 @@ Die Rechnung wird spätestens nach Abschluss des Auftrags gestellt und der Auftr
 
 Rechnungen für Wartungsverträge und dergleichen werden in der Regel bei Auftragserteilung für die laufende Vertragsdauer gestellt und sind im Voraus zahlbar.
 
-Die Einzelheiten zur Rechnungstellung ergeben sich aus der jeweiligen Offerte.
+Die Einzelheiten zur Rechnungstellung ergeben sich aus dem jeweiligen Vertrag.
 
 ### 2.5 Zahlungskonditionen
 
@@ -52,7 +53,7 @@ Rechnungsbeträge bis CHF 3000.- sind innerhalb der Zahlungsfrist von 15 Tagen o
 
 ### 2.6 Annullierung
 
-Wird ein Auftrag durch den Auftraggeber annulliert, so sind alle bis zum Zeitpunkt der Annullierung aufgelaufenen Stunden bzw. Aufwände zu entschädigen. Gleichzeitig verliert der Auftraggeber jegliches Nutzungsrecht (vgl. Ziff. 3.9) an den durch JI zur Verfügung gestellten Produkten.
+Wird ein Auftrag durch den Auftraggeber annulliert, so sind alle bis zum Zeitpunkt der Annullierung aufgelaufenen Stunden bzw. Aufwände zu entschädigen. Gleichzeitig verliert der Auftraggeber jegliches Nutzungsrecht (vgl. Ziff. 3.7) an den durch JI zur Verfügung gestellten Produkten.
 
 ## 3. Leistungsumfang, Rechte und Pflichten von JI
 
@@ -86,10 +87,9 @@ JI behält sich das Recht vor, bei widerrechtlichen, unsittlichen oder unethisch
 
 ### 3.7 Nutzungs- und Urheberrechte
 
-Die Nutzungs- und Urheberechte aller durch JI erbrachten Endprodukte, welche im Rahmen des Vertrags individuell und kundenbezogen erbracht werden, gehen, soweit sie übertragbar sind, ab Zeitpunkt des Projektabschlusses und nach vollständiger Bezahlung auf die Auftraggeberin über. Sämtliche Rechte an durch JI entwickelten Vorstufen und Varianten des Endprodukts (Konzepte, Skizzen, Entwürfe, Entwicklungsdokumente usw.) verbleiben bei JI.
+Die Nutzungs- und Urheberrechte der durch JI erbrachten Endprodukte, welche im Rahmen des Vertrags individuell und kundenbezogen erbracht werden, gehen, soweit sie übertragbar sind, ab Zeitpunkt des Projektabschlusses und nach vollständiger Bezahlung auf die Auftraggeberin über. Sämtliche Rechte an Vorstufen und Varianten der Endprodukte (Konzepte, Skizzen, Entwürfe, Entwicklungsdokumente usw.), die durch JI erbracht wurden, verbleiben bei JI.
 
-Benützt JI Software von Dritten, so verbleibt diesen sämtliche Rechte daran, ausser wenn zwischen dem Dritten, JI und/oder der Auftraggeberin eine anderweitige Vereinbarung besteht. Es gelten die Lizenzbestimmungen der jeweiligen Dritten und
-allenfalls Zusatzbedingungen von JI. Für Open-Source-Produkte gelten die jeweils zugehörigen Lizenzbestimmungen. Informationen darüber kann die Auftraggeberin jederzeit auf der Website der Drittanbieter einsehen. Die Auftraggeberin nimmt ausdrücklich zur Kenntnis und ist damit einverstanden, dass allfällig von JI beigezogene Produkte oder Dienstleistungen Dritter nicht in deren Eigentum ist.
+Benützt JI Produkte oder Dienstleistungen von Dritten, so verbleibt diesen sämtliche Rechte daran, ausser wenn zwischen dem Dritten, JI und/oder der Auftraggeberin eine anderweitige Vereinbarung besteht. Es gelten die Lizenzbestimmungen der jeweiligen Dritten und allenfalls Zusatzbedingungen von JI. Für Open-Source-Produkte gelten die jeweils zugehörigen Lizenzbestimmungen. Informationen darüber kann die Auftraggeberin jederzeit auf der Website der Drittanbieter einsehen. Die Auftraggeberin nimmt ausdrücklich zur Kenntnis und ist damit einverstanden, dass allfällig von JI beigezogene Produkte oder Dienstleistungen Dritter nicht in deren Eigentum ist.
 
 Es steht in der Verantwortung der Auftraggeberin, für jegliches Material (wie Texte, Grafiken, Videos usw.), welches sie über das von JI erbrachte Produkt publiziert, die entsprechenden Nutzungs- und Urheberrechte zu besitzen, beziehungsweise die Einwilligung des jeweiligen Urhebers einzuholen. JI leitet Rechtsansprüche von Dritten aus Urheberechtsverletzungen oder anderen Ansprüchen an die Auftraggeberin weiter. Etwaige Kosten der Rechtsverfolgung trägt ausschliesslich der Kunde.
 
@@ -118,7 +118,7 @@ hierdurch ein Mehraufwand, so ist dieser durch den Auftraggeber zu erstatten.
 
 ### 4.2 Auftragsänderungen und Zusatzleistungen
 
-Während der Durchführung eines Auftrags kann die Auftraggeberin Änderungen oder Anpassungen jeglicher Art beantragen. Diese und weitere Produkte oder Dienstleistungen, welche nicht explizit zu Beginn des Auftrags in der Offerte erwähnt wurden, bzw. von dieser erfasst sind, gelten als Zusatzleistungen und sind nach den auf der jeweiligen Offerte angegebenen Stundenansätzen zusätzlich zu entschädigen. Dasselbe gilt für Leistungen ausserhalb der Leistungszeiten, sonstige Leistungen und Spesen sowie besondere administrative Arbeiten, soweit sie von der Auftraggeberin gewünscht werden.
+Während der Durchführung eines Auftrags kann die Auftraggeberin Änderungen oder Anpassungen jeglicher Art beantragen. Diese und weitere Produkte oder Dienstleistungen, welche nicht explizit zu Beginn des Auftrags im Vertrag erwähnt wurden, bzw. von diesem erfasst sind, gelten als Zusatzleistungen und sind nach den auf dem jeweiligen Vertrag angegebenen Stundenansätzen zusätzlich zu entschädigen. Dasselbe gilt für Leistungen ausserhalb der Leistungszeiten, sonstige Leistungen und Spesen sowie besondere administrative Arbeiten, soweit sie von der Auftraggeberin gewünscht werden.
 
 ### 5. Schlussbestimmungen
 

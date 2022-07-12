@@ -1,11 +1,11 @@
 <template>
-  <h1 class="mb-4 font-mono font-black text-6xl">
+  <aside>
     <slot></slot>
-  </h1>
+  </aside>
 </template>
 
 <script>
   export default {
-    name: "Heading1"
+    name: "Sidebar"
   }
 </script>

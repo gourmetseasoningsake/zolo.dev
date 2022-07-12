@@ -1,6 +1,9 @@
 ---
 import "../global.css"
 import Main from "../components/Main.vue"
+import Sidebar from "../components/Sidebar.vue"
+import Heading1 from "../components/Heading1.vue"
+import Paragraph from "../components/Paragraph.vue"
 ---
 
 <html>
@@ -8,7 +11,13 @@ import Main from "../components/Main.vue"
     <meta charset="utf-8">
     <meta name="color-scheme" content="dark light">
   </head>
-  <body class="font-mono p-8">
-    <Main />
+  <body class="flex font-mono p-8">
+    <Sidebar class="w-full sm:w-1/2 lg:w-1/3">
+      <Heading1>Ahoi</Heading1>
+      <Paragraph>
+        Ich bin Jérôme Imfeld. Ich bin Web-Entwickler und denke mir für kleine Unternehmungen Lösungen aus, wo die Ressourcen knapp sind. Ich tue das seit 7 Jahren und kann alles Mögliche rund um Web- oder Desktop-Applikationen in Angriff nehmen, als Teil eines bestehenden Teams oder als Lieferant einer einzelnen Sache.
+      </Paragraph>
+    </Sidebar>
+    <Main class="flex-auto"></Main>
   </body>
 </html>
