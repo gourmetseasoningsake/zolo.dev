@@ -4,6 +4,11 @@ import Main from "../components/Main.vue"
 import Sidebar from "../components/Sidebar.vue"
 import Heading1 from "../components/Heading1.vue"
 import Paragraph from "../components/Paragraph.vue"
+import HCard from "../components/HCard.vue"
+import HCardFname from "../components/HCardFname.vue"
+import HCardLname from "../components/HCardLname.vue"
+import HCardEmail from "../components/HCardEmail.vue"
+import HCardLink from "../components/HCardLink.vue"
 ---
 
 <html>
@@ -11,12 +16,26 @@ import Paragraph from "../components/Paragraph.vue"
     <meta charset="utf-8">
     <meta name="color-scheme" content="dark light">
   </head>
-  <body class="flex font-mono p-8">
-    <Sidebar class="w-full sm:w-1/2 lg:w-1/3">
+  <body class="flex min-h-screen font-mono">
+    <Sidebar class="w-full md:w-1/2 2xl:w-1/3 p-8">
       <Heading1>Ahoi</Heading1>
-      <Paragraph>
+      <Paragraph class="mb-4">
         Ich bin Jérôme Imfeld. Ich bin Web-Entwickler und denke mir für kleine Unternehmungen Lösungen aus, wo die Ressourcen knapp sind. Ich tue das seit 7 Jahren und kann alles Mögliche rund um Web- oder Desktop-Applikationen in Angriff nehmen, als Teil eines bestehenden Teams oder als Lieferant einer einzelnen Sache.
       </Paragraph>
+      <HCard>
+        <HCardEmail
+          class="block"
+          email="ahoi@zolo.dev" 
+          title="E-Mail">
+          ahoi@zolo.dev
+        </HCardEmail>
+        <HCardLink
+          class="block"
+          href="https://threema.id/8UFC3385"
+          title="Threema">
+          threema: 8UFC3385
+        </HCardLink>
+      </HCard>
     </Sidebar>
     <Main class="flex-auto"></Main>
   </body>

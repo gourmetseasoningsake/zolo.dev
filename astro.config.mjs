@@ -3,6 +3,9 @@ import { defineConfig } from 'astro/config';
 import vue from "@astrojs/vue";
 import tailwind from "@astrojs/tailwind";
 
+
+process.env.BROWSER = "google chrome"
+
 // https://astro.build/config
 export default defineConfig({
   srcDir: "./src", // default
@@ -17,6 +20,10 @@ export default defineConfig({
     host: false, // default
     port: 3000, // default
   },
-  // vite: {},
+  vite: {
+    server: {
+      open: true
+    }
+  },
   integrations: [vue(), tailwind()]
 });
