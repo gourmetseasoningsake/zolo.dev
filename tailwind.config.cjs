@@ -39,6 +39,7 @@ module.exports = {
         "action-fg": "var(--action-fg)"
 			},
 			minHeight: {
+        "screen-px": "calc(100vh + 1px)",
 				"scroll": "calc(100% + 1px)"
 			}
 		}

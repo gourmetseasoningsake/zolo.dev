@@ -1,16 +1,12 @@
 <template>
   <header>
-    {{ title }}
+    <slot></slot>
   </header>
 </template>
 
 
 <script>
   export default {
-    data() {
-      return {
-        title: "hello"
-      }
-    }
+    name: "MainHeader"
   }
 </script>
