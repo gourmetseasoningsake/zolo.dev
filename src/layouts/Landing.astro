@@ -18,7 +18,7 @@ const { title, href, description } = Astro.props
     <meta name="google" value="notranslate">
   </head>
   <body class="min-h-screen font-mono">
-    <MainHeader class="fixed top-0 w-full p-8 bg-system-bg border-b">
+    <MainHeader class="fixed top-0 w-full p-8 bg-system-bg md:bg-transparent border-b md:border-b-0">
       <MainNav href={href} />
       <slot name="header"></slot>
     </MainHeader>

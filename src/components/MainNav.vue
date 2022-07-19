@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <ul class="flex -mx-2">
+    <ul class="flex justify-end -mx-2">
       <li class="px-1" v-for="link in links">
         <Link
           class="block px-1 uppercase"

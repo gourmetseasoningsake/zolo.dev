@@ -3,6 +3,7 @@
     class="touch-manipulation font-light text-action-fg"
     :href="href" 
     :title="title"
+    :target="target"
     :rel="rel"
     :aria-current="ariaCurrent">
     <slot></slot>
@@ -19,6 +20,10 @@
         required: true
       },
       title: {
+        type: String,
+        required: false
+      },
+      target: {
         type: String,
         required: false
       },

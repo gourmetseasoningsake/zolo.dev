@@ -12,12 +12,14 @@ import Link from "../components/Link.vue"
 
 
 <LayoutDefault title="Rechtliches" href="/rechtliches">
-  <section slot="main">
-    <Heading1>Rechtliches</Heading1>
+  <Heading1 slot="main">Rechtliches</Heading1>
+  <section slot="main" class="mb-4">
     <Heading2>Inhaber</Heading2>
     <HCard class="font-thin">
       <HCardFname>Jérôme</HCardFname>&nbsp;<HCardFname>Imfeld</HCardFname>
     </HCard>
+  </section>
+  <section slot="main">
     <Heading2>AGB</Heading2>
     <Link href="/pdf/AGB-J-Imfeld-180722.pdf" title="AGB">PDF</Link>
   </section>
