@@ -1,11 +1,13 @@
 <template>
-  <a 
-    class="u-url touch-manipulation font-light text-action-fg"
-    :href="href" 
-    :title="title"
-    :rel="rel">
-    <slot></slot>
-  </a>
+  <span>
+    <a 
+      class="u-url touch-manipulation font-light text-action-fg"
+      :href="href" 
+      :title="title"
+      :rel="rel">
+      <slot></slot>
+    </a>
+  </span>
 </template>
 
 

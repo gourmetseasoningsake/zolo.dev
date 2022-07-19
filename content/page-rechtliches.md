@@ -1,3 +1,5 @@
+Die allgemeinen Geschäftsbedingunen lassen sich hier als PDF einsehen.
+
 # ALLGEMEINE GESCHÄFTSBEDINGUNGEN (AGB)
 
 ## 1. Allgemeines
@@ -27,7 +29,7 @@ Falls die Auftraggeberin ausdrücklich Dienstleistungen ausserhalb dieser Zeiten
 - Sonntag: 100%
 - Feiertage (Kanton Zürich): 150%
 
-Die prozentualen Zuschläge sind kummulativ. So ist beispielsweise eine Dienstleistung am Sonntag Abend mit 150% Zuschlag auf den Stundensatz zu vergüten.
+Die prozentualen Zuschläge sind kumulativ. So ist beispielsweise eine Dienstleistung am Sonntag Abend mit 150% Zuschlag auf den Stundensatz zu vergüten.
 
 ### 2.2 Vorbesprechung
 

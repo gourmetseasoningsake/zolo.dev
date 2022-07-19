@@ -1,6 +1,6 @@
 # Ahoi
 
-Ich bin Jérôme Imfeld. Ich bin Web-Entwickler und denke mir für kleine Unternehmungen Lösungen aus, wo die Ressourcen knapp sind. Ich tue das seit 7 Jahren und kann alles Mögliche rund um Web- oder Desktop-Applikationen in Angriff nehmen, als Teil eines bestehenden Teams oder als Lieferant einer einzelnen Sache.
+Ich bin Jérôme Imfeld. Ich bin Web-Entwickler und erarbeite Lösungen für kleine Unternehmungen, die ihre Internetpräsenz verbessern oder Arbeitsflüsse digitalisieren möchten. Ich tue das seit 7 Jahren als Teil eines bestehenden Teams oder als Lieferant einzelner Sachen.
 
 ## Kontakt
 

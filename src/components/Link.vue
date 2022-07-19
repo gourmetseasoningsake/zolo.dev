@@ -3,7 +3,8 @@
     class="touch-manipulation font-light text-action-fg"
     :href="href" 
     :title="title"
-    :rel="rel">
+    :rel="rel"
+    :aria-current="ariaCurrent">
     <slot></slot>
   </a>
 </template>
@@ -24,7 +25,14 @@
       rel: {
         type: String,
         required: false
+      },
+      current: {
+        type: Boolean,
+        required: false
       }
+    },
+    computed: {
+      ariaCurrent() { return this.current && "page" }
     }
   }
 </script>
