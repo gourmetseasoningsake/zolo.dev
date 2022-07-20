@@ -1,8 +1,9 @@
 ---
-import MainHeader from "../components/MainHeader.vue"
+import MainHeaderDynamic from "../components/MainHeaderDynamic.vue"
 import MainNav from "../components/MainNav.vue"
 import Main from "../components/Main.vue"
 import MainFooter from "../components/MainFooter.vue"
+import Sentinel from "../components/Sentinel.vue"
 
 const { title, href, description } = Astro.props
 ---
@@ -18,10 +19,11 @@ const { title, href, description } = Astro.props
     <meta name="google" value="notranslate">
   </head>
   <body class="min-h-screen font-mono">
-    <MainHeader class="fixed top-0 w-full p-8 bg-system-bg md:bg-transparent border-b md:border-b-0">
+    <MainHeaderDynamic client:load>
       <MainNav href={href} />
       <slot name="header"></slot>
-    </MainHeader>
+    </MainHeaderDynamic>
+    <Sentinel client:load />
     <Main class="min-h-screen-px px-8 pt-[7rem] pb-8 border-b">
       <slot name="main"></slot>
     </Main>

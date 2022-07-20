@@ -12,7 +12,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "astro": "1.0.0-beta.63"
+    "@nanostores/vue": "^0.5.5",
+    "astro": "1.0.0-beta.63",
+    "nanostores": "^0.5.12"
   },
   "devDependencies": {
     "@astrojs/tailwind": "^0.2.2",

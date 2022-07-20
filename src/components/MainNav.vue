@@ -22,18 +22,18 @@
   export default {
     name: "MainNav",
     components: { Link },
+    props: {
+      href: {
+        type: String,
+        required: false
+      }
+    },
     data() {
       return {
         links: [
           { href: "/", title: "Ahoi", text: "Ahoi" },
           { href: "/rechtliches", title: "Rechtliches", text: "Rechtliches" }
         ]
-      }
-    },
-    props: {
-      href: {
-        type: String,
-        required: false
       }
     }
   }
