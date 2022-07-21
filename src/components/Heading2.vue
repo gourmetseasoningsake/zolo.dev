@@ -7,7 +7,6 @@
 
 <script>
   export default {
-    name: "Heading2",
     props: {
       class: {
         type: String,

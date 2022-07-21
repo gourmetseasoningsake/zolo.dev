@@ -12,7 +12,6 @@
   import { session } from "../stores/session.js"
 
   export default {
-    name: "MainHeaderDynamic",
     setup() {
       return { session: useStore(session) }
     }

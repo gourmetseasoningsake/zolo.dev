@@ -3,10 +3,3 @@
     <slot></slot>
   </span>
 </template>
-
-
-<script>
-  export default {
-    name: "HCardLocality"
-  }
-</script>

@@ -13,7 +13,6 @@
 
 <script>
   export default {
-    name: "Link",
     props: {
       href: {
         type: String,

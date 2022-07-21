@@ -20,7 +20,6 @@
   import Link from "./Link.vue"
 
   export default {
-    name: "MainNav",
     components: { Link },
     props: {
       href: {

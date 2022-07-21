@@ -13,7 +13,6 @@
 
 <script>
   export default {
-    name: "HCardLink",
     props: {
       href: {
         type: String,

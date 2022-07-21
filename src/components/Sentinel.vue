@@ -5,7 +5,6 @@
   import { session } from "../stores/session.js"
 
   export default {
-    name: "Sentinel",
     mounted() {
       let observer = new IntersectionObserver(([ entry ]) => {
         session.setKey("pageTop", entry.isIntersecting)

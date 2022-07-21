@@ -1,5 +1,5 @@
 <template>
-  <span class="p-adr h-adr">
+  <section class="mb-6">
     <slot></slot>
-  </span>
+  </section>
 </template>

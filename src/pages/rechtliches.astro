@@ -3,6 +3,7 @@ import "../global.css"
 import LayoutDefault from "../layouts/Default.astro"
 import Heading1 from "../components/Heading1.vue"
 import Heading2 from "../components/Heading2.vue"
+import Section from "../components/Section.vue"
 import HCard from "../components/HCard.vue"
 import HCardName from "../components/HCardName.vue"
 import HCardAdr from "../components/HCardAdr.vue"
@@ -17,7 +18,7 @@ import Link from "../components/Link.vue"
 
 <LayoutDefault title="Rechtliches" href="/rechtliches">
   <Heading1 slot="main">Rechtliches</Heading1>
-  <section slot="main" class="mb-6">
+  <Section slot="main">
     <Heading2 class="h3">Inhaber</Heading2>
     <HCard class="font-thin">
       <HCardName class="block">Jérôme Imfeld</HCardName>
@@ -35,9 +36,9 @@ import Link from "../components/Link.vue"
         e-mail: ahoi@zolo.dev
       </HCardEmail>
     </HCard>
-  </section>
-  <section slot="main" class="mb-6">
+  </Section>
+  <Section slot="main">
     <Heading2 class="h3">AGB</Heading2>
     <Link href="/pdf/AGB-J-Imfeld-180722.pdf" title="AGB">PDF</Link>
-  </section>
+  </Section>
 </LayoutDefault>

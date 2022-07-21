@@ -13,7 +13,6 @@
 
 <script>
   export default {
-    name: "HCardEMail",
     props: {
       email: {
         type: String,

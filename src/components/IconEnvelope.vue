@@ -16,7 +16,6 @@
 
 <script>
   export default {
-    name: "IconEnvelope",
     props: {
       width: {
         type: String,
