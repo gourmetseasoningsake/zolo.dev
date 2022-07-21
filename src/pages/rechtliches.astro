@@ -4,8 +4,12 @@ import LayoutDefault from "../layouts/Default.astro"
 import Heading1 from "../components/Heading1.vue"
 import Heading2 from "../components/Heading2.vue"
 import HCard from "../components/HCard.vue"
-import HCardFname from "../components/HCardFname.vue"
-import HCardLname from "../components/HCardLname.vue"
+import HCardName from "../components/HCardName.vue"
+import HCardAdr from "../components/HCardAdr.vue"
+import HCardStreet from "../components/HCardStreet.vue"
+import HCardZip from "../components/HCardZip.vue"
+import HCardLocality from "../components/HCardLocality.vue"
+import HCardCountry from "../components/HCardCountry.vue"
 import HCardEmail from "../components/HCardEmail.vue"
 import Link from "../components/Link.vue"
 ---
@@ -13,14 +17,27 @@ import Link from "../components/Link.vue"
 
 <LayoutDefault title="Rechtliches" href="/rechtliches">
   <Heading1 slot="main">Rechtliches</Heading1>
-  <section slot="main" class="mb-4">
-    <Heading2>Inhaber</Heading2>
+  <section slot="main" class="mb-6">
+    <Heading2 class="h3">Inhaber</Heading2>
     <HCard class="font-thin">
-      <HCardFname>Jérôme</HCardFname>&nbsp;<HCardFname>Imfeld</HCardFname>
+      <HCardName class="block">Jérôme Imfeld</HCardName>
+      <HCardAdr class="block">
+        <HCardStreet class="block">Grätzlistrasse 3</HCardStreet>
+        <span class="block">
+          <HCardZip>8152</HCardZip>&nbsp;<HCardLocality>Opfikon</HCardLocality>
+        </span>
+        <HCardCountry class="block">Schweiz</HCardCountry>
+      </HCardAdr>
+      <HCardEmail
+        class="block"
+        email="ahoi@zolo.dev" 
+        title="E-Mail">
+        e-mail: ahoi@zolo.dev
+      </HCardEmail>
     </HCard>
   </section>
-  <section slot="main">
-    <Heading2>AGB</Heading2>
+  <section slot="main" class="mb-6">
+    <Heading2 class="h3">AGB</Heading2>
     <Link href="/pdf/AGB-J-Imfeld-180722.pdf" title="AGB">PDF</Link>
   </section>
 </LayoutDefault>

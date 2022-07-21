@@ -1,11 +1,12 @@
 <template>
-  <h1 class="h1">
+  <span class="p-adr h-adr">
     <slot></slot>
-  </h1>
+  </span>
 </template>
+
 
 <script>
   export default {
-    name: "Heading1"
+    name: "HCardAdr"
   }
 </script>

@@ -1,11 +1,12 @@
 <template>
-  <h1 class="h1">
+  <span class="p-street-address">
     <slot></slot>
-  </h1>
+  </span>
 </template>
+
 
 <script>
   export default {
-    name: "Heading1"
+    name: "HCardStreet"
   }
 </script>

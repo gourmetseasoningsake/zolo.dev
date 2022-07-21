@@ -78,6 +78,18 @@
 
 
 @layer utilities {
+  .h1 {
+    @apply mb-6 font-mono font-black text-6xl;
+  }
+
+  .h2 {
+    @apply mb-2 font-mono font-medium italic text-base;
+  }
+
+  .h3 {
+    @apply font-mono font-medium italic text-base;
+  }
+
   .scrollbar-hidden {
     scrollbar-width: none;
   }
