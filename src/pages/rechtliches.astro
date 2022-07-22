@@ -12,6 +12,7 @@ import HCardZip from "../components/HCardZip.vue"
 import HCardLocality from "../components/HCardLocality.vue"
 import HCardCountry from "../components/HCardCountry.vue"
 import HCardEmail from "../components/HCardEmail.vue"
+import Paragraph from "../components/Paragraph.vue"
 import Link from "../components/Link.vue"
 ---
 
@@ -20,17 +21,14 @@ import Link from "../components/Link.vue"
   <Heading1 slot="main">Rechtliches</Heading1>
   <Section slot="main">
     <Heading2 class="h3">Inhaber</Heading2>
-    <HCard class="font-thin">
-      <HCardName class="block">Jérôme Imfeld</HCardName>
-      <HCardAdr class="block">
-        <HCardStreet class="block">Grätzlistrasse 3</HCardStreet>
-        <span class="block">
-          <HCardZip>8152</HCardZip>&nbsp;<HCardLocality>Opfikon</HCardLocality>
-        </span>
-        <HCardCountry class="block">Schweiz</HCardCountry>
-      </HCardAdr>
+    <HCard class="font-thin leading-snug">
+      <HCardName>Jérôme Imfeld</HCardName><br>
+      <HCardAdr>
+        <HCardStreet>Grätzlistrasse 3</HCardStreet><br>
+        <HCardZip>8152</HCardZip>&nbsp;<HCardLocality>Opfikon</HCardLocality><br>
+        <HCardCountry>Schweiz</HCardCountry>
+      </HCardAdr><br>
       <HCardEmail
-        class="block"
         email="ahoi@zolo.dev" 
         title="E-Mail">
         e-mail: ahoi@zolo.dev
@@ -39,6 +37,14 @@ import Link from "../components/Link.vue"
   </Section>
   <Section slot="main">
     <Heading2 class="h3">AGB</Heading2>
-    <Link href="/pdf/AGB-J-Imfeld-180722.pdf" title="AGB">PDF</Link>
+    <Paragraph>
+      <Link 
+        href="/pdf/AGB-J-Imfeld-180722.pdf" 
+        title="AGB"
+        target="_blank">
+        PDF
+      </Link>
+      im Browser ansehen, herunterladen oder ausdrucken.
+    </Paragraph>
   </Section>
 </LayoutDefault>

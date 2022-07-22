@@ -1,0 +1,19 @@
+---
+import "../global.css"
+import LayoutExternal from "../layouts/External.astro"
+import Heading1 from "../components/Heading1.vue"
+import Heading2 from "../components/Heading2.vue"
+import Section from "../components/Section.vue"
+import Paragraph from "../components/Paragraph.vue"
+import Link from "../components/Link.vue"
+import Calendly from "../components/Calendly.vue"
+---
+
+
+<LayoutExternal title="Kontakt" href="/kontakt">
+  <Calendly client:load />
+</LayoutExternal>
+
+
+
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
