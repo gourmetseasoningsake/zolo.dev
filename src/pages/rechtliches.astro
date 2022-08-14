@@ -18,7 +18,9 @@ import Link from "../components/Link.vue"
 
 
 <LayoutDefault title="Rechtliches" href="/rechtliches">
-  <Heading1 slot="main">Rechtliches</Heading1>
+  <Section neutral slot="main">
+    <Heading1>Rechtliches</Heading1>
+  </Section>
   <Section slot="main">
     <Heading2 class="h3">Inhaber</Heading2>
     <HCard class="font-thin leading-snug">
@@ -39,7 +41,7 @@ import Link from "../components/Link.vue"
     <Heading2 class="h3">AGB</Heading2>
     <Paragraph>
       <Link 
-        href="/pdf/AGB-J-Imfeld-180722.pdf" 
+        href="/resources/pdf/AGB-J-Imfeld-180722.pdf" 
         title="AGB"
         target="_blank">
         PDF

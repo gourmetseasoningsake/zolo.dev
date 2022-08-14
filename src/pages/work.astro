@@ -1,0 +1,32 @@
+---
+import "../global.css"
+import LayoutDefault from "../layouts/Default.astro"
+import Heading1 from "../components/Heading1.vue"
+import Heading2 from "../components/Heading2.vue"
+import Section from "../components/Section.vue"
+import Paragraph from "../components/Paragraph.vue"
+import Link from "../components/Link.vue"
+import Posts from "../components/Posts.vue"
+
+const posts = [
+  { 
+    title: "CRM Map",
+    description: "Web-Applikation für eine erleichterte Kundengewinnung",
+    client: "Stoli GmbH",
+    stack: "hybrids, rescript, tailwind, vite, slim, gcp, cyon"
+  }
+]
+---
+
+
+<LayoutDefault title="Work" href="/work">
+  <Section neutral slot="main">
+    <Heading1>Work</Heading1>
+    <Paragraph>
+      Eine Auswahl jüngster Arbeiten.
+    </Paragraph>
+  </Section>
+  <Section neutral full slot="main">
+    <Posts items={posts}></Posts>
+  </Section>
+</LayoutDefault>

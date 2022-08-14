@@ -31,8 +31,7 @@
       return {
         links: [
           { href: "/", title: "Ahoi", text: "Ahoi" },
-          { href: "/rechtliches", title: "Rechtliches", text: "Rechtliches" },
-          { href: "/kontakt", title: "Kontakt", text: "Kontakt" }
+          { href: "/work", title: "Work", text: "Work" }
         ]
       }
     }

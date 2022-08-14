@@ -13,12 +13,12 @@
   "license": "ISC",
   "dependencies": {
     "@nanostores/vue": "^0.5.5",
-    "astro": "1.0.0-beta.63",
-    "nanostores": "^0.5.12"
+    "astro": "1.0.3",
+    "nanostores": "^0.6.0"
   },
   "devDependencies": {
-    "@astrojs/tailwind": "^0.2.2",
-    "@astrojs/vue": "^0.2.0",
+    "@astrojs/tailwind": "^1.0.0",
+    "@astrojs/vue": "^1.0.0",
     "vue": "^3.2.30"
   }
 }
