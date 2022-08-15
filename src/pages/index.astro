@@ -2,7 +2,7 @@
 import "../global.css"
 import LayoutLanding from "../layouts/Landing.astro"
 import Link from "../components/Link.vue"
-import Heading2 from "../components/Heading2.vue"
+import Heading1 from "../components/Heading1.vue"
 import Section from "../components/Section.vue"
 import Paragraph from "../components/Paragraph.vue"
 import HCard from "../components/HCard.vue"
@@ -13,7 +13,9 @@ import HCardLink from "../components/HCardLink.vue"
 
 <LayoutLanding title="Ahoi" href="/">
   <Section neutral slot="main">
-    <Heading2 class="h1">Ahoi</Heading2>
+    <Heading1>Ahoi</Heading1>
+  </Section>
+  <Section neutral slot="main">
     <Paragraph>
       Ich bin Jérôme <Link 
         href="https://fr-audio.howtopronounce.com/1618555814607933a68bf4f.mp3" 

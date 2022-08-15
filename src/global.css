@@ -79,7 +79,7 @@
 
 @layer utilities {
   .h1 {
-    @apply mb-6 font-mono font-black text-6xl;
+    @apply mb-8 font-mono font-black text-6xl;
   }
 
   .h2 {
@@ -96,5 +96,9 @@
 
   .scrollbar-hidden::-webkit-scrollbar {
     display: none;
+  }
+
+  .divide-before:before {
+    @apply block content-[''] border-t border-system-fg opacity-5 mb-8;
   }
 }

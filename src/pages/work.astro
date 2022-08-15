@@ -1,6 +1,7 @@
 ---
 import "../global.css"
 import LayoutDefault from "../layouts/Default.astro"
+import LayoutLanding from "../layouts/Landing.astro"
 import Heading1 from "../components/Heading1.vue"
 import Heading2 from "../components/Heading2.vue"
 import Section from "../components/Section.vue"
@@ -10,23 +11,39 @@ import Posts from "../components/Posts.vue"
 
 const posts = [
   { 
-    title: "CRM Map",
-    description: "Web-Applikation für eine erleichterte Kundengewinnung",
-    client: "Stoli GmbH",
-    stack: "hybrids, rescript, tailwind, vite, slim, gcp, cyon"
+    title: "Customer Map",
+    description: "Geschlossene Web-Applikation, um bestimmte Arbeitsschritte bei der Kundengewinnung zu erleichtern.",
+    meta: [
+      { key: "Features", value: "Selektive Anzeige von Kundengruppen. Selektive Suche nach Neukunden mittels einstellbarer Schlüsselwörter und Ortschaft. Suchfunktion für Ortschaften und Anzeige aktueller Kennzahlen des Gemeindeportraits. Shortcuts für Telefon, Website und Reiseroute. Ablagefunktion für neue Adressen. Einstellbares Karten-Theme." },
+      { key: "Front", value: "hybrids, tailwind" },
+      { key: "Back", value: "slim, dbdb, gcp, cyon" },
+      { key: "Specs", value: "UIS frei, FS teilweise gegeben" }
+    ],
+    media: [
+      { type: "image", source: "/resources/images/work-crm-map-2.png" },
+      { type: "image", source: "/resources/images/work-crm-map-1.png" }
+    ]
+  },
+  { 
+    title: "Customer Map",
+    description: "Web-Applikation, um bestimmte Arbeitsschritte bei der Kundengewinnung zu erleichtern.",
+    meta: [
+      { key: "Front", value: "hybrids, tailwind, vite" },
+      { key: "Back", value: "slim, dbdb, gcp, cyon" },
+      { key: "Specs", value: "UIS frei, FS teilweise gegeben" }
+    ],
+    media: [
+      { type: "image", source: "/resources/images/work-crm-map-2.png" },
+      { type: "image", source: "/resources/images/work-crm-map-1.png" }
+    ]
   }
 ]
 ---
 
 
-<LayoutDefault title="Work" href="/work">
+<LayoutLanding title="Work" href="/work">
   <Section neutral slot="main">
     <Heading1>Work</Heading1>
-    <Paragraph>
-      Eine Auswahl jüngster Arbeiten.
-    </Paragraph>
   </Section>
-  <Section neutral full slot="main">
-    <Posts items={posts}></Posts>
-  </Section>
-</LayoutDefault>
+  <Posts client:load items={posts} slot="main"></Posts>
+</LayoutLanding>

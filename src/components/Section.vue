@@ -1,7 +1,7 @@
 <template>
   <div 
     v-if="neutral"
-    class="mb-8"
+    class="my-8"
     :class="{ 'px-8': !full }">
     <slot></slot>
   </div>
