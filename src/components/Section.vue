@@ -1,14 +1,14 @@
 <template>
   <div 
     v-if="neutral"
-    class="my-8"
-    :class="{ 'px-8': !full }">
+    class="mb-8"
+    :class="classes">
     <slot></slot>
   </div>
   <section 
     v-else
     class="mb-8"
-    :class="{ 'px-8': !full }">
+    :class="classes">
     <slot></slot>
   </section>
 </template>
@@ -24,7 +24,19 @@
       full: {
         type: Boolean,
         default: false
+      },
+      divideBefore: {
+        type: Boolean,
+        default: false
       }
     },
+    computed: {
+      classes() {
+        return {
+          "px-8": !this.full,
+          "divide-before": this.divideBefore
+        }
+      }
+    }
   }
 </script>

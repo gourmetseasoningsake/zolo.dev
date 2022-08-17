@@ -14,29 +14,43 @@ const posts = [
     title: "Customer Map",
     description: "Geschlossene Web-Applikation, um bestimmte Arbeitsschritte bei der Kundengewinnung zu erleichtern.",
     meta: [
-      { key: "Features", value: "Selektive Anzeige von Kundengruppen. Selektive Suche nach Neukunden mittels einstellbarer Schlüsselwörter und Ortschaft. Suchfunktion für Ortschaften und Anzeige aktueller Kennzahlen des Gemeindeportraits. Shortcuts für Telefon, Website und Reiseroute. Ablagefunktion für neue Adressen. Einstellbares Karten-Theme." },
+      { key: "Features", value: "Selektive Anzeige von Kundengruppen. Selektive Suche nach Neukunden mittels einstellbarer Schlüsselwörter und Ortschaft. Suchfunktion für Ortschaften und automatische Anzeige aktueller Kennzahlen des Gemeindeportraits. Shortcuts für Telefon, Website und Reiseroute. Ablagefunktion für neue Adressen. Einstellbares Karten-Theme. Dark- und Light-UI." },
       { key: "Front", value: "hybrids, tailwind" },
       { key: "Back", value: "slim, dbdb, gcp, cyon" },
       { key: "Specs", value: "UIS frei, FS teilweise gegeben" }
     ],
     media: [
-      { type: "image", source: "/resources/images/work-crm-map-2.png" },
-      { type: "image", source: "/resources/images/work-crm-map-1.png" }
+      {
+        type: "image",
+        alt: "Customer Map in dark mode with night map theme.",
+        source: "/resources/images/work-crm-map-2.png",
+        class: "object-cover object-right-top"
+      },
+      {
+        type: "image",
+        alt: "Customer Map in dark mode with simplified default map theme.",
+        source: "/resources/images/work-crm-map-1.png",
+        class: "object-cover object-right-top"
+      },
+      {
+        type: "image",
+        alt: "Customer Map in light mode with simplified default map theme.",
+        source: "/resources/images/work-crm-map-4.png",
+        class: "object-cover object-right-top"
+      }
     ]
   },
   { 
-    title: "Customer Map",
-    description: "Web-Applikation, um bestimmte Arbeitsschritte bei der Kundengewinnung zu erleichtern.",
+    title: "Appointment Scheduler",
+    description: "",
     meta: [
-      { key: "Front", value: "hybrids, tailwind, vite" },
-      { key: "Back", value: "slim, dbdb, gcp, cyon" },
-      { key: "Specs", value: "UIS frei, FS teilweise gegeben" }
+      { key: "Features", value: "" },
+      { key: "Front", value: "json" },
+      { key: "Back", value: "hono, sqlite, bun" },
+      { key: "Specs", value: "frei" }
     ],
-    media: [
-      { type: "image", source: "/resources/images/work-crm-map-2.png" },
-      { type: "image", source: "/resources/images/work-crm-map-1.png" }
-    ]
-  }
+    media: []
+  },
 ]
 ---
 

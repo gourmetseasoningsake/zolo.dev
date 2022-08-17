@@ -83,7 +83,7 @@
   }
 
   .h2 {
-    @apply mb-2 font-mono font-medium italic text-base;
+    @apply mb-2 font-mono font-medium italic text-3xl;
   }
 
   .h3 {

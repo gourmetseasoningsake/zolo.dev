@@ -1,14 +1,14 @@
 <template>
   <img 
-    class="block w-full h-full rounded-sm transition-opacity duration-500" 
-    :class="{ 'opacity-0': !isIntersecting, 'opacity-100': isIntersecting }"
+    class="transition-opacity duration-500"
+    :class="classes"
     :data-src="dataSource" 
     :src="source" />
 </template>
 
 
 <script>
-  export default {
+  export default { // TODO: handle cached and broken images
     props: {
       dataSource: {
         type: String, 
@@ -21,14 +21,20 @@
     },
     data() {
       return  {
-        isIntersecting: false
+        loaded: false
       }
     },
     mounted() {
       let observer = new IntersectionObserver(([ entry ], observer_) => {
         if (entry.isIntersecting) {
-          this.isIntersecting = true
-          this.$el.src = this.dataSource
+          let image = new Image()
+
+          image.onload = () => {
+            this.$el.src = image.src
+            this.loaded = true
+          }
+
+          image.src = this.dataSource
           observer_.disconnect()
         }
       }, {
@@ -38,6 +44,14 @@
       })
 
       observer.observe(this.$el)
+    },
+    computed: {
+      classes() {
+        return {
+          'opacity-0': !this.loaded,
+          'opacity-100': this.loaded
+        }
+      }
     }
   }
 </script>

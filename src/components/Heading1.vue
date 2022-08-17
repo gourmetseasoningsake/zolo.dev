@@ -1,5 +1,5 @@
 <template>
-  <h1 :class="class">
+  <h1 :class="visual">
     <slot></slot>
   </h1>
 </template>
@@ -8,7 +8,7 @@
 <script>
   export default {
     props: {
-      class: {
+      visual: {
         type: String,
         default: "h1"
       }
