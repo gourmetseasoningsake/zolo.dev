@@ -3,11 +3,11 @@
     v-for="(item, i) in items"
     :key="i"
     divideBefore>
-    <Section neutral full tabindex="0">
+    <Section neutral full>
       <Heading2>{{ item.title }}</Heading2>
       <Paragraph>{{ item.description }}</Paragraph>
     </Section>
-    <Section neutral full tabindex="0">
+    <Section neutral full>
       <DataList
         :title="item.title + ' Meta'"
         :items="item.meta" />

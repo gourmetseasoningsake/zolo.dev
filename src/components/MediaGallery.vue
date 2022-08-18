@@ -3,7 +3,7 @@
     <li
       v-for="(item, i) in items"
       tabindex="0"
-      class="relative w-full pb-[66.665%] sm:w-1/2 sm:pb-[33.333%] lg:w-1/3 lg:pb-[22.222%]"
+      class="relative w-full pb-[66.665%] sm:w-1/2 sm:pb-[33.333%] lg:w-1/3 lg:pb-[22.222%] focus focus-action-fg"
       :key="i"
       @mouseover="setItemEnlarged(i)"
       @mousdown="setItemEnlarged(i)"
@@ -14,7 +14,7 @@
         <Image
           width="3"
           height="2"
-          class="block w-full h-full rounded-sm focus:border focus:border-system-fg"
+          class="block w-full h-full"
           :class="item.class"
           :dataSource="item.source"
           :alt="item.alt"/>

@@ -1,8 +1,8 @@
 <template>
-  <div v-if="neutral" :class="classes">
+  <div v-if="neutral" tabindex="0" class="focus focus-offset-4" :class="classes">
     <slot></slot>
   </div>
-  <section v-else :class="classes">
+  <section v-else :class="classes" tabindex="0">
     <slot></slot>
   </section>
 </template>

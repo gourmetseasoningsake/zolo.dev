@@ -101,4 +101,20 @@
   .divide-before:before {
     @apply block content-[''] border-t border-system-fg opacity-5;
   }
+
+  .focus {
+    @apply focus:outline focus:outline-1;
+  }
+
+  .focus-offset-4 {
+    @apply focus:outline-offset-[1rem] focus:rounded-sm;
+  }
+
+  .focus-system-fg {
+  @apply focus:outline-system-fg;
+  }
+
+  .focus-action-fg {
+    @apply focus:outline-action-fg;
+  }
 }
