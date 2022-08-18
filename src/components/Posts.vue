@@ -1,15 +1,21 @@
 <template>
   <Section
-    v-for="(item, i) in items" :key="i"
+    v-for="(item, i) in items"
+    :key="i"
     divideBefore>
-    <Section neutral full>
+    <Section neutral full tabindex="0">
       <Heading2>{{ item.title }}</Heading2>
       <Paragraph>{{ item.description }}</Paragraph>
     </Section>
-    <Section neutral full>
-      <DataList :title="item.title + ' Meta'" :items="item.meta" />
+    <Section neutral full tabindex="0">
+      <DataList
+        :title="item.title + ' Meta'"
+        :items="item.meta" />
     </Section>
-    <MediaGallery :title="item.title + ' Gallery'" :items="item.media" />
+    <MediaGallery
+        v-if="item.media.length"
+        :title="item.title + ' Gallery'"
+        :items="item.media" />
   </Section>
 </template>
 

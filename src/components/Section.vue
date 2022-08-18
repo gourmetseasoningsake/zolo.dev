@@ -1,14 +1,8 @@
 <template>
-  <div 
-    v-if="neutral"
-    class="mb-8"
-    :class="classes">
+  <div v-if="neutral" :class="classes">
     <slot></slot>
   </div>
-  <section 
-    v-else
-    class="mb-8"
-    :class="classes">
+  <section v-else :class="classes">
     <slot></slot>
   </section>
 </template>
@@ -28,11 +22,16 @@
       divideBefore: {
         type: Boolean,
         default: false
+      },
+      first: {
+        type: Boolean,
+        default: false
       }
     },
     computed: {
       classes() {
         return {
+          "my-8": true,
           "px-8": !this.full,
           "divide-before": this.divideBefore
         }

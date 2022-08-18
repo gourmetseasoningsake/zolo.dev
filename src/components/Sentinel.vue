@@ -7,7 +7,7 @@
   export default {
     mounted() {
       let observer = new IntersectionObserver(([ entry ]) => {
-        session.setKey("pageTop", entry.isIntersecting)
+        session.setKey("headerTransparent", entry.isIntersecting)
       }, {
         root: null,
         rootMargin: "10px",

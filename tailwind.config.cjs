@@ -47,8 +47,11 @@ module.exports = {
 			},
 			minHeight: {
         "screen-px": "calc(100vh + 1px)",
-				"scroll": "calc(100% + 1px)"
-			}
+				"scroll-px": "calc(100% + 1px)"
+			},
+      spacing: {
+        "h-header": "5.5rem"
+      }
 		}
 	},
 	plugins: [],
