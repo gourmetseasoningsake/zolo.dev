@@ -102,19 +102,28 @@
     @apply block content-[''] border-t border-system-fg opacity-5;
   }
 
-  .focus {
-    @apply focus:outline focus:outline-1;
+  :focus {
+    outline: none;
   }
 
-  .focus-offset-4 {
-    @apply focus:outline-offset-[1rem] focus:rounded-sm;
+  .focus:focus,
+  :focus .focus {
+    box-shadow:
+      calc(-1rem + 1px) 0 0 0 var(--system-bg),
+      calc(-1rem - 1px) 0 0 0 var(--action-fg),
+      calc(1rem - 1px) 0 0 0 var(--system-bg),
+      calc(1rem + 1px) 0 0 0 var(--action-fg);
   }
 
-  .focus-system-fg {
-  @apply focus:outline-system-fg;
-  }
-
-  .focus-action-fg {
-    @apply focus:outline-action-fg;
+  .focus-inset:focus,
+  :focus .focus-inset {
+    box-shadow:
+      inset calc(1rem - 1px) 0 0 0 var(--system-bg),
+      inset calc(1rem + 1px) 0 0 0 var(--action-fg),
+      inset calc(-1rem + 1px) 0 0 0 var(--system-bg),
+      inset calc(-1rem - 1px) 0 0 0 var(--action-fg);
   }
 }
+
+
+/*box-shadow: inset 14px 0px 0px 0px white,inset 24px 0px 0px -3px black;*/

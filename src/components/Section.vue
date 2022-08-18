@@ -1,8 +1,8 @@
 <template>
-  <div v-if="neutral" tabindex="0" class="focus focus-offset-4" :class="classes">
+  <div v-if="neutral" :class="classes" :tabindex="tabindex">
     <slot></slot>
   </div>
-  <section v-else :class="classes" tabindex="0">
+  <section v-else :class="classes" :tabindex="tabindex">
     <slot></slot>
   </section>
 </template>
@@ -23,7 +23,7 @@
         type: Boolean,
         default: false
       },
-      first: {
+      focus: {
         type: Boolean,
         default: false
       }
@@ -33,8 +33,13 @@
         return {
           "my-8": true,
           "px-8": !this.full,
-          "divide-before": this.divideBefore
+          "divide-before": this.divideBefore,
+          "focus": this.focus && this.full,
+          "focus-inset": this.focus && !this.full
         }
+      },
+      tabindex() {
+        return this.focus ? "0" : undefined
       }
     }
   }

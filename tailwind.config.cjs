@@ -45,6 +45,9 @@ module.exports = {
 				"system-fg": "var(--system-fg)",
         "action-fg": "var(--action-fg)"
 			},
+      height: {
+        "screen-px": "calc(100vh + 1px)"
+      },
 			minHeight: {
         "screen-px": "calc(100vh + 1px)",
 				"scroll-px": "calc(100% + 1px)"

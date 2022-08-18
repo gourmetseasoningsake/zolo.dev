@@ -3,18 +3,20 @@
     <li
       v-for="(item, i) in items"
       tabindex="0"
-      class="relative w-full pb-[66.665%] sm:w-1/2 sm:pb-[33.333%] lg:w-1/3 lg:pb-[22.222%] focus focus-action-fg"
+      class="relative w-full pb-[66.665%] sm:w-1/2 sm:pb-[33.333%] lg:w-1/3 lg:pb-[22.222%] touch-manipulation"
       :key="i"
+      @focus="setItemEnlarged(i)"
       @mouseover="setItemEnlarged(i)"
-      @mousdown="setItemEnlarged(i)"
-      @focusin="setItemEnlarged(i)"
-      @click.exact="openDialog"
-      @keyup.enter.exact="openDialog">
+      @mouseup="openDialog"
+      @touchstart="setItemEnlarged(i)"
+      @touchend="openDialog"
+      @keyup.enter.exact="openDialog"
+      @keydown.space.prevent.exact="openDialog">
       <div class="absolute inset-0 p-4">
         <Image
           width="3"
           height="2"
-          class="block w-full h-full"
+          class="block w-full h-full focus"
           :class="item.class"
           :dataSource="item.source"
           :alt="item.alt"/>
@@ -26,11 +28,13 @@
     ref="dialog"
     :class="classesDialog"
     @click.exact="closeDialog"
-    @keyup.esc.exact="closeDialog">
-    <div class="relative min-h-scroll-px">
-      <div class="absolute z-0 inset-0 bg-system-bg opacity-90"></div>
-      <div class="flex sticky top-0 h-screen">
-        <div class="p-h-header">
+    @keyup.esc.exact="closeDialog"
+    @keyup.right.exact="setNextItemEnlarged(itemEnlarged.i)"
+    @keyup.left.exact="setPrevItemEnlarged(itemEnlarged.i)">
+    <div class="relative h-screen-px">
+      <div class="absolute z-0 inset-0 h-full bg-system-bg opacity-90"></div>
+      <div class="sticky top-0 h-screen overflow-auto">
+        <div class="h-full p-h-header">
           <Image
             v-if="itemEnlarged"
             width="3"
@@ -81,13 +85,24 @@
       openDialog() {
         this.active = true
         this.$nextTick(() => this.$refs.dialog.focus())
+        document.scrollingElement.classList.add("scrollbar-hidden")
       },
       closeDialog() {
         this.$refs.dialog.blur()
         this.active = false
+        document.scrollingElement.classList.remove("scrollbar-hidden")
       },
       setItemEnlarged(i) {
         this.itemEnlarged = { i, ...this.items[i] }
+      },
+      setNextItemEnlarged(i) {
+        let i_ = (i + 1) % this.items.length
+        this.itemEnlarged = { i: i_, ...this.items[i_] }
+      },
+      setPrevItemEnlarged(i) {
+        const len = this.items.length
+        let i_ = (i + len-1) % len
+        this.itemEnlarged = { i: i_, ...this.items[i_] }
       }
     }
   }

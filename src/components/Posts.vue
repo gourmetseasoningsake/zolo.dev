@@ -3,18 +3,18 @@
     v-for="(item, i) in items"
     :key="i"
     divideBefore>
-    <Section neutral full>
+    <Section neutral full focus>
       <Heading2>{{ item.title }}</Heading2>
       <Paragraph>{{ item.description }}</Paragraph>
     </Section>
-    <Section neutral full>
+    <Section neutral full focus>
       <DataList
         :title="item.title + ' Meta'"
         :items="item.meta" />
     </Section>
     <MediaGallery
         v-if="item.media.length"
-        :title="item.title + ' Gallery'"
+        :title="item.title + ' Galerie'"
         :items="item.media" />
   </Section>
 </template>

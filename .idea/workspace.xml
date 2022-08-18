@@ -7,6 +7,9 @@
       <change beforePath="$PROJECT_DIR$/src/components/Posts.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Posts.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Section.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Section.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/work.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/work.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.cjs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +48,8 @@
       <option name="presentableId" value="Default" />
       <updated>1660751800394</updated>
       <workItem from="1660751802380" duration="22494000" />
-      <workItem from="1660785271389" duration="1985000" />
+      <workItem from="1660785271389" duration="2365000" />
+      <workItem from="1660821351175" duration="11623000" />
     </task>
     <servers />
   </component>
