@@ -29,7 +29,7 @@
   import MediaGallery from "./MediaGallery.vue"
 
   export default {
-    components: {MediaGallery, Section, Heading2, Paragraph, DataList, Image },
+    components: {MediaGallery, Section, Heading2, Paragraph, DataList, Image},
     props: {
       items: {
         type: Array,

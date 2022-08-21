@@ -2,26 +2,22 @@
   <img 
     class="transition-opacity duration-500"
     :class="classes"
-    :data-src="dataSource" 
-    :src="source" />
+    :src="placeholderSrc"/>
 </template>
 
 
 <script>
   export default { // TODO: handle cached and broken images
     props: {
-      dataSource: {
-        type: String, 
+      sourceSet: {
+        type: Array,
         required: true
-      },
-      source: {
-        type: String,
-        default: "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
       }
     },
     data() {
       return  {
-        loaded: false
+        loaded: false,
+        placeholderSrc: "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
       }
     },
     mounted() {
@@ -30,11 +26,12 @@
           let image = new Image()
 
           image.onload = () => {
-            this.$el.src = image.src
+            this.$el.srcset = image.srcset
             this.loaded = true
           }
 
-          image.src = this.dataSource
+          image.sizes = this.$el.sizes
+          image.srcset = this.dataSrcset
           observer_.disconnect()
         }
       }, {
@@ -51,6 +48,9 @@
           'opacity-0': !this.loaded,
           'opacity-100': this.loaded
         }
+      },
+      dataSrcset() {
+        return this.sourceSet.join(",")
       }
     }
   }

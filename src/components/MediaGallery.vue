@@ -14,12 +14,17 @@
       @keydown.space.prevent.exact="openDialog">
       <div class="absolute inset-0 p-4">
         <Image
-          width="3"
-          height="2"
           class="block w-full h-full focus"
-          :class="item.class"
-          :dataSource="item.source"
-          :alt="item.alt"/>
+          :class="item.classes"
+          :width="item.width"
+          :height="item.height"
+          :sourceSet="item.sourceSet"
+          :alt="item.alt"
+          sizes="
+            (min-width: 1024px) calc(33.33vw - (32px * 4 / 3)),
+            (min-width: 640px) calc(50vw - (32px * 3 / 2)),
+            calc(100vw - (32px * 2))"
+        />
       </div>
     </li>
   </ul>
@@ -37,12 +42,11 @@
         <div class="h-full p-h-header">
           <Image
             v-if="itemEnlarged"
-            width="3"
-            height="2"
             class="block w-full h-full object-contain rounded-md"
-            :dataSource="itemEnlarged.source"
+            :sourceSet="itemEnlarged.sourceSet"
             :alt="itemEnlarged.alt"
-            :key="itemEnlarged.i"/>
+            :key="itemEnlarged.i"
+            sizes="calc(100vw - (88px * 2))"/>
         </div>
       </div>
     </div>
