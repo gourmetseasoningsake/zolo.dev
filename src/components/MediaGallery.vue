@@ -32,21 +32,34 @@
     tabindex="-1"
     ref="dialog"
     :class="classesDialog"
-    @click.exact="closeDialog"
-    @keyup.esc.exact="closeDialog"
+    @keydown.esc.prevent.exact="closeDialog"
+    @keyup.enter.exact="closeDialog"
+    @keydown.tab.prevent.exact="setNextItemEnlarged(itemEnlarged.i)"
     @keyup.right.exact="setNextItemEnlarged(itemEnlarged.i)"
     @keyup.left.exact="setPrevItemEnlarged(itemEnlarged.i)">
     <div class="relative h-screen-px">
       <div class="absolute z-0 inset-0 h-full bg-system-bg opacity-90"></div>
       <div class="sticky top-0 h-screen overflow-auto">
-        <div class="h-full p-h-header">
-          <Image
-            v-if="itemEnlarged"
-            class="block w-full h-full object-contain rounded-md"
-            :sourceSet="itemEnlarged.sourceSet"
-            :alt="itemEnlarged.alt"
-            :key="itemEnlarged.i"
-            sizes="calc(100vw - (88px * 2))"/>
+        <div
+          class="grid-media h-full"
+          @click.self.exact="closeDialog">
+          <div class="area-main ">
+            <Image
+              v-if="itemEnlarged"
+              class="block max-w-full max-h-full rounded-md"
+              :sourceSet="itemEnlarged.sourceSet"
+              :alt="itemEnlarged.alt"
+              :key="itemEnlarged.i"
+              sizes="calc(100vw - (88px * 2))"
+              @click="setNextItemEnlarged(itemEnlarged.i)" />
+          </div>
+          <div class="area-footer flex justify-center p-8">
+            <div class="mx-2">
+              <button class="px-3 py-1 border-y-2 border-r border-l-2 border-action-fg rounded-tl-md rounded-bl-md font-light text-action-fg">←</button>
+              <button class="px-3 py-1 border-y-2 border-r-2 border-l border-action-fg rounded-tr-md rounded-br-md font-light text-action-fg">→</button>
+            </div>
+            <button class="mx-2 px-2 py-1 border-2 border-action-fg rounded-md font-light text-action-fg">ESC</button>
+          </div>
         </div>
       </div>
     </div>

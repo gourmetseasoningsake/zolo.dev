@@ -1,15 +1,12 @@
 # build
-dist/
+/dist/
 
 # node
-node_modules/
+/node_modules/
 
 # os specifig
 .DS_Store
 
-
-
 # temp
-
 /public/resources/images
 /resources/
