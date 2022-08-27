@@ -24,8 +24,8 @@ export default defineConfig({
     server: {
       open: true,
       https: {
-        key: "/Users/jerome/.localssl/server.key",
-        cert: "/Users/jerome/.localssl/server.crt"
+        key: "/Users/jerome/.localssl/localhost+2-key.pem",
+        cert: "/Users/jerome/.localssl/localhost+2.pem"
       }
     }
   },
