@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="59c169d7-9382-47b2-a579-18b590c60323" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/astro.config.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MediaGallery.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MediaGallery.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HCardEmail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HCardEmail.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Paragraph.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Paragraph.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.astro" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +76,8 @@
       <workItem from="1661584155991" duration="5635000" />
       <workItem from="1661599812702" duration="1324000" />
       <workItem from="1661624219102" duration="6736000" />
-      <workItem from="1661634280332" duration="1284000" />
+      <workItem from="1661634280332" duration="4373000" />
+      <workItem from="1661641917437" duration="1259000" />
     </task>
     <servers />
   </component>
