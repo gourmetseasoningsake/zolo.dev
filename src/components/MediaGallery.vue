@@ -1,18 +1,24 @@
 <template>
-  <ul class="flex flex-wrap -m-4 pt-1 pb-2" :title="title" v-bind="$attrs">
+  <ul
+    role="list"
+    ref="list"
+    class="flex flex-wrap -m-4 pt-1 pb-2"
+    :title="title"
+    v-bind="$attrs">
     <li
       v-for="(item, i) in items"
-      tabindex="0"
       class="relative w-full pb-[66.665%] sm:w-1/2 sm:pb-[33.333%] lg:w-1/3 lg:pb-[22.222%] touch-manipulation"
       :key="i"
-      @focus="setItemEnlarged(i)"
+      @focusin="setItemEnlarged(i)"
       @mouseover="setItemEnlarged(i)"
       @mouseup="openDialog"
       @touchstart="setItemEnlarged(i)"
       @touchend="openDialog"
-      @keyup.enter.exact="openDialog"
-      @keydown.space.prevent.exact="openDialog">
-      <div class="absolute inset-0 p-4">
+      @keydown.enter.exact="openDialog">
+      <button
+        class="block absolute inset-0 p-4"
+        aria-controls="dialog"
+        :aria-selected="active && i === itemEnlarged.i">
         <Image
           class="block w-full h-full focus"
           :class="item.classes"
@@ -23,42 +29,73 @@
           sizes="
             (min-width: 1024px) calc(33.33vw - (32px * 4 / 3)),
             (min-width: 640px) calc(50vw - (32px * 3 / 2)),
-            calc(100vw - (32px * 2))"
-        />
-      </div>
+            calc(100vw - (32px * 2))"/>
+      </button>
     </li>
   </ul>
   <aside
     tabindex="-1"
+    id="dialog"
     ref="dialog"
+    :aria-hidden="!active"
     :class="classesDialog"
-    @keydown.esc.prevent.exact="closeDialog"
-    @keyup.enter.exact="closeDialog"
-    @keydown.tab.prevent.exact="setNextItemEnlarged(itemEnlarged.i)"
-    @keyup.right.exact="setNextItemEnlarged(itemEnlarged.i)"
-    @keyup.left.exact="setPrevItemEnlarged(itemEnlarged.i)">
+    @keydown.esc.exact="closeDialog"
+    @keydown.tab.prevent="closeDialog"
+    @keydown.left.exact="focusPrevDialogControl(dialogControlFocused)"
+    @keydown.right.exact="focusNextDialogControl(dialogControlFocused)">
     <div class="relative h-screen-px">
       <div class="absolute z-0 inset-0 h-full bg-system-bg opacity-90"></div>
       <div class="sticky top-0 h-screen overflow-auto">
-        <div
-          class="grid-media h-full"
-          @click.self.exact="closeDialog">
-          <div class="area-main ">
-            <Image
-              v-if="itemEnlarged"
-              class="block max-w-full max-h-full rounded-md"
-              :sourceSet="itemEnlarged.sourceSet"
-              :alt="itemEnlarged.alt"
-              :key="itemEnlarged.i"
-              sizes="calc(100vw - (88px * 2))"
-              @click="setNextItemEnlarged(itemEnlarged.i)" />
-          </div>
-          <div class="area-footer flex justify-center p-8">
-            <div class="mx-2">
-              <button class="px-3 py-1 border-y-2 border-r border-l-2 border-action-fg rounded-tl-md rounded-bl-md font-light text-action-fg">←</button>
-              <button class="px-3 py-1 border-y-2 border-r-2 border-l border-action-fg rounded-tr-md rounded-br-md font-light text-action-fg">→</button>
-            </div>
-            <button class="mx-2 px-2 py-1 border-2 border-action-fg rounded-md font-light text-action-fg">ESC</button>
+        <div class="grid-media h-full">
+          <Image
+            v-if="itemEnlarged"
+            class="area-main block w-full h-full object-contain rounded-md"
+            :sourceSet="itemEnlarged.sourceSet"
+            :alt="itemEnlarged.alt"
+            :key="itemEnlarged.i"
+            sizes="calc(100vw - (88px * 2))"
+            @click.exact="setNextItemEnlarged(itemEnlarged.i)" />
+          <div class="area-footer p-8">
+            <ul
+              role="list"
+              class="flex justify-center">
+              <li>
+                <button
+                  tabindex="-1"
+                  type="button"
+                  aria-label="Rückwärts"
+                  title="Rückwärts"
+                  class="px-3 py-1 border-y-2 border-r border-l-2 border-action-fg rounded-tl-md rounded-bl-md focus:bg-action-fg font-light text-action-fg focus:text-system-bg"
+                  @click.exact="setPrevItemEnlarged(itemEnlarged.i)"
+                  @keydown.enter.exact="setNextItemEnlarged(itemEnlarged.i)">
+                  <span aria-hidden="true">←</span>
+                </button>
+              </li>
+              <li>
+                <button
+                  tabindex="-1"
+                  type="button"
+                  aria-label="Vorwärts"
+                  title="Vorwärts"
+                  class="px-3 py-1 border-y-2 border-r-2 border-l border-action-fg rounded-tr-md rounded-br-md focus:bg-action-fg font-light text-action-fg focus:text-system-bg"
+                  @click.exact="setNextItemEnlarged(itemEnlarged.i)"
+                  @keydown.enter.exact="setNextItemEnlarged(itemEnlarged.i)">
+                  <span aria-hidden="true">→</span>
+                </button>
+              </li>
+              <li class="ml-4">
+                <button
+                  tabindex="-1"
+                  type="button"
+                  aria-label="Schliessen"
+                  title="Schliessen"
+                  class="px-2 py-1 border-2 border-action-fg rounded-md focus:bg-action-fg font-light text-action-fg focus:text-system-bg"
+                  @click.exact="closeDialog"
+                  @keydown.enter.exact="closeDialog">
+                  <span aria-hidden="true">ESC</span>
+                </button>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -68,8 +105,11 @@
 
 
 <script>
-  import { session } from "../stores/session.js"
   import Image from "./Image.vue"
+
+  // @keyup.right.exact="setNextItemEnlarged(itemEnlarged.i)"
+  // @keyup.left.exact="setPrevItemEnlarged(itemEnlarged.i)"
+  // @keydown.tab.prevent.exact="cycleTab"
 
   export default {
     inheritAttrs: false,
@@ -87,7 +127,9 @@
     data() {
       return {
         active: false,
-        itemEnlarged: null
+        itemEnlarged: { i: 0, ...this.items[0] },
+        dialogControls: [],
+        dialogControlFocused: -1
       }
     },
     computed: {
@@ -98,14 +140,21 @@
         return "hidden invisible"
       }
     },
+    mounted() {
+      this.dialogControls = this.$refs.dialog.querySelectorAll('[tabindex="-1"]')
+    },
     methods: {
       openDialog() {
         this.active = true
-        this.$nextTick(() => this.$refs.dialog.focus())
+        this.$nextTick(() => {
+          this.$refs.dialog.focus()
+          this.$refs.dialog.tabIndex = 0
+        })
         document.scrollingElement.classList.add("scrollbar-hidden")
       },
       closeDialog() {
-        this.$refs.dialog.blur()
+        this.$refs.list.querySelector('button[aria-selected="true"]').focus()
+        this.$refs.dialog.tabIndex = -1
         this.active = false
         document.scrollingElement.classList.remove("scrollbar-hidden")
       },
@@ -120,6 +169,17 @@
         const len = this.items.length
         let i_ = (i + len-1) % len
         this.itemEnlarged = { i: i_, ...this.items[i_] }
+      },
+      focusNextDialogControl(i) {
+        let i_ = (i + 1) % this.dialogControls.length
+        this.dialogControls[i_].focus()
+        this.dialogControlFocused = i_
+      },
+      focusPrevDialogControl(i) {
+        const len = this.dialogControls.length
+        let i_ = (i + len-1) % len
+        this.dialogControls[i_].focus()
+        this.dialogControlFocused = i_
       }
     }
   }

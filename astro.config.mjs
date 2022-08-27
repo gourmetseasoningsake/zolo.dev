@@ -1,7 +1,7 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig } from 'astro/config'
 
-import vue from "@astrojs/vue";
-import tailwind from "@astrojs/tailwind";
+import vue from "@astrojs/vue"
+import tailwind from "@astrojs/tailwind"
 
 
 process.env.BROWSER = "firefox developer edition"
@@ -22,8 +22,12 @@ export default defineConfig({
   },
   vite: {
     server: {
-      open: true
+      open: true,
+      https: {
+        key: "/Users/jerome/.localssl/server.key",
+        cert: "/Users/jerome/.localssl/server.crt"
+      }
     }
   },
   integrations: [vue(), tailwind()]
-});
+})
