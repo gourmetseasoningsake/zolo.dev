@@ -1,5 +1,5 @@
 <template>
-  <span>
+  <span :class="classes">
     <a 
       class="u-url touch-manipulation font-light text-action-fg"
       :href="href" 
@@ -25,6 +25,17 @@
       rel: {
         type: String,
         required: false
+      },
+      focus: {
+        type: Boolean,
+        default: false
+      }
+    },
+    computed: {
+      classes() {
+        return {
+          "focus-within": this.focus
+        }
       }
     }
   }

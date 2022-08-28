@@ -1,7 +1,5 @@
 <template>
-  <span
-    :class="classes"
-    :tabindex="tabindex">
+  <span :class="classes">
     <a
       class="u-email touch-manipulation font-light text-action-fg"
       :href="href"
@@ -39,11 +37,8 @@
       },
       classes() {
         return {
-          "focus": this.focus
+          "focus-within": this.focus
         }
-      },
-      tabindex() {
-        return this.focus ? "0" : undefined
       }
     }
   }

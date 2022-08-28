@@ -17,7 +17,8 @@ import HCardLink from "../components/HCardLink.vue"
   </Section>
   <Section neutral slot="main">
     <Paragraph focus>
-      Ich bin Jérôme <Link 
+      Ich bin Jérôme <Link
+        tabindex="-1"
         href="https://fr-audio.howtopronounce.com/1618555814607933a68bf4f.mp3" 
         target="_blank"
         rel="noopener noreferrer">
@@ -27,7 +28,7 @@ import HCardLink from "../components/HCardLink.vue"
     <HCard>
       <HCardEmail
         class="block"
-        email="ahoi@zolo.dev" 
+        email="ahoi@zolo.dev"
         title="E-Mail"
         focus>
         e-mail: ahoi@zolo.dev
@@ -35,7 +36,8 @@ import HCardLink from "../components/HCardLink.vue"
       <HCardLink
         class="block"
         href="https://threema.id/8UFC3385"
-        title="Threema">
+        title="Threema"
+        focus>
         threema: 8UFC3385
       </HCardLink>
     </HCard>

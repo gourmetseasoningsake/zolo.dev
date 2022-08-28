@@ -100,6 +100,14 @@
       inset calc(-1rem - 1px) 0 0 0 var(--action-fg);
   }
 
+  :focus-within.focus-within {
+    box-shadow:
+      calc(-1rem + 1px) 0 0 0 var(--system-bg),
+      calc(-1rem - 1px) 0 0 0 var(--action-fg),
+      calc(1rem - 1px) 0 0 0 var(--system-bg),
+      calc(1rem + 1px) 0 0 0 var(--action-fg);
+  }
+
   .scrollbar-hidden {
     scrollbar-width: none;
   }
