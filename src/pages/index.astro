@@ -8,6 +8,7 @@ import Paragraph from "../components/Paragraph.vue"
 import HCard from "../components/HCard.vue"
 import HCardEmail from "../components/HCardEmail.vue"
 import HCardLink from "../components/HCardLink.vue"
+import Speak from "../components/Speak.vue"
 ---
 
 
@@ -17,13 +18,13 @@ import HCardLink from "../components/HCardLink.vue"
   </Section>
   <Section neutral slot="main">
     <Paragraph focus>
-      Ich bin Jérôme <Link
-        tabindex="-1"
-        href="https://fr-audio.howtopronounce.com/1618555814607933a68bf4f.mp3" 
-        target="_blank"
-        rel="noopener noreferrer">
+      Ich bin Jérôme <Speak
+        client:only="vue"
+        text="Jérôme"
+        lang="fr-FR"
+        fallback="https://fr-audio.howtopronounce.com/1618555814607933a68bf4f.mp3">
         /ʒe.ʁom/
-      </Link>  Imfeld. Ich bin Web-Entwickler und erarbeite Lösungen für kleine Unternehmungen, die ihre Internetpräsenz verbessern oder Arbeitsflüsse digitalisieren möchten. Ich tue das seit 7 Jahren, als Teil eines bestehenden Teams oder als Lieferant einzelner Sachen.
+      </Speak> Imfeld. Ich bin Web-Entwickler und erarbeite Lösungen für kleine Unternehmungen, die ihre Internetpräsenz verbessern oder Arbeitsflüsse digitalisieren möchten. Ich tue das seit 7 Jahren, als Teil eines bestehenden Teams oder als Lieferant einzelner Sachen.
     </Paragraph>
     <HCard>
       <HCardEmail
