@@ -3,13 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="59c169d7-9382-47b2-a579-18b590c60323" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FooterPrimary.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeaderPrimary.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainHeaderDynamic.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeaderPrimaryDynamic.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainNav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavPrimary.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Speak.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Speak.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FooterPrimary.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FooterPrimary.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/contents.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/contents.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layouts/Default.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Default.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/legal.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/legal.astro" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +85,7 @@
       <workItem from="1661759238573" duration="4715000" />
       <workItem from="1661785954316" duration="1331000" />
       <workItem from="1661788656270" duration="29000" />
-      <workItem from="1661794037988" duration="977000" />
+      <workItem from="1661794037988" duration="2375000" />
     </task>
     <servers />
   </component>

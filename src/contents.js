@@ -1,6 +1,11 @@
-export const navItems = [
+export const navPrimaryItems = [
   { href: "/", title: "Ahoi", text: "Ahoi" },
   { href: "/work", title: "Work", text: "Work" }
+]
+
+
+export const navSecondaryItems = [
+  { href: "/legal", title: "Rechtliches", text: "Rechtliches" }
 ]
 
 

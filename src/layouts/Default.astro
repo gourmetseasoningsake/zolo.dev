@@ -3,9 +3,10 @@ import HeaderPrimaryDynamic from "../components/HeaderPrimaryDynamic.vue"
 import NavPrimary from "../components/NavPrimary.vue"
 import Main from "../components/Main.vue"
 import FooterPrimary from "../components/FooterPrimary.vue"
+import NavSecondary from "../components/NavSecondary.vue"
 import Sentinel from "../components/Sentinel.vue"
 
-import { navItems } from "../contents.js"
+import { navPrimaryItems, navSecondaryItems } from "../contents.js"
 
 const { title, href, description } = Astro.props
 ---
@@ -22,8 +23,8 @@ const { title, href, description } = Astro.props
   </head>
   <body class="min-h-screen font-mono">
     <HeaderPrimaryDynamic client:load>
-      <NavPrimary href={href} links={navItems}/>
       <slot name="header"></slot>
+      <NavPrimary href={href} links={navPrimaryItems}/>
     </HeaderPrimaryDynamic>
     <Sentinel client:load />
     <Main>
@@ -31,6 +32,7 @@ const { title, href, description } = Astro.props
     </Main>
     <FooterPrimary>
       <slot name="footer"></slot>
+      <NavSecondary href={href} links={navSecondaryItems}/>
     </FooterPrimary>
   </body>
 </html>
