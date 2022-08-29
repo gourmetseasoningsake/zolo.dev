@@ -9,6 +9,9 @@ export const navSecondaryItems = [
 ]
 
 
+export const copyLicense = `CC BY-NC-ND 2017-${(new Date()).getFullYear()}`
+
+
 export const workPosts = [
   {
     title: "Appointment Scheduler",

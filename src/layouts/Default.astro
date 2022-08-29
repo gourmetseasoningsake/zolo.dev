@@ -5,8 +5,9 @@ import Main from "../components/Main.vue"
 import FooterPrimary from "../components/FooterPrimary.vue"
 import NavSecondary from "../components/NavSecondary.vue"
 import Sentinel from "../components/Sentinel.vue"
+import License from "../components/License.vue"
 
-import { navPrimaryItems, navSecondaryItems } from "../contents.js"
+import { navPrimaryItems, navSecondaryItems, copyLicense } from "../contents.js"
 
 const { title, href, description } = Astro.props
 ---
@@ -31,6 +32,7 @@ const { title, href, description } = Astro.props
       <slot name="main"></slot>
     </Main>
     <FooterPrimary>
+      <License>{copyLicense}</License>
       <slot name="footer"></slot>
       <NavSecondary href={href} links={navSecondaryItems}/>
     </FooterPrimary>

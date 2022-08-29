@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59c169d7-9382-47b2-a579-18b590c60323" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/Speak.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Speak.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FooterPrimary.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FooterPrimary.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/contents.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/contents.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Default.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Default.astro" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +84,7 @@
       <workItem from="1661759238573" duration="4715000" />
       <workItem from="1661785954316" duration="1331000" />
       <workItem from="1661788656270" duration="29000" />
-      <workItem from="1661794037988" duration="2548000" />
+      <workItem from="1661794037988" duration="5167000" />
     </task>
     <servers />
   </component>
