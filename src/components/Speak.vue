@@ -3,7 +3,8 @@
     <span
       class="touch-manipulation font-light text-action-fg cursor-pointer"
       :tabindex="tabindex"
-      @click="speak">
+      @click="speak"
+      @keydown.enter.prevent.exact="speak">
       <slot>{{ placeholder }}</slot>
     </span>
   </span>
