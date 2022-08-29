@@ -1,8 +1,8 @@
 ---
-import MainHeaderDynamic from "../components/MainHeaderDynamic.vue"
-import MainNav from "../components/MainNav.vue"
+import HeaderPrimaryDynamic from "../components/HeaderPrimaryDynamic.vue"
+import NavPrimary from "../components/NavPrimary.vue"
 import Main from "../components/Main.vue"
-import MainFooter from "../components/MainFooter.vue"
+import FooterPrimary from "../components/FooterPrimary.vue"
 import Sentinel from "../components/Sentinel.vue"
 
 import { navItems } from "../contents.js"
@@ -21,16 +21,16 @@ const { title, href, description } = Astro.props
     <meta name="googlebot" content="notranslate">
   </head>
   <body class="min-h-screen font-mono">
-    <MainHeaderDynamic client:load>
-      <MainNav href={href} links={navItems}/>
+    <HeaderPrimaryDynamic client:load>
+      <NavPrimary href={href} links={navItems}/>
       <slot name="header"></slot>
-    </MainHeaderDynamic>
+    </HeaderPrimaryDynamic>
     <Sentinel client:load />
     <Main>
       <slot name="main"></slot>
     </Main>
-    <MainFooter>
+    <FooterPrimary>
       <slot name="footer"></slot>
-    </MainFooter>
+    </FooterPrimary>
   </body>
 </html>

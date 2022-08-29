@@ -1,11 +1,13 @@
 <template>
-  <span
-    class="touch-manipulation font-light text-action-fg cursor-pointer"
-    @click="speak">
-    <slot></slot>
+  <span :class="classes">
+    <span
+      class="touch-manipulation font-light text-action-fg cursor-pointer"
+      :tabindex="tabindex"
+      @click="speak">
+      <slot>{{ placeholder }}</slot>
+    </span>
   </span>
 </template>
-
 
 <script>
   export default {
@@ -14,13 +16,21 @@
         type: String,
         required: true
       },
+      placeholder: {
+        type: String,
+        required: false
+      },
       lang: {
         type: String,
-        default: document.lang || "de-CH"
+        default: "de-CH"
       },
       fallback: {
         type: String,
         required: true
+      },
+      focus: {
+        type: Boolean,
+        default: false
       }
     },
     data() {
@@ -29,7 +39,17 @@
       }
     },
     computed: {
-      canSpeak() { return Boolean(this.utter) }
+      canSpeak() {
+        return Boolean(this.utter)
+      },
+      classes() {
+        return {
+          "focus-within": this.focus
+        }
+      },
+      tabindex() {
+        return this.focus ? "0" : undefined
+      }
     },
     mounted() {
       const voices = speechSynthesis?.getVoices()

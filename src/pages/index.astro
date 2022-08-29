@@ -18,13 +18,7 @@ import Speak from "../components/Speak.vue"
   </Section>
   <Section neutral slot="main">
     <Paragraph focus>
-      Ich bin Jérôme <Speak
-        client:only="vue"
-        text="Jérôme"
-        lang="fr-FR"
-        fallback="https://fr-audio.howtopronounce.com/1618555814607933a68bf4f.mp3">
-        /ʒe.ʁom/
-      </Speak> Imfeld. Ich bin Web-Entwickler und erarbeite Lösungen für kleine Unternehmungen, die ihre Internetpräsenz verbessern oder Arbeitsflüsse digitalisieren möchten. Ich tue das seit 7 Jahren, als Teil eines bestehenden Teams oder als Lieferant einzelner Sachen.
+      Ich bin Jérôme<sup class="text-action-fg" aria-hidden="true">*</sup> Imfeld. Ich bin Web-Entwickler und erarbeite Lösungen für kleine Unternehmungen, die ihre Internetpräsenz verbessern oder Arbeitsflüsse digitalisieren möchten. Ich tue das seit 7 Jahren, als Teil eines bestehenden Teams oder als Lieferant einzelner Sachen.
     </Paragraph>
     <HCard>
       <HCardEmail
@@ -42,5 +36,14 @@ import Speak from "../components/Speak.vue"
         threema: 8UFC3385
       </HCardLink>
     </HCard>
+    <Speak
+      client:load
+      class="block"
+      text="Jérôme"
+      placeholder="*: /ʒe.ʁom/"
+      lang="fr-FR"
+      fallback="https://fr-audio.howtopronounce.com/1618555814607933a68bf4f.mp3"
+      focus>
+    </Speak>
   </Section>
 </LayoutDefault>
