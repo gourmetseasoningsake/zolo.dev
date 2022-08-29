@@ -1,6 +1,6 @@
 ---
 import "../global.css"
-import LayoutLanding from "../layouts/Landing.astro"
+import LayoutDefault from "../layouts/Default.astro"
 import Link from "../components/Link.vue"
 import Heading1 from "../components/Heading1.vue"
 import Section from "../components/Section.vue"
@@ -12,7 +12,7 @@ import Speak from "../components/Speak.vue"
 ---
 
 
-<LayoutLanding title="Ahoi" href="/">
+<LayoutDefault title="Ahoi" href="/">
   <Section neutral focus slot="main">
     <Heading1>Ahoi</Heading1>
   </Section>
@@ -43,4 +43,4 @@ import Speak from "../components/Speak.vue"
       </HCardLink>
     </HCard>
   </Section>
-</LayoutLanding>
+</LayoutDefault>

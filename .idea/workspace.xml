@@ -3,9 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="59c169d7-9382-47b2-a579-18b590c60323" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainFooter.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainNav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainNav.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layouts/Default.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Default.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/Landing.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Landing.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Landing.astro" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/work.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/work.astro" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +81,10 @@
       <workItem from="1661624219102" duration="6736000" />
       <workItem from="1661634280332" duration="4373000" />
       <workItem from="1661641917437" duration="1387000" />
-      <workItem from="1661677987901" duration="11057000" />
+      <workItem from="1661677987901" duration="11715000" />
+      <workItem from="1661705456780" duration="1275000" />
+      <workItem from="1661708660805" duration="12000" />
+      <workItem from="1661759238573" duration="2580000" />
     </task>
     <servers />
   </component>

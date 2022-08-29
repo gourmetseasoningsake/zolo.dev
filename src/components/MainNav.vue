@@ -25,14 +25,10 @@
       href: {
         type: String,
         required: false
-      }
-    },
-    data() {
-      return {
-        links: [
-          { href: "/", title: "Ahoi", text: "Ahoi" },
-          { href: "/work", title: "Work", text: "Work" }
-        ]
+      },
+      links: {
+        type: Array,
+        default() { return [] }
       }
     }
   }
