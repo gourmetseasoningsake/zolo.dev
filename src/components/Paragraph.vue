@@ -1,6 +1,6 @@
 <template>
   <p
-    class="mb-2 last:mb-0 font-mono font-thin text-base"
+    class="mb-2 last:mb-0 font-mono font-thin"
     :class="classes"
     :tabindex="tabindex">
     <span class="inline-block max-w-2xl">
