@@ -8,5 +8,6 @@
 .DS_Store
 
 # temp
+/temp_dist/
 /public/resources/images
 /resources/
