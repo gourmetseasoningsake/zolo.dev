@@ -1,0 +1,3 @@
+[submodule "dist"]
+	path = dist
+	url = humanmic@shtill.com:/home/humanmic/public_html/zolo.dev/dist.git
