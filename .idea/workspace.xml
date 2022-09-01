@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="59c169d7-9382-47b2-a579-18b590c60323" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/HeaderPrimaryDynamic.8e2a8587.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/Posts.531b9a4f.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/Sentinel.80a1dcef.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/Speak.12004ccd.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/JetBrainsMono-Italic-VariableFont_wght.287e3d3f.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/JetBrainsMono-VariableFont_wght.3818aca7.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/index-legal-work.462ae0fb.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/chunks/_plugin-vue_export-helper.1e5d64a6.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/chunks/runtime-core.esm-bundler.49a662ea.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/chunks/runtime-dom.esm-bundler.64df8cb0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/chunks/session.92ba2b7d.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/client.353c5dd0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/legal/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/resources/pdf/AGB-J-Imfeld-180722.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/work/index.html" beforeDir="false" />
-    </list>
+    <list default="true" id="59c169d7-9382-47b2-a579-18b590c60323" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,7 +80,7 @@
       <workItem from="1661785954316" duration="1331000" />
       <workItem from="1661788656270" duration="29000" />
       <workItem from="1661794037988" duration="5756000" />
-      <workItem from="1662026748643" duration="6904000" />
+      <workItem from="1662026748643" duration="7214000" />
     </task>
     <servers />
   </component>
