@@ -15,15 +15,25 @@ export const copyLicense = `CC BY-NC-ND 2017-${(new Date()).getFullYear()}`
 export const workPosts = [
   {
     title: "Appointment Scheduler",
-    description: "Offene, selbstgehostete Terminplaner-API.",
+    description: "Offene Terminplaner-API zum selber hosten.",
     meta: [
       { key: "Features", value: "Servicepositionen und -gruppen. Multiple Serviceanbieter (Mitarbeiter). Arbeitspläne. Automatische Terminbelegung und E-Mail-Benachrichtigungen." },
-      { key: "Front", value: "json" },
+      { key: "Front", value: "JSON" },
       { key: "Back", value: "hono, sqlite, bun" },
       { key: "Specs", value: "frei" },
       { key: "Status", value: "WIP" }
     ],
     media: []
+  },
+  {
+    title: "Internet Radio Station",
+    description: "Komplettes Setup und Frontend einer privaten Hobbyradiostation. Selbstgehostetes Backend auf einem gebrauchten ThinkCentre M900 Tiny. Schutz und Frontend über Cloudflare.",
+    meta: [
+      { key: "Front", value: "astro, vue, tailwind" },
+      { key: "Back", value: "azuracast, docker, self-hosted, cloudflare" },
+      { key: "Specs", value: "frei" },
+      { key: "Status", value: "WIP" }
+    ]
   },
   {
     title: "Customer Map",

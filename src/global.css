@@ -147,7 +147,7 @@
   }
 
   .divide-before:before {
-    @apply block content-[''] border-t border-system-fg opacity-5;
+    @apply block content-[''] border-t border-system-fg opacity-20;
   }
 
   .h1 {

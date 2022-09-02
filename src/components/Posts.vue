@@ -13,7 +13,7 @@
         :items="item.meta" />
     </Section>
     <MediaGallery
-        v-if="item.media.length"
+        v-if="item.media?.length"
         :title="item.title + ' Galerie'"
         :items="item.media" />
   </Section>
