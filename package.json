@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "astro dev",
-    "build": "shopt -s dotglob extglob && rm -r dist/!.git/ && astro build && cp -rf temp_dist/* dist",
+    "build": "node scripts/clean-dist.mjs && astro build && shopt -s dotglob && cp -rf temp_dist/* dist && rm -rf temp_dist",
     "preview": "astro preview"
   },
   "keywords": [],
@@ -19,6 +19,7 @@
   "devDependencies": {
     "@astrojs/tailwind": "^1.0.0",
     "@astrojs/vue": "^1.0.0",
+    "del": "^7.0.0",
     "sharp": "^0.30.7",
     "vue": "^3.2.30",
     "yaml": "^2.1.1"
