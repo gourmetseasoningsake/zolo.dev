@@ -36,6 +36,7 @@
   </ul>
   <aside
     tabindex="-1"
+    class="backdrop-blur-md"
     ref="dialog"
     :id="uid"
     :aria-hidden="!active"
@@ -138,7 +139,7 @@
     computed: {
       classesDialog() {
         if (this.active) {
-          return "fixed z-50 inset-0 overflow-auto overscroll-none scrollbar-hidden backdrop-blur-md"
+          return "fixed z-50 inset-0 overflow-auto overscroll-none scrollbar-hidden"
         }
         return "hidden invisible"
       }

@@ -4,13 +4,8 @@
     <list default="true" id="59c169d7-9382-47b2-a579-18b590c60323" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist" beforeDir="false" afterPath="$PROJECT_DIR$/dist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/Posts.531b9a4f.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/index-legal-work.462ae0fb.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/legal/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/legal/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/work/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/work/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HeaderPrimaryDynamic.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeaderPrimaryDynamic.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MediaGallery.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MediaGallery.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +20,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/dist" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -92,7 +87,7 @@
       <workItem from="1661788656270" duration="29000" />
       <workItem from="1661794037988" duration="5756000" />
       <workItem from="1662026748643" duration="11395000" />
-      <workItem from="1662104380066" duration="4385000" />
+      <workItem from="1662104380066" duration="6733000" />
     </task>
     <servers />
   </component>
