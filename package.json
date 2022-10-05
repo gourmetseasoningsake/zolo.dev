@@ -12,16 +12,18 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@nanostores/vue": "^0.5.5",
-    "astro": "1.0.3",
-    "nanostores": "^0.6.0"
+    "@nanostores/vue": "^0.6.0",
+    "astro": "1.4.4",
+    "nanostores": "^0.7.0"
   },
   "devDependencies": {
-    "@astrojs/tailwind": "^1.0.0",
-    "@astrojs/vue": "^1.0.0",
+    "@astrojs/tailwind": "^2.0.2",
+    "@astrojs/vue": "^1.1.0",
     "del": "^7.0.0",
-    "sharp": "^0.30.7",
-    "vue": "^3.2.30",
-    "yaml": "^2.1.1"
+    "sharp": "^0.31.1",
+    "tailwindcss": "^3.1.8",
+    "vite": "^3.1.4",
+    "vue": "^3.2.40",
+    "yaml": "^2.1.3"
   }
 }

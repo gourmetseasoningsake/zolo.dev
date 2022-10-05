@@ -3,9 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="59c169d7-9382-47b2-a579-18b590c60323" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist" beforeDir="false" afterPath="$PROJECT_DIR$/dist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HeaderPrimaryDynamic.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeaderPrimaryDynamic.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MediaGallery.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MediaGallery.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/HeaderPrimaryDynamic.853e5502.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/Posts.db59522a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/Sentinel.80a1dcef.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/Speak.12004ccd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/index-legal-work.11a2d0b8.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/chunks/runtime-core.esm-bundler.49a662ea.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/chunks/runtime-dom.esm-bundler.64df8cb0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/client.353c5dd0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/legal/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/legal/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/work/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/work/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/global.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +98,9 @@
       <workItem from="1661788656270" duration="29000" />
       <workItem from="1661794037988" duration="5756000" />
       <workItem from="1662026748643" duration="11395000" />
-      <workItem from="1662104380066" duration="6733000" />
+      <workItem from="1662104380066" duration="7194000" />
+      <workItem from="1662407706762" duration="13000" />
+      <workItem from="1664995168078" duration="922000" />
     </task>
     <servers />
   </component>
