@@ -14,6 +14,86 @@ export const copyLicense = `CC BY-NC-ND 2017-${(new Date()).getFullYear()}`
 
 export const workPosts = [
   {
+    title: "Document Template Builder",
+    description: "Eine Helfer-Applikation, um PDF-Templates für eine private Anwendung zur Ressourcenplanung herzustellen.",
+    meta: [
+      { key: "Features", value: "Templates mittels HTML, CSS und JS. Freie Verknüpfung mit externen Datenquellen. Drop-in JSON-File als Datenfeed. Vertikale und horizontale Voransicht mit automatischem Seitenumbruch. Optionale, automatisch generierte Schweizer QR-Rechnung mit optionaler Daten-Validierung und -Formatierung. Ansichtsgetreuer Ausdruck über den Browser." },
+      { key: "Front", value: "hybrids, paged, rescript, tailwind" },
+      { key: "Specs", value: "UIS frei, FS teilweise gegeben" },
+      { key: "Status", value: "WIP" }
+    ],
+    media: [
+      {
+        type: "image",
+        sourceSet: [
+          'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/317426a2-37db-4c77-eff6-fc06a6975900/600 600w',
+          'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/317426a2-37db-4c77-eff6-fc06a6975900/800 800w',
+          'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/317426a2-37db-4c77-eff6-fc06a6975900/2400 2400w',
+          'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/317426a2-37db-4c77-eff6-fc06a6975900/1000 1000w',
+          'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/317426a2-37db-4c77-eff6-fc06a6975900/2000 2000w',
+          'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/317426a2-37db-4c77-eff6-fc06a6975900/1200 1200w',
+          'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/317426a2-37db-4c77-eff6-fc06a6975900/1400 1400w',
+          'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/317426a2-37db-4c77-eff6-fc06a6975900/1600 1600w'
+        ],
+        alt: "Document Template Builder showing an invoice with swiss qr-bill in vertical view.",
+        width: 3,
+        height: 2,
+        classes: "object-cover object-left-top"
+      },
+      {
+        type: "image",
+        sourceSet: [
+          'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/f8e24c08-6a1b-466c-c282-581b08d59e00/600 600w',
+          'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/f8e24c08-6a1b-466c-c282-581b08d59e00/800 800w',
+          'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/f8e24c08-6a1b-466c-c282-581b08d59e00/2400 2400w',
+          'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/f8e24c08-6a1b-466c-c282-581b08d59e00/1000 1000w',
+          'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/f8e24c08-6a1b-466c-c282-581b08d59e00/2000 2000w',
+          'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/f8e24c08-6a1b-466c-c282-581b08d59e00/1200 1200w',
+          'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/f8e24c08-6a1b-466c-c282-581b08d59e00/1400 1400w',
+          'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/f8e24c08-6a1b-466c-c282-581b08d59e00/1600 1600w'
+        ],
+        alt: "Document Template Builder showing an invoice with swiss qr-bill in vertical view.",
+        width: 3,
+        height: 2,
+        classes: "object-cover object-right-top"
+      },
+      {
+        type: "image",
+        sourceSet: [
+          'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/c0419a84-7525-4c0a-1e09-67a527fb2900/600 600w',
+          'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/c0419a84-7525-4c0a-1e09-67a527fb2900/800 800w',
+          'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/c0419a84-7525-4c0a-1e09-67a527fb2900/2400 2400w',
+          'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/c0419a84-7525-4c0a-1e09-67a527fb2900/1000 1000w',
+          'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/c0419a84-7525-4c0a-1e09-67a527fb2900/2000 2000w',
+          'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/c0419a84-7525-4c0a-1e09-67a527fb2900/1200 1200w',
+          'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/c0419a84-7525-4c0a-1e09-67a527fb2900/1400 1400w',
+          'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/c0419a84-7525-4c0a-1e09-67a527fb2900/1600 1600w'
+        ],
+        alt: "Document Template Builder showing an invoice with swiss qr-bill in vertical view.",
+        width: 3,
+        height: 2,
+        classes: "object-cover object-right-top"
+      },
+      {
+        type: "image",
+        sourceSet: [
+          'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/71d232fe-2e8a-4c4a-d390-0281e9add500/600 600w',
+          'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/71d232fe-2e8a-4c4a-d390-0281e9add500/800 800w',
+          'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/71d232fe-2e8a-4c4a-d390-0281e9add500/2400 2400w',
+          'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/71d232fe-2e8a-4c4a-d390-0281e9add500/1000 1000w',
+          'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/71d232fe-2e8a-4c4a-d390-0281e9add500/2000 2000w',
+          'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/71d232fe-2e8a-4c4a-d390-0281e9add500/1200 1200w',
+          'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/71d232fe-2e8a-4c4a-d390-0281e9add500/1400 1400w',
+          'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/71d232fe-2e8a-4c4a-d390-0281e9add500/1600 1600w'
+        ],
+        alt: "Document Template Builder showing an invoice with swiss qr-bill in vertical view.",
+        width: 3,
+        height: 2,
+        classes: "object-cover object-right-top"
+      },
+    ]
+  },
+  {
     title: "Appointment Scheduler",
     description: "Offene Terminplaner-API zum selber hosten.",
     meta: [
@@ -49,8 +129,8 @@ export const workPosts = [
       {
         type: "image",
         sourceSet: [
-          'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/d20753c5-a6a9-4041-3810-289675666b00/800 800w',
           'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/d20753c5-a6a9-4041-3810-289675666b00/600 600w',
+          'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/d20753c5-a6a9-4041-3810-289675666b00/800 800w',
           'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/d20753c5-a6a9-4041-3810-289675666b00/2400 2400w',
           'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/d20753c5-a6a9-4041-3810-289675666b00/1000 1000w',
           'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/d20753c5-a6a9-4041-3810-289675666b00/2000 2000w',
@@ -66,8 +146,8 @@ export const workPosts = [
       {
         type: "image",
         sourceSet: [
-          'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/dfbfdc08-a154-4435-f68a-82c3efd29800/800 800w',
           'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/dfbfdc08-a154-4435-f68a-82c3efd29800/600 600w',
+          'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/dfbfdc08-a154-4435-f68a-82c3efd29800/800 800w',
           'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/dfbfdc08-a154-4435-f68a-82c3efd29800/2400 2400w',
           'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/dfbfdc08-a154-4435-f68a-82c3efd29800/1000 1000w',
           'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/dfbfdc08-a154-4435-f68a-82c3efd29800/2000 2000w',
@@ -83,8 +163,8 @@ export const workPosts = [
       {
         type: "image",
         sourceSet: [
-          'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/4bf66684-2a41-4b80-90f9-066c0b67ac00/800 800w',
           'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/4bf66684-2a41-4b80-90f9-066c0b67ac00/600 600w',
+          'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/4bf66684-2a41-4b80-90f9-066c0b67ac00/800 800w',
           'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/4bf66684-2a41-4b80-90f9-066c0b67ac00/2400 2400w',
           'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/4bf66684-2a41-4b80-90f9-066c0b67ac00/1000 1000w',
           'https://imagedelivery.net/klp-jTetJGIJ9S2pnnAsDQ/4bf66684-2a41-4b80-90f9-066c0b67ac00/2000 2000w',

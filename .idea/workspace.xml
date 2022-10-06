@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59c169d7-9382-47b2-a579-18b590c60323" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/zolo.dev.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/zolo.dev.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist" beforeDir="false" afterPath="$PROJECT_DIR$/dist" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/HeaderPrimaryDynamic.853e5502.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/Posts.db59522a.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/Sentinel.80a1dcef.js" beforeDir="false" />
@@ -14,9 +17,7 @@
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/legal/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/legal/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/work/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/work/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/contents.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/contents.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +48,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/jerome/Projects/Gourmetseasoningsake/zolo.dev&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jerome/Projects/Gourmetseasoningsake/zolo.dev/resources/work&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;pnpm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;,
@@ -55,7 +56,12 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/work" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/resources/images/work/document-template-builder" />
+      <recent name="$PROJECT_DIR$/resources/work/document-template-builder" />
       <recent name="$PROJECT_DIR$/resources/work" />
       <recent name="$PROJECT_DIR$/resources/work/customer-map" />
     </key>
@@ -100,7 +106,11 @@
       <workItem from="1662026748643" duration="11395000" />
       <workItem from="1662104380066" duration="7194000" />
       <workItem from="1662407706762" duration="13000" />
-      <workItem from="1664995168078" duration="922000" />
+      <workItem from="1664995168078" duration="1107000" />
+      <workItem from="1665000666793" duration="1923000" />
+      <workItem from="1665040239455" duration="247000" />
+      <workItem from="1665054892099" duration="4530000" />
+      <workItem from="1665090582828" duration="261000" />
     </task>
     <servers />
   </component>
