@@ -2,22 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59c169d7-9382-47b2-a579-18b590c60323" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/android-chrome-192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/android-chrome-512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/apple-touch-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/favicon.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/zolo.dev.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/zolo.dev.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist" beforeDir="false" afterPath="$PROJECT_DIR$/dist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/HeaderPrimaryDynamic.853e5502.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/Posts.db59522a.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/Sentinel.80a1dcef.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/Speak.12004ccd.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/index-legal-work.11a2d0b8.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/chunks/runtime-core.esm-bundler.49a662ea.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/chunks/runtime-dom.esm-bundler.64df8cb0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/client.353c5dd0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/dist/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/HeaderPrimaryDynamic.ebf6b763.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/Posts.e13f8a92.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/Sentinel.f65a16e5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/Speak.d7c342b2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/JetBrainsMono-Italic-VariableFont_wght.287e3d3f.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/JetBrainsMono-VariableFont_wght.3818aca7.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/index-legal-work.b2825ad3.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/chunks/runtime-core.esm-bundler.f8df865d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/chunks/runtime-dom.esm-bundler.f872f1da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/client.0a4a408d.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/legal/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/legal/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/work/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/work/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contents.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/contents.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JetBrainsMono-Italic-VariableFont_wght.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/JetBrainsMono-Italic-VariableFont_wght.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JetBrainsMono-VariableFont_wght.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/JetBrainsMono-VariableFont_wght.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Default.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Default.astro" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +43,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/dist" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -60,6 +71,7 @@
       <recent name="$PROJECT_DIR$/resources/work" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/assets" />
       <recent name="$PROJECT_DIR$/public/resources/images/work/document-template-builder" />
       <recent name="$PROJECT_DIR$/resources/work/document-template-builder" />
       <recent name="$PROJECT_DIR$/resources/work" />
@@ -110,7 +122,9 @@
       <workItem from="1665000666793" duration="1923000" />
       <workItem from="1665040239455" duration="247000" />
       <workItem from="1665054892099" duration="4530000" />
-      <workItem from="1665090582828" duration="261000" />
+      <workItem from="1665090582828" duration="875000" />
+      <workItem from="1665339263994" duration="22000" />
+      <workItem from="1665877110008" duration="1217000" />
     </task>
     <servers />
   </component>

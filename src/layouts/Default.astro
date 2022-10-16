@@ -21,6 +21,10 @@ const { title, href, description } = Astro.props
     <title>{title}</title>
     <meta name="description" content={description}>
     <meta name="googlebot" content="notranslate">
+
+    <link rel="icon" href="/assets/favicon.ico" sizes="any">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
   </head>
   <body class="min-h-screen font-mono text-sm sm:text-base">
     <HeaderPrimaryDynamic client:load>

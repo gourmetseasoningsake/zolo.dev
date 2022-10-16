@@ -10,7 +10,7 @@
     font-display: auto;
     font-weight: 100 900;
     font-style: normal;
-    src: url('JetBrainsMono-VariableFont_wght.woff2') format('woff2');
+    src: url('/assets/JetBrainsMono-VariableFont_wght.woff2') format('woff2');
   }
 
   @font-face {
@@ -18,7 +18,7 @@
     font-display: auto;
     font-weight: 100 900;
     font-style: italic;
-    src: url('JetBrainsMono-Italic-VariableFont_wght.woff2') format('woff2');
+    src: url('/assets/JetBrainsMono-Italic-VariableFont_wght.woff2') format('woff2');
   }
 
   /* light mode */
