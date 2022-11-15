@@ -31,9 +31,9 @@
     computed: {
       classes() {
         return {
-          "my-8": true,
+          "my-8": !this.divideBefore,
           "px-8": !this.full,
-          "divide-before": this.divideBefore,
+          "mt-8 mb-24 divide-before": this.divideBefore,
           "focus": this.focus && this.full,
           "focus-inset": this.focus && !this.full
         }

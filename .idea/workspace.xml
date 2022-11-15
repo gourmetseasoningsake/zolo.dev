@@ -2,33 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59c169d7-9382-47b2-a579-18b590c60323" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/assets/android-chrome-192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/android-chrome-512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/apple-touch-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/favicon.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist" beforeDir="false" afterPath="$PROJECT_DIR$/dist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/dist/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/HeaderPrimaryDynamic.ebf6b763.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/Posts.e13f8a92.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/Sentinel.f65a16e5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/Speak.d7c342b2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/JetBrainsMono-Italic-VariableFont_wght.287e3d3f.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/JetBrainsMono-VariableFont_wght.3818aca7.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/index-legal-work.b2825ad3.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/chunks/runtime-core.esm-bundler.f8df865d.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/chunks/runtime-dom.esm-bundler.f872f1da.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/client.0a4a408d.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/legal/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/legal/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/work/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/work/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.npmrc" beforeDir="false" afterPath="$PROJECT_DIR$/.npmrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JetBrainsMono-Italic-VariableFont_wght.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/JetBrainsMono-Italic-VariableFont_wght.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JetBrainsMono-VariableFont_wght.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/JetBrainsMono-VariableFont_wght.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/Default.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Default.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Section.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Section.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +21,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/dist" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -124,7 +102,10 @@
       <workItem from="1665054892099" duration="4530000" />
       <workItem from="1665090582828" duration="875000" />
       <workItem from="1665339263994" duration="22000" />
-      <workItem from="1665877110008" duration="1217000" />
+      <workItem from="1665877110008" duration="1875000" />
+      <workItem from="1665884022466" duration="1466000" />
+      <workItem from="1665920331610" duration="32000" />
+      <workItem from="1668519324948" duration="374000" />
     </task>
     <servers />
   </component>
