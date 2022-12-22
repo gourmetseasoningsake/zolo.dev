@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59c169d7-9382-47b2-a579-18b590c60323" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/public/resources/pdf/AGB-J-Imfeld-231222.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.npmrc" beforeDir="false" afterPath="$PROJECT_DIR$/.npmrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Section.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Section.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/legal.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/legal.astro" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,11 +47,11 @@
       <recent name="$PROJECT_DIR$/resources/work" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/resources/pdf" />
       <recent name="$PROJECT_DIR$/public/assets" />
       <recent name="$PROJECT_DIR$/public/resources/images/work/document-template-builder" />
       <recent name="$PROJECT_DIR$/resources/work/document-template-builder" />
       <recent name="$PROJECT_DIR$/resources/work" />
-      <recent name="$PROJECT_DIR$/resources/work/customer-map" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -105,7 +103,9 @@
       <workItem from="1665877110008" duration="1875000" />
       <workItem from="1665884022466" duration="1466000" />
       <workItem from="1665920331610" duration="32000" />
-      <workItem from="1668519324948" duration="374000" />
+      <workItem from="1668519324948" duration="537000" />
+      <workItem from="1668528082922" duration="88000" />
+      <workItem from="1671752614385" duration="73000" />
     </task>
     <servers />
   </component>
