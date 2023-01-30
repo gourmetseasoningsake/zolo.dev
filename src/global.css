@@ -21,10 +21,10 @@
     src: url('/assets/JetBrainsMono-Italic-VariableFont_wght.woff2') format('woff2');
   }
 
-  /* light mode */
+  /* dark mode */
   :root {
-    --system-bg: #fbfbfb;
-    --system-fg: #1d1d1f;
+    --system-bg: #303030;
+    --system-fg: #fff;
     --action-fg: #38bdf8;
   }
 
@@ -32,11 +32,11 @@
     font-optical-sizing: auto;
   }
 
-  /* dark mode */
-  @media (prefers-color-scheme: dark) {
+  /* light mode */
+  @media (prefers-color-scheme: light) {
     :root {
-      --system-bg: #303030;
-      --system-fg: #fff;
+      --system-bg: #fbfbfb;
+      --system-fg: #1d1d1f;
       --action-fg: #38bdf8;
     }
   }

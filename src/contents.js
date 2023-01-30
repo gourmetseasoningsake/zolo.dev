@@ -17,10 +17,18 @@ export const workPosts = [
     title: "Document Template Builder",
     description: "Eine Helfer-Applikation, um PDF-Templates für eine private Anwendung zur Ressourcenplanung herzustellen.",
     meta: [
-      { key: "Features", value: "Templates mittels HTML, CSS und JS. Freie Verknüpfung mit externen Datenquellen. Drop-in JSON-File als Datenfeed. Vertikale und horizontale Voransicht mit automatischem Seitenumbruch. Optionale, automatisch generierte Schweizer QR-Rechnung mit optionaler Daten-Validierung und -Formatierung. Ansichtsgetreuer Ausdruck über den Browser." },
+      { key: "Features", value: "Templates mittels HTML, CSS und JS. Freie Verknüpfung mit externen Datenquellen. Vertikale und horizontale Voransicht mit automatischem Seitenumbruch. Optionale, automatisch generierte Schweizer QR-Rechnung mit optionaler Daten-Validierung und -Formatierung. Ansichtsgetreuer Ausdruck über den Browser." },
       { key: "Front", value: "hybrids, paged, rescript, tailwind" },
       { key: "Specs", value: "UIS frei, FS teilweise gegeben" },
-      { key: "Status", value: "WIP" }
+      { key: "Status",
+        value: {
+          href: "https://github.com/prpsake/prp",
+          title: "github.com/prpsake/prp",
+          text: "alpha",
+          target: "_blank",
+          rel: "noopener noreferrer"
+        }
+      }
     ],
     media: [
       {
@@ -101,7 +109,7 @@ export const workPosts = [
       { key: "Front", value: "JSON" },
       { key: "Back", value: "hono, sqlite, bun" },
       { key: "Specs", value: "frei" },
-      { key: "Status", value: "WIP" }
+      { key: "Status", value: "wip" }
     ],
     media: []
   },
@@ -112,7 +120,7 @@ export const workPosts = [
       { key: "Front", value: "astro, vue, tailwind" },
       { key: "Back", value: "azuracast, docker, self-hosted, cloudflare" },
       { key: "Specs", value: "frei" },
-      { key: "Status", value: "WIP" }
+      { key: "Status", value: "wip" }
     ]
   },
   {
@@ -123,7 +131,7 @@ export const workPosts = [
       { key: "Front", value: "hybrids, tailwind" },
       { key: "Back", value: "slim, dbdb, gcp, cyon" },
       { key: "Specs", value: "UIS frei, FS teilweise gegeben" },
-      { key: "Status", value: "Done" }
+      { key: "Status", value: "done" }
     ],
     media: [
       {
