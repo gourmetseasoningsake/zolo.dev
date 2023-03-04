@@ -24,7 +24,7 @@ export const workPosts = [
         value: {
           href: "https://github.com/prpsake/prp",
           title: "github.com/prpsake/prp",
-          text: "alpha",
+          text: "dev",
           target: "_blank",
           rel: "noopener noreferrer"
         }
@@ -109,7 +109,7 @@ export const workPosts = [
       { key: "Front", value: "JSON" },
       { key: "Back", value: "hono, sqlite, bun" },
       { key: "Specs", value: "frei" },
-      { key: "Status", value: "wip" }
+      { key: "Status", value: "dev" }
     ],
     media: []
   },
@@ -120,7 +120,7 @@ export const workPosts = [
       { key: "Front", value: "astro, vue, tailwind" },
       { key: "Back", value: "azuracast, docker, self-hosted, cloudflare" },
       { key: "Specs", value: "frei" },
-      { key: "Status", value: "wip" }
+      { key: "Status", value: "dev" }
     ]
   },
   {
