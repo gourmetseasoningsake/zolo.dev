@@ -25,7 +25,6 @@ export const workPosts = [
           href: "https://github.com/prpsake/prp",
           title: "github.com/prpsake/prp",
           text: "dev",
-          target: "_blank",
           rel: "noreferrer"
         }
       }
