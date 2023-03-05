@@ -9,24 +9,23 @@
   </p>
 </template>
 
-
 <script>
-  export default {
-    props: {
-      focus: {
-        type: Boolean,
-        default: false
-      }
+export default {
+  props: {
+    focus: {
+      type: Boolean,
+      default: false,
     },
-    computed: {
-      classes() {
-        return {
-          "focus": this.focus
-        }
-      },
-      tabindex() {
-        return this.focus ? "0" : undefined
-      }
-    }
-  }
+  },
+  computed: {
+    classes() {
+      return {
+        focus: this.focus,
+      };
+    },
+    tabindex() {
+      return this.focus ? "0" : undefined;
+    },
+  },
+};
 </script>

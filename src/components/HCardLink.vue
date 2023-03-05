@@ -1,8 +1,8 @@
 <template>
   <span :class="classes">
-    <a 
+    <a
       class="u-url touch-manipulation font-light text-action-fg"
-      :href="href" 
+      :href="href"
       :title="title"
       :target="target"
       :rel="rel">
@@ -11,37 +11,36 @@
   </span>
 </template>
 
-
 <script>
-  export default {
-    props: {
-      href: {
-        type: String,
-        required: true
-      },
-      title: {
-        type: String,
-        required: false
-      },
-      target: {
-        type: String,
-        required: false
-      },
-      rel: {
-        type: String,
-        required: false
-      },
-      focus: {
-        type: Boolean,
-        default: false
-      }
+export default {
+  props: {
+    href: {
+      type: String,
+      required: true,
     },
-    computed: {
-      classes() {
-        return {
-          "focus-within": this.focus
-        }
-      }
-    }
-  }
+    title: {
+      type: String,
+      required: false,
+    },
+    target: {
+      type: String,
+      required: false,
+    },
+    rel: {
+      type: String,
+      required: false,
+    },
+    focus: {
+      type: Boolean,
+      default: false,
+    },
+  },
+  computed: {
+    classes() {
+      return {
+        "focus-within": this.focus,
+      };
+    },
+  },
+};
 </script>

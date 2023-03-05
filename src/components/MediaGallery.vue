@@ -30,7 +30,7 @@
           sizes="
             (min-width: 1024px) calc(33.33vw - (32px * 4 / 3)),
             (min-width: 640px) calc(50vw - (32px * 3 / 2)),
-            calc(100vw - (32px * 2))"/>
+            calc(100vw - (32px * 2))" />
       </div>
     </li>
   </ul>
@@ -71,7 +71,9 @@
                   class="px-3 py-1 border-y-2 border-r border-l-2 border-action-fg rounded-tl-md rounded-bl-md focus:bg-action-fg font-light text-action-fg focus:text-system-bg touch-manipulation"
                   @touchstart.prevent="setPrevItemEnlarged(itemEnlarged.i)"
                   @mouseup.prevent.exact="setPrevItemEnlarged(itemEnlarged.i)"
-                  @keydown.enter.prevent.exact="setPrevItemEnlarged(itemEnlarged.i)">
+                  @keydown.enter.prevent.exact="
+                    setPrevItemEnlarged(itemEnlarged.i)
+                  ">
                   <span aria-hidden="true">←</span>
                 </button>
               </li>
@@ -84,7 +86,9 @@
                   class="px-3 py-1 border-y-2 border-r-2 border-l border-action-fg rounded-tr-md rounded-br-md focus:bg-action-fg font-light text-action-fg focus:text-system-bg touch-manipulation"
                   @touchstart.prevent="setNextItemEnlarged(itemEnlarged.i)"
                   @mouseup.prevent.exact="setNextItemEnlarged(itemEnlarged.i)"
-                  @keydown.enter.prevent.exact="setNextItemEnlarged(itemEnlarged.i)">
+                  @keydown.enter.prevent.exact="
+                    setNextItemEnlarged(itemEnlarged.i)
+                  ">
                   <span aria-hidden="true">→</span>
                 </button>
               </li>
@@ -109,84 +113,89 @@
   </aside>
 </template>
 
-
 <script>
-  import Image from "./Image.vue"
-  import { uid } from "../utils/random.js"
+import Image from "./Image.vue";
+import {uid} from "../utils/random.js";
 
-  export default {
-    inheritAttrs: false,
-    components: { Image },
-    props: {
-      title: {
-        type: String,
-        required: true
-      },
-      items: {
-        type: Array,
-        default() { return [] }
-      }
+export default {
+  inheritAttrs: false,
+  components: {Image},
+  props: {
+    title: {
+      type: String,
+      required: true,
     },
-    data() {
-      return {
-        uid: "dialog-" + uid(),
-        active: false,
-        itemEnlarged: { i: 0, ...this.items[0] },
-        dialogControls: [],
-        dialogControlFocused: 1
-      }
+    items: {
+      type: Array,
+      default() {
+        return [];
+      },
     },
-    computed: {
-      classesDialog() {
-        if (this.active) {
-          return "fixed z-50 inset-0 overflow-auto overscroll-none scrollbar-hidden"
-        }
-        return "hidden invisible"
+  },
+  data() {
+    return {
+      uid: "dialog-" + uid(),
+      active: false,
+      itemEnlarged: {i: 0, ...this.items[0]},
+      dialogControls: [],
+      dialogControlFocused: 1,
+    };
+  },
+  computed: {
+    classesDialog() {
+      if (this.active) {
+        return "fixed z-50 inset-0 overflow-auto overscroll-none scrollbar-hidden";
       }
+      return "hidden invisible";
     },
-    mounted() {
-      this.dialogControls = this.$refs.dialog.querySelectorAll('button[tabindex="-1"]')
+  },
+  mounted() {
+    this.dialogControls = this.$refs.dialog.querySelectorAll(
+      'button[tabindex="-1"]',
+    );
+  },
+  methods: {
+    openDialog() {
+      this.active = true;
+      this.$nextTick(() => {
+        this.$refs.dialog.focus();
+        this.$refs.dialog.tabIndex = 0;
+        this.dialogControls[this.dialogControlFocused].focus();
+      });
+      document.scrollingElement.classList.add("scrollbar-hidden");
     },
-    methods: {
-      openDialog() {
-        this.active = true
-        this.$nextTick(() => {
-          this.$refs.dialog.focus()
-          this.$refs.dialog.tabIndex = 0
-          this.dialogControls[this.dialogControlFocused].focus()
-        })
-        document.scrollingElement.classList.add("scrollbar-hidden")
-      },
-      closeDialog(e) {
-        this.$refs.list.querySelector('[role="button"][aria-selected="true"]').focus()
-        this.$refs.dialog.tabIndex = -1
-        this.dialogControlFocused = 1
-        this.active = false
-        document.scrollingElement.classList.remove("scrollbar-hidden")
-      },
-      setItemEnlarged(i) {
-        this.itemEnlarged = { i, ...this.items[i] }
-      },
-      setNextItemEnlarged(i) {
-        let i_ = (i + 1) % this.items.length
-        this.itemEnlarged = { i: i_, ...this.items[i_] }
-      },
-      setPrevItemEnlarged(i) {
-        const len = this.items.length
-        let i_ = (i + len-1) % len
-        this.itemEnlarged = { i: i_, ...this.items[i_] }
-      },
-      focusNextDialogControl(i) {
-        let i_ = (i + 1) % this.dialogControls.length
-        this.dialogControls[i_].focus()
-        this.dialogControlFocused = i_
-      },
-      focusPrevDialogControl(i) {
-        const len = this.dialogControls.length
-        let i_ = (i + len-1) % len
-        this.dialogControls[i_].focus()
-        this.dialogControlFocused = i_
-      }
-    }
-  }
+    closeDialog(e) {
+      this.$refs.list
+        .querySelector('[role="button"][aria-selected="true"]')
+        .focus();
+      this.$refs.dialog.tabIndex = -1;
+      this.dialogControlFocused = 1;
+      this.active = false;
+      document.scrollingElement.classList.remove("scrollbar-hidden");
+    },
+    setItemEnlarged(i) {
+      this.itemEnlarged = {i, ...this.items[i]};
+    },
+    setNextItemEnlarged(i) {
+      let i_ = (i + 1) % this.items.length;
+      this.itemEnlarged = {i: i_, ...this.items[i_]};
+    },
+    setPrevItemEnlarged(i) {
+      const len = this.items.length;
+      let i_ = (i + len - 1) % len;
+      this.itemEnlarged = {i: i_, ...this.items[i_]};
+    },
+    focusNextDialogControl(i) {
+      let i_ = (i + 1) % this.dialogControls.length;
+      this.dialogControls[i_].focus();
+      this.dialogControlFocused = i_;
+    },
+    focusPrevDialogControl(i) {
+      const len = this.dialogControls.length;
+      let i_ = (i + len - 1) % len;
+      this.dialogControls[i_].focus();
+      this.dialogControlFocused = i_;
+    },
+  },
+};
 </script>

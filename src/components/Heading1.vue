@@ -4,14 +4,13 @@
   </h1>
 </template>
 
-
 <script>
-  export default {
-    props: {
-      visual: {
-        type: String,
-        default: "h1"
-      }
-    }
-  }
+export default {
+  props: {
+    visual: {
+      type: String,
+      default: "h1",
+    },
+  },
+};
 </script>

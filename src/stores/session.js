@@ -1,7 +1,6 @@
-import { map } from "nanostores"
-
+import {map} from "nanostores";
 
 export const session = map({
   headerTransparent: true,
-  headerForceSolid: false
-})
+  headerForceSolid: false,
+});

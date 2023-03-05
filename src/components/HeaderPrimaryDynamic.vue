@@ -4,38 +4,36 @@
     :class="classesHeader">
     <div
       class="absolute inset-0 z-0 bg-system-bg opacity-90 transition-colors duration-100"
-      :class="classesBg">
-    </div>
+      :class="classesBg"></div>
     <div class="flex justify-between relative z-10">
       <slot></slot>
     </div>
   </header>
 </template>
 
-
 <script>
-  import { useStore } from "@nanostores/vue"
-  import { session } from "../stores/session.js"
+import {useStore} from "@nanostores/vue";
+import {session} from "../stores/session.js";
 
-  export default {
-    setup() {
-      return { session: useStore(session) }
+export default {
+  setup() {
+    return {session: useStore(session)};
+  },
+  computed: {
+    transparent() {
+      return !this.session.headerForceSolid && this.session.headerTransparent;
     },
-    computed: {
-      transparent() {
-        return !this.session.headerForceSolid && this.session.headerTransparent
-      },
-      classesHeader() {
-        return {
-          "border-transparent": this.transparent,
-          "backdrop-blur-md": !this.transparent
-        }
-      },
-      classesBg() {
-        return {
-          "bg-transparent": this.transparent,
-        }
-      }
-    }
-  }
+    classesHeader() {
+      return {
+        "border-transparent": this.transparent,
+        "backdrop-blur-md": !this.transparent,
+      };
+    },
+    classesBg() {
+      return {
+        "bg-transparent": this.transparent,
+      };
+    },
+  },
+};
 </script>
