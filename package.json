@@ -7,18 +7,17 @@
     "dev": "astro dev",
     "dev:clean": "astro dev --force",
     "build": "node scripts/clean-dist.mjs && astro build && shopt -s dotglob && cp -rf temp_dist/* dist && rm -rf temp_dist",
+    "deploy:prod": "pnpm build && cd dist && git add -A && git commit -m \"chore: deploy\" && git push && cd -",
     "preview": "astro preview"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "@astrojs/sitemap": "^1.1.0",
     "@nanostores/vue": "^0.7.0",
     "astro": "2.0.17",
-    "nanostores": "^0.7.4"
-  },
-  "devDependencies": {
+    "nanostores": "^0.7.4",
     "@astrojs/tailwind": "^3.0.1",
     "@astrojs/vue": "^2.0.1",
     "del": "^7.0.0",

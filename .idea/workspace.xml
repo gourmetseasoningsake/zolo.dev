@@ -5,31 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59c169d7-9382-47b2-a579-18b590c60323" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.prettierignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.prettierrc.cjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/work/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/work/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DataList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FooterPrimary.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FooterPrimary.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HCardEmail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HCardEmail.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HCardLink.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HCardLink.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HeaderPrimaryDynamic.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeaderPrimaryDynamic.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Heading1.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Heading1.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Heading2.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Heading2.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/IconEnvelope.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/IconEnvelope.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Image.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Image.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Link.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Link.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MediaGallery.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MediaGallery.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavPrimary.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavPrimary.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavSecondary.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavSecondary.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Paragraph.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Paragraph.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Posts.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Posts.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Section.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Section.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sentinel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sentinel.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Speak.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Speak.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contents.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/contents.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/random.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/random.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +130,7 @@
       <workItem from="1677969694605" duration="487000" />
       <workItem from="1677971003404" duration="8314000" />
       <workItem from="1678029167167" duration="3265000" />
-      <workItem from="1678048330317" duration="348000" />
+      <workItem from="1678048330317" duration="848000" />
     </task>
     <servers />
   </component>
