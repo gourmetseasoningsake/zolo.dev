@@ -6,7 +6,7 @@
       class="absolute inset-0 z-0 bg-system-bg opacity-90 transition-colors duration-100"
       :class="classesBg">
     </div>
-    <div class="relative z-10">
+    <div class="flex justify-between relative z-10">
       <slot></slot>
     </div>
   </header>

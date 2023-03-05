@@ -5,6 +5,7 @@ import Main from "../components/Main.vue"
 import FooterPrimary from "../components/FooterPrimary.vue"
 import NavSecondary from "../components/NavSecondary.vue"
 import Sentinel from "../components/Sentinel.vue"
+import Link from "../components/Link.vue"
 import License from "../components/License.vue"
 
 import { navPrimaryItems, navSecondaryItems, copyLicense } from "../contents.js"
@@ -28,7 +29,15 @@ const { title, href, description } = Astro.props
   </head>
   <body class="min-h-screen font-mono text-sm sm:text-base">
     <HeaderPrimaryDynamic client:load>
-      <slot name="header"></slot>
+      <slot name="header">
+        <Link
+          class="block text-system-fg"
+          href="/"
+          title="Startseite"
+          current={href === "/"}>
+          (•_•)ノ
+        </Link>
+      </slot>
       <NavPrimary href={href} links={navPrimaryItems}/>
     </HeaderPrimaryDynamic>
     <Sentinel client:load />

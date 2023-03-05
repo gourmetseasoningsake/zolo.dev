@@ -1,11 +1,11 @@
 export const navPrimaryItems = [
-  { href: "/", title: "Ahoi", text: "Ahoi" },
-  { href: "/work", title: "Work", text: "Work" }
+  { href: "/", title: "Startseite", text: "Ahoi" },
+  { href: "/work", title: "Jüngste Arbeiten", text: "Work", textLang: "en" }
 ]
 
 
 export const navSecondaryItems = [
-  { href: "/legal", title: "Rechtliches", text: "Rechtliches" }
+  { href: "/legal", title: "Rechtliche Informationen", text: "Rechtliches" }
 ]
 
 
