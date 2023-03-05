@@ -31,11 +31,11 @@ const { title, href, description } = Astro.props
     <HeaderPrimaryDynamic client:load>
       <slot name="header">
         <Link
-          class="block text-system-fg font-bold"
+          class="block text-system-fg"
           href="/"
           title="Startseite"
           current={href === "/"}>
-          (•_•)ノ
+          <span class="font-bold">(•_•)ノ</span>
         </Link>
       </slot>
       <NavPrimary href={href} links={navPrimaryItems}/>
