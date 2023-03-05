@@ -31,7 +31,7 @@ const { title, href, description } = Astro.props
     <HeaderPrimaryDynamic client:load>
       <slot name="header">
         <Link
-          class="block text-system-fg"
+          class="block text-system-fg font-bold"
           href="/"
           title="Startseite"
           current={href === "/"}>

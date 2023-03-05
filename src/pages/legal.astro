@@ -21,10 +21,10 @@ import Link from "../components/Link.vue"
   href="/legal"
   title="Rechtliche Informationen - Jérôme Imfeld"
   description="Rechtliche Informationen zu dieser Seite und den Dienstleistungen von Jérôme Imfeld.">
-  <Section neutral slot="main">
+  <Section neutral focus slot="main">
     <Heading1>Rechtliches</Heading1>
   </Section>
-  <Section slot="main">
+  <Section focus slot="main">
     <Heading2 visual="h3">Inhaber</Heading2>
     <HCard class="font-thin leading-snug">
       <HCardName>Jérôme Imfeld</HCardName><br>
@@ -34,13 +34,15 @@ import Link from "../components/Link.vue"
         <HCardCountry>Schweiz</HCardCountry>
       </HCardAdr><br>
       <HCardEmail
+        class="block"
         email="ahoi@zolo.dev"
-        title="E-Mail">
+        title="E-Mail"
+        focus>
         e-mail: ahoi@zolo.dev
       </HCardEmail>
     </HCard>
   </Section>
-  <Section slot="main">
+  <Section focus slot="main">
     <Heading2 visual="h3">AGB</Heading2>
     <Paragraph>
       Auf <Link

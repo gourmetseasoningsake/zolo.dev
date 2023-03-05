@@ -1,6 +1,6 @@
 <template>
   <a 
-    class="touch-manipulation font-light text-action-fg focus:underline"
+    class="touch-manipulation font-light text-action-fg focus:underline underline-offset-8 decoration-2"
     :href="href" 
     :title="title"
     :target="target"
