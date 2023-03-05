@@ -1,10 +1,10 @@
-import { defineConfig } from 'astro/config'
+import { defineConfig } from 'astro/config';
+import vue from "@astrojs/vue";
+import tailwind from "@astrojs/tailwind";
+import sitemap from "@astrojs/sitemap";
+process.env.BROWSER = "firefox developer edition";
 
-import vue from "@astrojs/vue"
-import tailwind from "@astrojs/tailwind"
-
-
-process.env.BROWSER = "firefox developer edition"
+// https://astro.build/config
 
 // https://astro.build/config
 export default defineConfig({
@@ -14,12 +14,14 @@ export default defineConfig({
   site: "https://zolo.dev",
   trailingSlash: "ignore", // default
   build: {
-    format: "directory", // default
+    format: "directory" // default
   },
+
   server: {
     host: false, // default
-    port: 3000, // default
+    port: 3000 // default
   },
+
   vite: {
     server: {
       open: true,
@@ -29,5 +31,5 @@ export default defineConfig({
       }
     }
   },
-  integrations: [vue(), tailwind()]
-})
+  integrations: [vue(), tailwind(), sitemap()]
+});
