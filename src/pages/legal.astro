@@ -17,7 +17,10 @@ import Link from "../components/Link.vue"
 ---
 
 
-<LayoutDefault title="Rechtliches" href="/legal">
+<LayoutDefault
+  href="/legal"
+  title="Rechtliche Informationen - Jérôme Imfeld"
+  description="Rechtliche Informationen zu dieser Seite und den Dienstleistungen von Jérôme Imfeld.">
   <Section neutral slot="main">
     <Heading1>Rechtliches</Heading1>
   </Section>
@@ -43,8 +46,7 @@ import Link from "../components/Link.vue"
       Auf <Link
         href="https://github.com/zolosake/legal/blob/main/AGB.md"
         title="AGB"
-        target="_blank"
-        rel="noopener noreferrer">
+        rel="noreferrer">
         Github</Link> ansehen
     </Paragraph>
   </Section>
