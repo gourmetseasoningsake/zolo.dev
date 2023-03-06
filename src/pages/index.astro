@@ -9,13 +9,25 @@ import HCard from "../components/HCard.vue"
 import HCardEmail from "../components/HCardEmail.vue"
 import HCardLink from "../components/HCardLink.vue"
 import Speak from "../components/Speak.vue"
+
+const href = "/";
+const title = "Web-Entwicklung für kleine Unternehmungen - Jérôme Imfeld";
+const description = "Jérôme Imfeld erarbeitet Lösungen für kleine Unternehmungen, die ihre Internetpräsenz verbessern oder Arbeitsflüsse digitalisieren möchten."
+const preloads = [
+ {
+   href: "/assets/JetBrainsMono-VariableFont_wght.woff2",
+   as: "font",
+   crossorigin: "anonymous",
+ }
+];
 ---
 
 
 <LayoutDefault
-  href="/"
-  title="Web-Entwicklung für kleine Unternehmungen - Jérôme Imfeld"
-  description="Jérôme Imfeld erarbeitet Lösungen für kleine Unternehmungen, die ihre Internetpräsenz verbessern oder Arbeitsflüsse digitalisieren möchten.">
+  href={href}
+  title={title}
+  description={description}
+  preloads={preloads}>
   <Section neutral focus slot="main">
     <Heading1>Ahoi</Heading1>
   </Section>

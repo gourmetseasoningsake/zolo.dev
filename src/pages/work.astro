@@ -9,13 +9,30 @@ import Link from "../components/Link.vue"
 import Posts from "../components/Posts.vue"
 
 import { workPosts } from "../contents.js"
+
+const href = "/work";
+const title = "Jüngste Arbeiten - Jérôme Imfeld";
+const description = "Auswahl der jüngsten Arbeiten von Jérôme Imfeld."
+const preloads = [
+ {
+   href: "/assets/JetBrainsMono-VariableFont_wght.woff2",
+   as: "font",
+   crossorigin: "anonymous",
+ },
+ {
+   href: "/assets/JetBrainsMono-Italic-VariableFont_wght.woff2",
+   as: "font",
+   crossorigin: "anonymous",
+ }
+];
 ---
 
 
 <LayoutDefault
-  href="/work"
-  title="Jüngste Arbeiten - Jérôme Imfeld"
-  description="Auswahl der jüngsten Arbeiten von Jérôme Imfeld.">
+  href={href}
+  title={title}
+  description={description}
+  preloads={preloads}>
   <Section neutral focus slot="main">
     <Heading1><span lang="en">Work</span></Heading1>
   </Section>

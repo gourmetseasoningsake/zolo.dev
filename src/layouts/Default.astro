@@ -1,16 +1,25 @@
 ---
-import HeaderPrimaryDynamic from "../components/HeaderPrimaryDynamic.vue"
-import NavPrimary from "../components/NavPrimary.vue"
-import Main from "../components/Main.vue"
-import FooterPrimary from "../components/FooterPrimary.vue"
-import NavSecondary from "../components/NavSecondary.vue"
-import Sentinel from "../components/Sentinel.vue"
-import Link from "../components/Link.vue"
-import License from "../components/License.vue"
+import HeaderPrimaryDynamic from "../components/HeaderPrimaryDynamic.vue";
+import NavPrimary from "../components/NavPrimary.vue";
+import Main from "../components/Main.vue";
+import FooterPrimary from "../components/FooterPrimary.vue";
+import NavSecondary from "../components/NavSecondary.vue";
+import Sentinel from "../components/Sentinel.vue";
+import Link from "../components/Link.vue";
+import License from "../components/License.vue";
 
-import { navPrimaryItems, navSecondaryItems, copyLicense } from "../contents.js"
+import {
+  navPrimaryItems,
+  navSecondaryItems,
+  copyLicense
+} from "../contents.js";
 
-const { title, href, description } = Astro.props
+const {
+  title,
+  href,
+  description,
+  preloads = []
+} = Astro.props;
 ---
 
 
@@ -22,6 +31,10 @@ const { title, href, description } = Astro.props
     <title>{title}</title>
     <meta name="description" content={description}>
     <meta name="googlebot" content="notranslate">
+
+    {preloads.map(({href, as, crossorigin}) => (
+        <link rel="preload" href={href} as={as} {crossorigin}>
+    ))}
 
     <link rel="icon" href="/assets/favicon.ico" sizes="any">
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">

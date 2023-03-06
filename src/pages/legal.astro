@@ -14,13 +14,30 @@ import HCardCountry from "../components/HCardCountry.vue"
 import HCardEmail from "../components/HCardEmail.vue"
 import Paragraph from "../components/Paragraph.vue"
 import Link from "../components/Link.vue"
+
+const href = "/legal";
+const title = "Rechtliche Informationen - Jérôme Imfeld";
+const description = "Rechtliche Informationen zu dieser Seite und den Dienstleistungen von Jérôme Imfeld."
+const preloads = [
+ {
+   href: "/assets/JetBrainsMono-VariableFont_wght.woff2",
+   as: "font",
+   crossorigin: "anonymous",
+ },
+ {
+   href: "/assets/JetBrainsMono-Italic-VariableFont_wght.woff2",
+   as: "font",
+   crossorigin: "anonymous",
+ }
+];
 ---
 
 
 <LayoutDefault
-  href="/legal"
-  title="Rechtliche Informationen - Jérôme Imfeld"
-  description="Rechtliche Informationen zu dieser Seite und den Dienstleistungen von Jérôme Imfeld.">
+  href={href}
+  title={title}
+  description={description}
+  preloads={preloads}>
   <Section neutral focus slot="main">
     <Heading1>Rechtliches</Heading1>
   </Section>
