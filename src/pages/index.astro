@@ -20,6 +20,25 @@ const preloads = [
    crossorigin: "anonymous",
  }
 ];
+const jsonLd = [
+  {
+    "@context": "http://www.schema.org",
+    "@type": "LocalBusiness",
+    "name": "Jérôme Imfeld",
+    "url": "https://zolo.dev",
+    "sameAs": [
+       "https://github.com/gourmetseasoningsake"
+    ],
+    "description": "Jérôme Imfeld erarbeitet Lösungen für kleine Unternehmungen, die ihre Internetpräsenz verbessern oder Arbeitsflüsse digitalisieren möchten.",
+    "address": {
+       "@type": "PostalAddress",
+       "addressLocality": "Opfikon",
+       "addressRegion": "Zürich",
+       "postalCode": "8152",
+       "addressCountry": "Schweiz"
+    }
+  }
+];
 ---
 
 
@@ -27,7 +46,8 @@ const preloads = [
   href={href}
   title={title}
   description={description}
-  preloads={preloads}>
+  preloads={preloads}
+  jsonLd={jsonLd}>
   <Section neutral slot="main">
     <Heading1>Ahoi</Heading1>
   </Section>

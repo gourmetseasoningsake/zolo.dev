@@ -18,7 +18,8 @@ const {
   title,
   href,
   description,
-  preloads = []
+  preloads = [],
+  jsonLd = [],
 } = Astro.props;
 ---
 
@@ -32,12 +33,16 @@ const {
     <meta name="googlebot" content="notranslate">
 
     {preloads.map(({href, as, crossorigin}) => (
-        <link rel="preload" href={href} as={as} {crossorigin}>
+      <link rel="preload" href={href} as={as} {crossorigin}>
     ))}
 
     <link rel="icon" href="/assets/favicon.ico" sizes="any">
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+
+    {jsonLd.length > 0 && (
+      <script type="application/ld+json" set:html={JSON.stringify(jsonLd)}/>
+    )}
   </head>
   <body class="min-h-screen bg-system-bg font-mono text-sm sm:text-base">
     <HeaderPrimaryDynamic client:load>
