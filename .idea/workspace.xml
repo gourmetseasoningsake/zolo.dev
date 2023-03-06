@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="59c169d7-9382-47b2-a579-18b590c60323" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HCardEmail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HCardEmail.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HCardLink.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HCardLink.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Speak.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Speak.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/legal.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/legal.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Default.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Default.astro" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +131,9 @@
       <workItem from="1678029167167" duration="3265000" />
       <workItem from="1678048330317" duration="7049000" />
       <workItem from="1678093640680" duration="931000" />
-      <workItem from="1678097636173" duration="6617000" />
+      <workItem from="1678097636173" duration="7654000" />
+      <workItem from="1678131463264" duration="340000" />
+      <workItem from="1678133043634" duration="71000" />
     </task>
     <servers />
   </component>

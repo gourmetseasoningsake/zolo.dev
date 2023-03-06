@@ -23,8 +23,8 @@
 
   /* dark mode */
   :root {
-    --system-bg: #303030;
-    --system-fg: #fff;
+    --system-bg: #191919;
+    --system-fg: #fefefe;
     --action-fg: #38bdf8;
   }
 
@@ -35,9 +35,9 @@
   /* light mode */
   @media (prefers-color-scheme: light) {
     :root {
-      --system-bg: #fbfbfb;
-      --system-fg: #1d1d1f;
-      --action-fg: #38bdf8;
+      --system-bg: #fefefe;
+      --system-fg: #191919;
+      --action-fg: #087BAE;
     }
   }
 
@@ -53,23 +53,23 @@
      NB: Firefox must be set to "System theme" for this to auto-switch based
      on os system preferences
   */
-  @supports (color-scheme: light dark)
-    and (background-color: canvas)
-    and (color: canvastext) {
-    :root {
-      --system-bg: canvas;
-      --system-fg: canvastext;
-    }
-  }
+  /*@supports (color-scheme: light dark)*/
+  /*  and (background-color: canvas)*/
+  /*  and (color: canvastext) {*/
+  /*  :root {*/
+  /*    --system-bg: canvas;*/
+  /*    --system-fg: canvastext;*/
+  /*  }*/
+  /*}*/
 
   /* ios safari hack */
-  @supports (background-color: -apple-system-control-background)
-    and (color: text) {
-    :root {
-      --system-bg: -apple-system-control-background;
-      --system-fg: text;
-    }
-  }
+  /*@supports (background-color: -apple-system-control-background)*/
+  /*  and (color: text) {*/
+  /*  :root {*/
+  /*    --system-bg: -apple-system-control-background;*/
+  /*    --system-fg: text;*/
+  /*  }*/
+  /*}*/
 
   /* :root{
     font: -apple-system-body;
