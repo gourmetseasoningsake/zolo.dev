@@ -1,7 +1,9 @@
 <template>
-  <span :class="classes">
+  <span :class="classesParent">
     <span
+      role="button"
       class="touch-manipulation font-light text-action-fg cursor-pointer"
+      :class="classesChild"
       :tabindex="tabindex"
       @click="speak"
       @keydown.enter.prevent.exact="speak">
@@ -29,6 +31,10 @@ export default {
       type: String,
       required: true,
     },
+    focusWithin: {
+      type: Boolean,
+      default: false,
+    },
     focus: {
       type: Boolean,
       default: false,
@@ -43,13 +49,18 @@ export default {
     canSpeak() {
       return Boolean(this.utter);
     },
-    classes() {
+    classesParent() {
       return {
-        "focus-within": this.focus,
+        "focus-within": this.focusWithin,
+      };
+    },
+    classesChild() {
+      return {
+        focus: this.focus,
       };
     },
     tabindex() {
-      return this.focus ? "0" : undefined;
+      return this.focusWithin || this.focus ? "0" : undefined;
     },
   },
   mounted() {

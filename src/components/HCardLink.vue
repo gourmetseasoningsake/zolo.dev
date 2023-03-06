@@ -1,7 +1,8 @@
 <template>
-  <span :class="classes">
+  <span :class="classesParent">
     <a
       class="u-url touch-manipulation font-light text-action-fg"
+      :class="classesChild"
       :href="href"
       :title="title"
       :target="target"
@@ -30,15 +31,24 @@ export default {
       type: String,
       required: false,
     },
+    focusWithin: {
+      type: Boolean,
+      default: false,
+    },
     focus: {
       type: Boolean,
       default: false,
     },
   },
   computed: {
-    classes() {
+    classesParent() {
       return {
-        "focus-within": this.focus,
+        "focus-within": this.focusWithin,
+      };
+    },
+    classesChild() {
+      return {
+        focus: this.focus,
       };
     },
   },
