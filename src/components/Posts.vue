@@ -11,15 +11,13 @@ You can ignore it or add a wrapping div. For more info, see https://github.com/v
     divideBefore>
     <Section
       neutral
-      full
-      focus>
+      full>
       <Heading2>{{ item.title }}</Heading2>
       <Paragraph>{{ item.description }}</Paragraph>
     </Section>
     <Section
       neutral
-      full
-      focus>
+      full>
       <DataList
         :title="item.title + ' Meta'"
         :items="item.meta" />
