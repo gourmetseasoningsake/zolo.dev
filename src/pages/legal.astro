@@ -38,10 +38,10 @@ const preloads = [
   title={title}
   description={description}
   preloads={preloads}>
-  <Section neutral focus slot="main">
+  <Section neutral slot="main">
     <Heading1>Rechtliches</Heading1>
   </Section>
-  <Section focus slot="main">
+  <Section slot="main">
     <Heading2 visual="h3">Inhaber</Heading2>
     <HCard class="font-thin leading-snug">
       <HCardName>Jérôme Imfeld</HCardName><br>
@@ -59,14 +59,14 @@ const preloads = [
       </HCardEmail>
     </HCard>
   </Section>
-  <Section focus slot="main">
+  <Section slot="main">
     <Heading2 visual="h3">AGB</Heading2>
     <Paragraph>
       Auf <Link
         href="https://github.com/zolosake/legal/blob/main/AGB.md"
         title="AGB"
-        rel="noreferrer">
-        Github</Link> ansehen
+        rel="noreferrer"
+        focus>Github</Link> ansehen
     </Paragraph>
   </Section>
 </LayoutDefault>
