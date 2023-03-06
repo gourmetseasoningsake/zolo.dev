@@ -15,7 +15,7 @@
         role="button"
         class="block absolute inset-0 p-4 touch-manipulation"
         :aria-controls="uid"
-        :aria-selected="active && i === itemEnlarged.i"
+        :aria-pressed="active && i === itemEnlarged.i"
         @touchstart="setItemEnlarged(i)"
         @click="openDialog"
         @focusin="setItemEnlarged(i)"
@@ -166,7 +166,7 @@ export default {
     },
     closeDialog(e) {
       this.$refs.list
-        .querySelector('[role="button"][aria-selected="true"]')
+        .querySelector('[role="button"][aria-pressed="true"]')
         .focus();
       this.$refs.dialog.tabIndex = -1;
       this.dialogControlFocused = 1;
