@@ -1,0 +1,36 @@
+---
+import "../global.css"
+import LayoutDefault from "../layouts/Default.astro"
+import Link from "../components/Link.vue"
+import Heading1 from "../components/Heading1.vue"
+import Section from "../components/Section.vue"
+import Paragraph from "../components/Paragraph.vue"
+
+const href = "/pro";
+const title = "Kundenportal - Jérôme Imfeld";
+const description = "Kundenportal"
+const preloads = [
+ {
+   href: "/assets/JetBrainsMono-VariableFont_wght.woff2",
+   as: "font",
+   crossorigin: "anonymous",
+ }
+];
+const jsonLd = [];
+---
+
+
+<LayoutDefault
+  href={href}
+  title={title}
+  description={description}
+  preloads={preloads}
+  jsonLd={jsonLd}>
+  <Section neutral slot="main">
+    <Heading1>Portal</Heading1>
+  </Section>
+  <Section neutral slot="main">
+
+
+  </Section>
+</LayoutDefault>
