@@ -1,10 +1,10 @@
 # build
-#/dist/ (now submodule)
+.env
 
-# node
+# dev
 /node_modules/
 
-# os specifig
+# os
 .DS_Store
 
 # temp

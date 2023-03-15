@@ -1,6 +1,7 @@
 export const navPrimaryItems = [
   {href: "/", title: "Startseite", text: "Ahoi"},
   {href: "/work", title: "Jüngste Arbeiten", text: "Work", textLang: "en"},
+  {href: "/portal", title: "Kundenportal", text: "Portal"},
 ];
 
 export const navSecondaryItems = [

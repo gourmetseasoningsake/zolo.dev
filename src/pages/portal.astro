@@ -1,14 +1,15 @@
 ---
-import "../global.css"
-import LayoutDefault from "../layouts/Default.astro"
-import Link from "../components/Link.vue"
-import Heading1 from "../components/Heading1.vue"
-import Section from "../components/Section.vue"
-import Paragraph from "../components/Paragraph.vue"
+import "../global.css";
+import LayoutDefault from "../layouts/Default.astro";
+import Link from "../components/Link.vue";
+import Heading1 from "../components/Heading1.vue";
+import Section from "../components/Section.vue";
+import Paragraph from "../components/Paragraph.vue";
+import GithubLogin from "../components/GithubLogin.vue";
 
-const href = "/pro";
+const href = "/portal";
 const title = "Kundenportal - Jérôme Imfeld";
-const description = "Kundenportal"
+const description = "Kundenportal";
 const preloads = [
  {
    href: "/assets/JetBrainsMono-VariableFont_wght.woff2",
@@ -30,7 +31,6 @@ const jsonLd = [];
     <Heading1>Portal</Heading1>
   </Section>
   <Section neutral slot="main">
-
-
+    <GithubLogin redirectPath="/portal" client:load/>
   </Section>
 </LayoutDefault>
