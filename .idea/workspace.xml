@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59c169d7-9382-47b2-a579-18b590c60323" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Button.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/GithubLogin.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contents.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/contents.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GithubLogin.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GithubLogin.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/portal.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/portal.astro" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -152,7 +149,7 @@
       <workItem from="1678786563828" duration="127000" />
       <workItem from="1678786718571" duration="7636000" />
       <workItem from="1678869871086" duration="399000" />
-      <workItem from="1678913266662" duration="2557000" />
+      <workItem from="1678913266662" duration="7439000" />
     </task>
     <servers />
   </component>
