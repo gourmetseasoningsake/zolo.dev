@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59c169d7-9382-47b2-a579-18b590c60323" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/astro.config.mjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/GithubLogin.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GithubLogin.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/portal.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/portal.astro" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +150,11 @@
       <workItem from="1678786563828" duration="127000" />
       <workItem from="1678786718571" duration="7636000" />
       <workItem from="1678869871086" duration="399000" />
-      <workItem from="1678913266662" duration="7439000" />
+      <workItem from="1678913266662" duration="7668000" />
+      <workItem from="1678957171767" duration="136000" />
+      <workItem from="1678958048002" duration="3829000" />
+      <workItem from="1678962477468" duration="4145000" />
+      <workItem from="1679066600473" duration="7256000" />
     </task>
     <servers />
   </component>

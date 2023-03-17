@@ -9,8 +9,8 @@ process.env.BROWSER = "firefox developer edition";
 export default defineConfig({
   srcDir: "./src", // default
   publicDir: "./public", // default
-  outDir: "./temp_dist", // default
-  site: "https://zolo.dev",
+  outDir: "./temp_dist",
+  site: import.meta.env.MODE === "production" ? "https://zolo.dev" : "https://localhost:3000",
   trailingSlash: "ignore", // default
   build: {
     format: "directory" // default
