@@ -14,7 +14,7 @@ Crawl-delay: 10
 Disallow: /portal
 
 User-agent: Pinterest
-Crawl-delay: 10
+Disallow: /
 
 User-agent: MJ12bot
 Disallow: /
