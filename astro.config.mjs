@@ -10,7 +10,7 @@ export default defineConfig({
   srcDir: "./src", // default
   publicDir: "./public", // default
   outDir: "./temp_dist",
-  site: import.meta.env.MODE === "production" ? "https://zolo.dev" : "https://localhost:3000",
+  site: process.env.NODE_ENV === "production" ? "https://zolo.dev" : "https://localhost:3000",
   trailingSlash: "ignore", // default
   build: {
     format: "directory" // default
@@ -28,5 +28,8 @@ export default defineConfig({
       }
     }
   },
-  integrations: [vue(), tailwind(), sitemap()]
+  integrations: [vue(), tailwind(), sitemap({
+    filter: (page) =>
+      page !== "https://zolo.dev/portal/"
+  })]
 });
