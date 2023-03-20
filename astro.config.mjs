@@ -3,7 +3,7 @@ import vue from "@astrojs/vue";
 import tailwind from "@astrojs/tailwind";
 import sitemap from "@astrojs/sitemap";
 
-process.env.BROWSER = "firefox developer edition";
+process.env.BROWSER = "google chrome";
 
 // https://astro.build/config
 export default defineConfig({
