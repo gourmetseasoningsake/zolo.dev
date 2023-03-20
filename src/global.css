@@ -74,6 +74,27 @@
   /* :root{
     font: -apple-system-body;
   } */
+
+
+  /*::view-transition-old(root),*/
+  /*::view-transition-new(root) {*/
+  /*  animation-name: fade;*/
+  /*  animation-duration: 0.5s;*/
+  /*}*/
+
+  /*::view-transition-new(root) {*/
+  /*  animation-name: fade;*/
+  /*  animation-direction: reverse;*/
+  /*}*/
+
+  /*@keyframes fade {*/
+  /*  from {*/
+  /*    opacity: 1;*/
+  /*  }*/
+  /*  to {*/
+  /*    opacity: 0;*/
+  /*  }*/
+  /*}*/
 }
 
 
