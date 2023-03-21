@@ -2,7 +2,7 @@
   <ul
     role="list"
     ref="list"
-    class="flex flex-wrap -m-4 pt-1 pb-2"
+    class="flex flex-wrap -mx-4 -mt-2 mb-6"
     :title="title"
     v-bind="$attrs">
     <li

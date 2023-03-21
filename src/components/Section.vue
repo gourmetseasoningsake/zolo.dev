@@ -38,7 +38,7 @@ export default {
       return {
         "my-8": !this.divideBefore,
         "px-8": !this.full,
-        "mt-8 mb-24 divide-before": this.divideBefore,
+        "pb-16 divide-before": this.divideBefore,
         focus: this.focus && this.full,
         "focus-inset": this.focus && !this.full,
       };
