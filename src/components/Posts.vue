@@ -10,13 +10,17 @@ NB(210323): added a wrapping div with display: contents
     <Section
       v-for="(item, i) in items"
       :key="i"
-      divideBefore>
+      divide-before>
       <Section
         neutral
         full>
         <Heading2>{{ item.title }}</Heading2>
         <Paragraph>{{ item.description }}</Paragraph>
       </Section>
+      <MediaGallery
+        v-if="item.media?.length"
+        :title="item.title + ' Galerie'"
+        :items="item.media" />
       <Section
         neutral
         full>
@@ -24,10 +28,6 @@ NB(210323): added a wrapping div with display: contents
           :title="item.title + ' Meta'"
           :items="item.meta" />
       </Section>
-      <MediaGallery
-        v-if="item.media?.length"
-        :title="item.title + ' Galerie'"
-        :items="item.media" />
     </Section>
   </div>
 </template>
