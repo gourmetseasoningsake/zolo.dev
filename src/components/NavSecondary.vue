@@ -1,3 +1,24 @@
+<script lang="ts">
+import {defineComponent} from "vue";
+import Link from "./Link.vue";
+
+export default defineComponent({
+  components: {Link},
+  props: {
+    href: {
+      type: String,
+      required: false,
+    },
+    links: {
+      type: Array,
+      default() {
+        return [];
+      },
+    },
+  },
+});
+</script>
+
 <template>
   <nav>
     <ul class="flex justify-end -mx-2">
@@ -16,23 +37,3 @@
     </ul>
   </nav>
 </template>
-
-<script>
-import Link from "./Link.vue";
-
-export default {
-  components: {Link},
-  props: {
-    href: {
-      type: String,
-      required: false,
-    },
-    links: {
-      type: Array,
-      default() {
-        return [];
-      },
-    },
-  },
-};
-</script>

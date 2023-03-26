@@ -1,3 +1,115 @@
+<script lang="ts">
+import {defineComponent, ref, type PropType} from "vue";
+import Image, {type ImageProps} from "./Image.vue";
+import {uid} from "../utils/random";
+
+interface ItemEnlarged extends ImageProps {
+  i: number;
+}
+
+interface MediaGalleryData {
+  uid: string;
+  active: boolean;
+  itemEnlarged: {i: number} | ItemEnlarged;
+  dialogControls: NodeListOf<HTMLButtonElement> | null;
+  dialogControlFocused: number;
+}
+
+const dialog = ref<HTMLElement | null>(null);
+const list = ref<HTMLUListElement | null>(null);
+
+export default defineComponent({
+  inheritAttrs: false,
+  components: {Image},
+  props: {
+    title: {
+      type: String,
+      required: true,
+    },
+    items: {
+      type: Array as PropType<ImageProps[]>,
+      required: true,
+    },
+  },
+  data(): MediaGalleryData {
+    return {
+      uid: "dialog-" + uid(),
+      active: false,
+      itemEnlarged: {i: 0, ...this.items[0]},
+      dialogControls: null,
+      dialogControlFocused: 1,
+    };
+  },
+  computed: {
+    classesDialog() {
+      if (this.active) {
+        return "fixed z-50 inset-0 overflow-auto overscroll-none scrollbar-hidden";
+      }
+      return "hidden invisible";
+    },
+  },
+  mounted() {
+    if (dialog.value) {
+      this.dialogControls = dialog.value.querySelectorAll(
+        'button[tabindex="-1"]',
+      );
+    }
+  },
+  methods: {
+    openDialog() {
+      this.active = true;
+      this.$nextTick(() => {
+        if (dialog.value) {
+          dialog.value.focus();
+          dialog.value.tabIndex = 0;
+        }
+        this.dialogControls![this.dialogControlFocused]!.focus();
+      });
+      if (document.scrollingElement) {
+        document.scrollingElement.classList.add("scrollbar-hidden");
+      }
+    },
+    closeDialog() {
+      const activeButton = list.value!.querySelector(
+        '[role="button"][aria-pressed="true"]',
+      ) as HTMLButtonElement;
+      activeButton.focus();
+      dialog.value!.tabIndex = -1;
+      this.dialogControlFocused = 1;
+      this.active = false;
+      document.scrollingElement?.classList.remove("scrollbar-hidden");
+    },
+    setItemEnlarged(i: number) {
+      this.itemEnlarged = {i, ...this.items[i]};
+    },
+    setNextItemEnlarged(i: number) {
+      let i_ = (i + 1) % this.items.length;
+      this.itemEnlarged = {i: i_, ...this.items[i_]};
+    },
+    setPrevItemEnlarged(i: number) {
+      const len = this.items.length;
+      let i_ = (i + len - 1) % len;
+      this.itemEnlarged = {i: i_, ...this.items[i_]};
+    },
+    focusNextDialogControl(i: number) {
+      if (this.dialogControls) {
+        let i_ = (i + 1) % this.dialogControls.length;
+        this.dialogControls[i_]!.focus();
+        this.dialogControlFocused = i_;
+      }
+    },
+    focusPrevDialogControl(i: number) {
+      if (this.dialogControls) {
+        const len = this.dialogControls.length;
+        let i_ = (i + len - 1) % len;
+        this.dialogControls[i_]!.focus();
+        this.dialogControlFocused = i_;
+      }
+    },
+  },
+});
+</script>
+
 <template>
   <ul
     role="list"
@@ -112,90 +224,3 @@
     </div>
   </aside>
 </template>
-
-<script>
-import Image from "./Image.vue";
-import {uid} from "../utils/random.js";
-
-export default {
-  inheritAttrs: false,
-  components: {Image},
-  props: {
-    title: {
-      type: String,
-      required: true,
-    },
-    items: {
-      type: Array,
-      default() {
-        return [];
-      },
-    },
-  },
-  data() {
-    return {
-      uid: "dialog-" + uid(),
-      active: false,
-      itemEnlarged: {i: 0, ...this.items[0]},
-      dialogControls: [],
-      dialogControlFocused: 1,
-    };
-  },
-  computed: {
-    classesDialog() {
-      if (this.active) {
-        return "fixed z-50 inset-0 overflow-auto overscroll-none scrollbar-hidden";
-      }
-      return "hidden invisible";
-    },
-  },
-  mounted() {
-    this.dialogControls = this.$refs.dialog.querySelectorAll(
-      'button[tabindex="-1"]',
-    );
-  },
-  methods: {
-    openDialog() {
-      this.active = true;
-      this.$nextTick(() => {
-        this.$refs.dialog.focus();
-        this.$refs.dialog.tabIndex = 0;
-        this.dialogControls[this.dialogControlFocused].focus();
-      });
-      document.scrollingElement.classList.add("scrollbar-hidden");
-    },
-    closeDialog(e) {
-      this.$refs.list
-        .querySelector('[role="button"][aria-pressed="true"]')
-        .focus();
-      this.$refs.dialog.tabIndex = -1;
-      this.dialogControlFocused = 1;
-      this.active = false;
-      document.scrollingElement.classList.remove("scrollbar-hidden");
-    },
-    setItemEnlarged(i) {
-      this.itemEnlarged = {i, ...this.items[i]};
-    },
-    setNextItemEnlarged(i) {
-      let i_ = (i + 1) % this.items.length;
-      this.itemEnlarged = {i: i_, ...this.items[i_]};
-    },
-    setPrevItemEnlarged(i) {
-      const len = this.items.length;
-      let i_ = (i + len - 1) % len;
-      this.itemEnlarged = {i: i_, ...this.items[i_]};
-    },
-    focusNextDialogControl(i) {
-      let i_ = (i + 1) % this.dialogControls.length;
-      this.dialogControls[i_].focus();
-      this.dialogControlFocused = i_;
-    },
-    focusPrevDialogControl(i) {
-      const len = this.dialogControls.length;
-      let i_ = (i + len - 1) % len;
-      this.dialogControls[i_].focus();
-      this.dialogControlFocused = i_;
-    },
-  },
-};
-</script>

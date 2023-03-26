@@ -5,11 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59c169d7-9382-47b2-a579-18b590c60323" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stores/session.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/random.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Button.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DataList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HCardEmail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HCardEmail.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HCardLink.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HCardLink.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HeaderPrimaryDynamic.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeaderPrimaryDynamic.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Heading1.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Heading1.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Heading2.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Heading2.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/IconEnvelope.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/IconEnvelope.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Image.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Image.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Link.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Link.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MediaGallery.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MediaGallery.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavPrimary.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavPrimary.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavSecondary.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavSecondary.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Paragraph.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Paragraph.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Posts.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Posts.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Section.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Section.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sentinel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sentinel.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Speak.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Speak.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stores/session.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/random.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +79,7 @@
     "nodejs_package_manager_path": "pnpm",
     "prettierjs.PrettierConfiguration.Package": "/Users/jerome/Projects/Gourmetseasoningsake/zolo.dev/node_modules/prettier",
     "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/Users/jerome/Projects/Gourmetseasoningsake/zolo.dev/node_modules/typescript/lib",
+    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -186,7 +204,7 @@
       <workItem from="1679606573329" duration="4131000" />
       <workItem from="1679690718724" duration="117000" />
       <workItem from="1679690974397" duration="2058000" />
-      <workItem from="1679736652827" duration="3135000" />
+      <workItem from="1679736652827" duration="13534000" />
     </task>
     <servers />
   </component>

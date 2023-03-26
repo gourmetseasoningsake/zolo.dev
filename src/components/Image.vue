@@ -1,12 +1,16 @@
-<template>
-  <img
-    class="transition-opacity duration-500"
-    :class="classes"
-    :src="placeholderSrc" />
-</template>
+<script lang="ts">
+import {defineComponent} from "vue";
 
-<script>
-export default {
+export interface ImageProps {
+  type: "image";
+  sourceSet: string[];
+  alt: string;
+  width: number;
+  height: number;
+  classes: string;
+}
+
+export default defineComponent({
   // TODO: handle cached and broken images
   props: {
     sourceSet: {
@@ -24,7 +28,7 @@ export default {
   mounted() {
     let observer = new IntersectionObserver(
       ([entry], observer_) => {
-        if (entry.isIntersecting) {
+        if (entry?.isIntersecting) {
           let image = new Image();
 
           image.onload = () => {
@@ -57,5 +61,12 @@ export default {
       return this.sourceSet.join(",");
     },
   },
-};
+});
 </script>
+
+<template>
+  <img
+    class="transition-opacity duration-500"
+    :class="classes"
+    :src="placeholderSrc" />
+</template>

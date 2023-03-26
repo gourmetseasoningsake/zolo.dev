@@ -1,3 +1,23 @@
+<script lang="ts">
+import {defineComponent} from "vue";
+import Link from "./Link.vue";
+export default defineComponent({
+  components: {Link},
+  props: {
+    title: {
+      type: String,
+      required: true,
+    },
+    items: {
+      type: Array,
+      default() {
+        return [];
+      },
+    },
+  },
+});
+</script>
+
 <template>
   <dl
     v-if="items.length"
@@ -25,22 +45,3 @@
     </div>
   </dl>
 </template>
-
-<script>
-import Link from "./Link.vue";
-export default {
-  components: {Link},
-  props: {
-    title: {
-      type: String,
-      required: true,
-    },
-    items: {
-      type: Array,
-      default() {
-        return [];
-      },
-    },
-  },
-};
-</script>
