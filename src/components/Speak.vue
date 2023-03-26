@@ -53,17 +53,17 @@ export default defineComponent({
     },
   },
   mounted() {
-    // const voices = speechSynthesis
-    //   ?.getVoices()
-    //   .filter(({lang}) => lang.startsWith(this.lang.split("-")[0]))
-    //   .sort((a) => (a === this.lang ? -1 : 1));
-    //
-    // if (voices?.[0]) {
-    //   const utter = new SpeechSynthesisUtterance(this.text);
-    //   utter.lang = voices[0].lang;
-    //   utter.voice = voices[0];
-    //   this.utter = utter;
-    // }
+    const voices = speechSynthesis
+      ?.getVoices()
+      .filter(({lang}) => lang.startsWith(this.lang.split("-")[0]!))
+      .sort(({lang}) => (lang === this.lang ? -1 : 1));
+
+    if (voices?.[0]) {
+      const utter = new SpeechSynthesisUtterance(this.text);
+      utter.lang = voices[0].lang;
+      utter.voice = voices[0];
+      this.utter = utter;
+    }
   },
   methods: {
     speak() {

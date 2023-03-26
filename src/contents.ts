@@ -8,8 +8,6 @@ export const navSecondaryItems = [
   {href: "/legal", title: "Rechtliche Informationen", text: "Rechtliches"},
 ];
 
-function blub() {}
-
 export const copyLicense = `CC BY-NC-ND 2017-${new Date().getFullYear()}`;
 
 export const workPosts = [
