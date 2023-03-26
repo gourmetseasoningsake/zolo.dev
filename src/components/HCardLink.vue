@@ -1,19 +1,6 @@
-<template>
-  <span :class="classesParent">
-    <a
-      class="u-url touch-manipulation font-light text-action-fg"
-      :class="classesChild"
-      :href="href"
-      :title="title"
-      :target="target"
-      :rel="rel">
-      <slot></slot>
-    </a>
-  </span>
-</template>
-
-<script>
-export default {
+<script lang="ts">
+import {defineComponent} from "vue";
+export default defineComponent({
   props: {
     href: {
       type: String,
@@ -52,5 +39,19 @@ export default {
       };
     },
   },
-};
+});
 </script>
+
+<template>
+  <span :class="classesParent">
+    <a
+      class="u-url touch-manipulation font-light text-action-fg"
+      :class="classesChild"
+      :href="href"
+      :title="title"
+      :target="target"
+      :rel="rel">
+      <slot></slot>
+    </a>
+  </span>
+</template>

@@ -1,17 +1,6 @@
-<template>
-  <a
-    class="touch-manipulation font-light text-action-fg focus:underline underline-offset-8 decoration-2"
-    :href="href"
-    :title="title"
-    :target="target"
-    :rel="rel"
-    :aria-current="ariaCurrent">
-    <slot></slot>
-  </a>
-</template>
-
-<script>
-export default {
+<script lang="ts">
+import {defineComponent} from "vue";
+export default defineComponent({
   props: {
     href: {
       type: String,
@@ -39,5 +28,17 @@ export default {
       return this.current && "page";
     },
   },
-};
+});
 </script>
+
+<template>
+  <a
+    class="touch-manipulation font-light text-action-fg focus:underline underline-offset-8 decoration-2"
+    :href="href"
+    :title="title"
+    :target="target"
+    :rel="rel"
+    :aria-current="ariaCurrent">
+    <slot></slot>
+  </a>
+</template>

@@ -1,18 +1,6 @@
-<template>
-  <span :class="classesParent">
-    <a
-      class="u-email touch-manipulation font-light text-action-fg"
-      :class="classesChild"
-      :href="href"
-      :title="title"
-      :rel="rel">
-      <slot></slot>
-    </a>
-  </span>
-</template>
-
-<script>
-export default {
+<script lang="ts">
+import {defineComponent} from "vue";
+export default defineComponent({
   props: {
     email: {
       type: String,
@@ -50,5 +38,18 @@ export default {
       };
     },
   },
-};
+});
 </script>
+
+<template>
+  <span :class="classesParent">
+    <a
+      class="u-email touch-manipulation font-light text-action-fg"
+      :class="classesChild"
+      :href="href"
+      :title="title"
+      :rel="rel">
+      <slot></slot>
+    </a>
+  </span>
+</template>

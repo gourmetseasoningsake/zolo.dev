@@ -1,19 +1,11 @@
-<template>
-  <span :class="classesParent">
-    <span
-      role="button"
-      class="touch-manipulation font-light text-action-fg cursor-pointer"
-      :class="classesChild"
-      :tabindex="tabindex"
-      @click="speak"
-      @keydown.enter.prevent.exact="speak">
-      <slot>{{ placeholder }}</slot>
-    </span>
-  </span>
-</template>
+<script lang="ts">
+import {defineComponent} from "vue";
 
-<script>
-export default {
+interface SpeakData {
+  utter: SpeechSynthesisUtterance | null;
+}
+
+export default defineComponent({
   props: {
     text: {
       type: String,
@@ -25,7 +17,7 @@ export default {
     },
     lang: {
       type: String,
-      default: "de-CH",
+      required: true,
     },
     fallback: {
       type: String,
@@ -40,15 +32,12 @@ export default {
       default: false,
     },
   },
-  data() {
+  data(): SpeakData {
     return {
       utter: null,
     };
   },
   computed: {
-    canSpeak() {
-      return Boolean(this.utter);
-    },
     classesParent() {
       return {
         "focus-within": this.focusWithin,
@@ -66,8 +55,8 @@ export default {
   mounted() {
     const voices = speechSynthesis
       ?.getVoices()
-      .filter(({lang}) => lang.startsWith(this.lang.split("-")[0]))
-      .sort((a) => (a === this.lang ? -1 : 1));
+      .filter(({lang}) => lang.startsWith(this.lang.split("-")[0]!))
+      .sort(({lang}) => (lang === this.lang ? -1 : 1));
 
     if (voices?.[0]) {
       const utter = new SpeechSynthesisUtterance(this.text);
@@ -78,7 +67,7 @@ export default {
   },
   methods: {
     speak() {
-      if (this.canSpeak) {
+      if (this.utter) {
         speechSynthesis.speak(this.utter);
       } else {
         const audio = new Audio(this.fallback);
@@ -86,5 +75,19 @@ export default {
       }
     },
   },
-};
+});
 </script>
+
+<template>
+  <span :class="classesParent">
+    <span
+      role="button"
+      class="touch-manipulation font-light text-action-fg cursor-pointer"
+      :class="classesChild"
+      :tabindex="tabindex"
+      @click="speak"
+      @keydown.enter.prevent.exact="speak">
+      <slot>{{ placeholder }}</slot>
+    </span>
+  </span>
+</template>

@@ -170,7 +170,7 @@
   }
 
   .divide-before:before {
-    @apply block content-[''] border-t border-system-fg opacity-20;
+    @apply block content-[''] -mx-8 border-t border-system-fg opacity-100;
   }
 
   .h1 {

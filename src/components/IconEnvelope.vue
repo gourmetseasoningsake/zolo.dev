@@ -1,3 +1,19 @@
+<script lang="ts">
+import {defineComponent} from "vue";
+export default defineComponent({
+  props: {
+    width: {
+      type: String,
+      required: true,
+    },
+    height: {
+      type: String,
+      default: "auto",
+    },
+  },
+});
+</script>
+
 <template>
   <svg
     :width="width"
@@ -12,18 +28,3 @@
       transform="translate(-9.766 66.33)" />
   </svg>
 </template>
-
-<script>
-export default {
-  props: {
-    width: {
-      type: String,
-      required: true,
-    },
-    height: {
-      type: String,
-      default: "auto",
-    },
-  },
-};
-</script>

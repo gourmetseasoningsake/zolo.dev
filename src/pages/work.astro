@@ -8,7 +8,7 @@ import Paragraph from "../components/Paragraph.vue"
 import Link from "../components/Link.vue"
 import Posts from "../components/Posts.vue"
 
-import { workPosts } from "../contents.js"
+import { workPosts } from "../contents"
 
 const href = "/work";
 const title = "Jüngste Arbeiten - Jérôme Imfeld";
@@ -27,7 +27,6 @@ const preloads = [
 ];
 ---
 
-
 <LayoutDefault
   href={href}
   title={title}
@@ -36,5 +35,5 @@ const preloads = [
   <Section neutral slot="main">
     <Heading1><span lang="en">Work</span></Heading1>
   </Section>
-  <Posts client:load items={workPosts} slot="main"></Posts>
+  <Posts client:idle items={workPosts} slot="main"></Posts>
 </LayoutDefault>

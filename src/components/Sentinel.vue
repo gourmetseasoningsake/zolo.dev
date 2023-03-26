@@ -1,9 +1,8 @@
-<template><div class="_sentinel"></div></template>
+<script lang="ts">
+import {defineComponent} from "vue";
+import {session} from "../stores/session";
 
-<script>
-import {session} from "../stores/session.js";
-
-export default {
+export default defineComponent({
   mounted() {
     let observer = new IntersectionObserver(
       ([entry]) => {
@@ -18,5 +17,7 @@ export default {
 
     observer.observe(this.$el);
   },
-};
+});
 </script>
+
+<template><div class="_sentinel"></div></template>

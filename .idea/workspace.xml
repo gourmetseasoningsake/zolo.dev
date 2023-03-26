@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59c169d7-9382-47b2-a579-18b590c60323" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Speak.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Speak.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/contents.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/contents.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Default.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Default.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/work.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/work.astro" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +26,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="8bac1d7d-b598-4b35-ac86-9b5e5e153f7e" />
+        <option name="url" value="git@github.com:gourmetseasoningsake/zolo.dev.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -38,7 +53,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/jerome/Projects/Gourmetseasoningsake/zolo.dev/public&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jerome/Projects/Gourmetseasoningsake/zolo.dev&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -52,8 +67,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/resources/work" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -164,7 +179,15 @@
       <workItem from="1679265483013" duration="1590000" />
       <workItem from="1679268016810" duration="769000" />
       <workItem from="1679302507722" duration="6000" />
-      <workItem from="1679336942405" duration="5213000" />
+      <workItem from="1679336942405" duration="7120000" />
+      <workItem from="1679396560204" duration="61000" />
+      <workItem from="1679404073127" duration="3823000" />
+      <workItem from="1679490972402" duration="3000" />
+      <workItem from="1679606573329" duration="4131000" />
+      <workItem from="1679690718724" duration="117000" />
+      <workItem from="1679690974397" duration="2058000" />
+      <workItem from="1679736652827" duration="13663000" />
+      <workItem from="1679868175305" duration="943000" />
     </task>
     <servers />
   </component>

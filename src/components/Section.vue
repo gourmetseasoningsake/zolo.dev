@@ -1,20 +1,6 @@
-<template>
-  <div
-    v-if="neutral"
-    :class="classes"
-    :tabindex="tabindex">
-    <slot></slot>
-  </div>
-  <section
-    v-else
-    :class="classes"
-    :tabindex="tabindex">
-    <slot></slot>
-  </section>
-</template>
-
-<script>
-export default {
+<script lang="ts">
+import {defineComponent} from "vue";
+export default defineComponent({
   props: {
     neutral: {
       type: Boolean,
@@ -38,7 +24,7 @@ export default {
       return {
         "my-8": !this.divideBefore,
         "px-8": !this.full,
-        "mt-8 mb-24 divide-before": this.divideBefore,
+        "pb-16 divide-before": this.divideBefore,
         focus: this.focus && this.full,
         "focus-inset": this.focus && !this.full,
       };
@@ -47,5 +33,20 @@ export default {
       return this.focus ? "0" : undefined;
     },
   },
-};
+});
 </script>
+
+<template>
+  <div
+    v-if="neutral"
+    :class="classes"
+    :tabindex="tabindex">
+    <slot></slot>
+  </div>
+  <section
+    v-else
+    :class="classes"
+    :tabindex="tabindex">
+    <slot></slot>
+  </section>
+</template>
