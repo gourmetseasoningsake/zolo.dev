@@ -15,9 +15,6 @@ interface MediaGalleryData {
   dialogControlFocused: number;
 }
 
-const dialog = ref<HTMLElement | null>(null);
-const list = ref<HTMLUListElement | null>(null);
-
 export default defineComponent({
   inheritAttrs: false,
   components: {Image},
@@ -30,6 +27,11 @@ export default defineComponent({
       type: Array as PropType<ImageProps[]>,
       required: true,
     },
+  },
+  setup() {
+    const dialog = ref<HTMLElement | null>(null);
+    const list = ref<HTMLUListElement | null>(null);
+    return {dialog, list};
   },
   data(): MediaGalleryData {
     return {
@@ -49,19 +51,17 @@ export default defineComponent({
     },
   },
   mounted() {
-    if (dialog.value) {
-      this.dialogControls = dialog.value.querySelectorAll(
-        'button[tabindex="-1"]',
-      );
-    }
+    this.dialogControls = this.dialog!.querySelectorAll(
+      'button[tabindex="-1"]',
+    );
   },
   methods: {
     openDialog() {
       this.active = true;
       this.$nextTick(() => {
-        if (dialog.value) {
-          dialog.value.focus();
-          dialog.value.tabIndex = 0;
+        if (this.dialog) {
+          this.dialog.focus();
+          this.dialog.tabIndex = 0;
         }
         this.dialogControls![this.dialogControlFocused]!.focus();
       });
@@ -70,11 +70,11 @@ export default defineComponent({
       }
     },
     closeDialog() {
-      const activeButton = list.value!.querySelector(
+      const activeButton = this.list!.querySelector(
         '[role="button"][aria-pressed="true"]',
       ) as HTMLButtonElement;
       activeButton.focus();
-      dialog.value!.tabIndex = -1;
+      this.dialog!.tabIndex = -1;
       this.dialogControlFocused = 1;
       this.active = false;
       document.scrollingElement?.classList.remove("scrollbar-hidden");
