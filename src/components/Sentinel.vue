@@ -6,7 +6,9 @@ export default defineComponent({
   mounted() {
     let observer = new IntersectionObserver(
       ([entry]) => {
-        session.setKey("headerTransparent", entry.isIntersecting);
+        if (entry) {
+          session.setKey("headerTransparent", entry.isIntersecting);
+        }
       },
       {
         root: null,
