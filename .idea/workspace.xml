@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="59c169d7-9382-47b2-a579-18b590c60323" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Speak.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Speak.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contents.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/contents.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/Default.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Default.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/portal.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/portal.astro" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/work.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/work.astro" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -187,7 +185,9 @@
       <workItem from="1679690718724" duration="117000" />
       <workItem from="1679690974397" duration="2058000" />
       <workItem from="1679736652827" duration="13663000" />
-      <workItem from="1679868175305" duration="943000" />
+      <workItem from="1679868175305" duration="2296000" />
+      <workItem from="1680027825945" duration="84000" />
+      <workItem from="1680027943224" duration="536000" />
     </task>
     <servers />
   </component>
