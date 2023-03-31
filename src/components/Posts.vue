@@ -31,20 +31,19 @@ export default defineComponent({
     <Section
       v-for="(item, i) in items"
       :key="i"
-      divide-before>
-      <Section
-        neutral
-        full>
+      divide-between
+      full>
+      <Section neutral>
         <Heading2>{{ item.title }}</Heading2>
         <Paragraph>{{ item.description }}</Paragraph>
       </Section>
-      <MediaGallery
-        v-if="item.media?.length"
-        :title="item.title + ' Galerie'"
-        :items="item.media" />
-      <Section
-        neutral
-        full>
+      <Section>
+        <MediaGallery
+          v-if="item.media?.length"
+          :title="item.title + ' Galerie'"
+          :items="item.media" />
+      </Section>
+      <Section neutral>
         <DataList
           :title="item.title + ' Meta'"
           :items="item.meta" />

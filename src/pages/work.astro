@@ -1,11 +1,9 @@
 ---
 import "../global.css"
 import LayoutDefault from "../layouts/Default.astro"
-import Heading1 from "../components/Heading1.vue"
-import Heading2 from "../components/Heading2.vue"
+import Sentinel from "../components/Sentinel.vue";
+import Heading1Dynamic from "../components/Heading1Dynamic.vue"
 import Section from "../components/Section.vue"
-import Paragraph from "../components/Paragraph.vue"
-import Link from "../components/Link.vue"
 import Posts from "../components/Posts.vue"
 
 import { workPosts } from "../contents"
@@ -32,8 +30,12 @@ const preloads = [
   title={title}
   description={description}
   preloads={preloads}>
-  <Section neutral slot="main">
-    <Heading1 lang="en">Work</Heading1>
+  <Section class="sticky top-0" neutral slot="main">
+    <Sentinel
+      sessionKey="sentinelHeadingAbove"
+      rootMargin="-120px"
+      client:load/>
+    <Heading1Dynamic defaultText="Work" client:load>Work</Heading1Dynamic>
   </Section>
-  <Posts client:idle items={workPosts} slot="main"></Posts>
+  <Posts items={workPosts} slot="main" client:load></Posts>
 </LayoutDefault>

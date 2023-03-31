@@ -22,7 +22,7 @@ export default defineComponent({
   <dl
     v-if="items.length"
     :title="title"
-    class="sm:table max-w-2xl text-xs leading-relaxed">
+    class="sm:table max-w-2xl pb-0.5 text-xs leading-relaxed">
     <div
       v-for="(item, i) in items"
       :key="i"

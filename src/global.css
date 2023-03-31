@@ -169,8 +169,8 @@
     grid-area: f;
   }
 
-  .divide-before:before {
-    @apply block content-[''] -mx-8 border-t border-system-fg opacity-100;
+  .divide-between:not(:last-child):after {
+    @apply block content-[''] -my-px border-t border-system-fg;
   }
 
   .h1 {

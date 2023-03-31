@@ -1,13 +1,13 @@
 import {map} from "nanostores";
 
-type SessionProps = {
-  headerTransparent: boolean;
-  headerForceSolid: boolean;
+export type SessionProps = {
+  sentinelHeaderBelow: boolean;
+  sentinelHeadingAbove: boolean;
 };
 
 const initSession: SessionProps = {
-  headerTransparent: true,
-  headerForceSolid: false,
+  sentinelHeaderBelow: true,
+  sentinelHeadingAbove: true,
 };
 
 export const session = map(initSession);

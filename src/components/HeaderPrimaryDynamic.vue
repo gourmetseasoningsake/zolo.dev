@@ -9,7 +9,7 @@ export default defineComponent({
   },
   computed: {
     transparent() {
-      return !this.session.headerForceSolid && this.session.headerTransparent;
+      return this.session.sentinelHeaderBelow;
     },
     classesHeader() {
       return {

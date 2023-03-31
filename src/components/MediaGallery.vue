@@ -114,7 +114,7 @@ export default defineComponent({
   <ul
     role="list"
     ref="list"
-    class="flex flex-wrap -mx-4 -mt-2 mb-6"
+    class="flex flex-wrap -mx-4 -my-3"
     :title="title"
     v-bind="$attrs">
     <li
