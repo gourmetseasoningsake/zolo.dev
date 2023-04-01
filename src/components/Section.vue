@@ -2,11 +2,27 @@
 import {defineComponent} from "vue";
 export default defineComponent({
   props: {
-    neutral: {
+    p: {
       type: Boolean,
       default: false,
     },
-    full: {
+    px: {
+      type: Boolean,
+      default: false,
+    },
+    py: {
+      type: Boolean,
+      default: false,
+    },
+    m: {
+      type: Boolean,
+      default: false,
+    },
+    mx: {
+      type: Boolean,
+      default: false,
+    },
+    my: {
       type: Boolean,
       default: false,
     },
@@ -22,35 +38,36 @@ export default defineComponent({
       type: Boolean,
       default: false,
     },
+    focusInset: {
+      type: Boolean,
+      default: false,
+    },
   },
   computed: {
     classes() {
       return {
-        "my-8": !(this.divideBetween || this.divideAfter),
+        "p-8": this.p,
+        "px-8": this.px,
+        "py-8": this.py,
+        "m-8": this.m,
+        "mx-8": this.mx,
+        "my-8": this.my,
         "py-px": this.divideBetween || this.divideAfter,
         "divide-after": this.divideAfter,
         "divide-between": this.divideBetween,
-        "px-8": !this.full,
-        focus: this.focus && this.full,
-        "focus-inset": this.focus && !this.full,
+        focus: this.focus,
+        "focus-inset": this.focusInset,
       };
     },
     tabindex() {
-      return this.focus ? "0" : undefined;
+      return this.focus || this.focusInset ? "0" : undefined;
     },
   },
 });
 </script>
 
 <template>
-  <div
-    v-if="neutral"
-    :class="classes"
-    :tabindex="tabindex">
-    <slot></slot>
-  </div>
   <section
-    v-else
     :class="classes"
     :tabindex="tabindex">
     <slot></slot>

@@ -4,17 +4,22 @@ import LayoutApp from "../layouts/App.astro";
 import Link from "../components/Link.vue";
 import Heading1 from "../components/Heading1.vue";
 import Section from "../components/Section.vue";
-import Paragraph from "../components/Paragraph.vue";
+import Content from "../components/Content.vue";
 
 const href = "/portal";
 const title = "Kundenportal - Jérôme Imfeld";
 const description = "Kundenportal";
 const preloads = [
- {
+  {
    href: "/assets/JetBrainsMono-VariableFont_wght.woff2",
    as: "font",
    crossorigin: "anonymous",
- }
+  },
+  {
+    href: "/assets/JetBrainsMono-Italic-VariableFont_wght.woff2",
+    as: "font",
+    crossorigin: "anonymous",
+  }
 ];
 const jsonLd = [];
 ---
@@ -25,61 +30,15 @@ const jsonLd = [];
   description={description}
   preloads={preloads}
   jsonLd={jsonLd}>
-  <Heading1 slot="header">Portal</Heading1>
+  <Heading1 slot="header-left" tight>Portal</Heading1>
+  <Content slot="header-right">
+    <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 203.722 203.726">
+      <g>
+        <rect height="203.726" opacity="0" width="203.722" x="0" y="0"/>
+        <path d="M101.845 203.691C157.704 203.691 203.722 157.637 203.722 101.845C203.722 45.9867 157.637 0 101.779 0C46.0178 0 0 45.9867 0 101.845C0 157.637 46.0844 203.691 101.845 203.691ZM78.0703 149.542C73.2765 149.542 69.4904 148.938 66.8627 147.429C63.631 146.009 62.033 143.705 62.033 140.683C62.033 137.065 64.3367 134.597 68.0431 134.256C69.2816 134.194 70.156 134.229 71.1902 134.362C72.7572 134.562 74.0222 134.86 76.5838 134.86C84.601 134.86 88.4851 130.971 90.0566 121.933L92.6848 105.986L76.2062 105.986C72.3224 105.986 70.1785 103.625 70.1785 100.22C70.1785 96.5849 72.389 94.2191 76.2062 94.2191L94.4646 94.2191L96.7908 79.9511C99.6494 62.5066 108.767 54.37 125.589 54.37C130.316 54.37 134.071 55.1023 136.73 56.5136C139.962 57.9339 141.591 60.3042 141.591 63.2604C141.591 66.8778 139.256 69.3768 135.55 69.6563C134.409 69.7184 133.437 69.7139 132.5 69.5497C130.933 69.3499 129.602 69.1501 127.107 69.1501C119.059 69.1501 115.174 72.9721 113.669 81.713L111.729 94.2191L129.233 94.2191C133.117 94.2191 135.39 96.5849 135.39 100.22C135.39 103.625 133.117 105.986 129.233 105.986L109.785 105.986L106.9 124.059C104.01 141.503 94.9239 149.542 78.0703 149.542Z" fill="#ffffff" fill-opacity="0.85"/>
+      </g>
+    </svg>
+  </Content>
   <Section slot="main">
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
-    <p>aaaaaaa aaaaaaa</p>
   </Section>
 </LayoutApp>

@@ -188,6 +188,12 @@
   .h3 {
     @apply mb-1 font-mono font-medium italic;
   }
+
+  .h1.tight,
+  .h2.tight,
+  .h3.tight {
+    @apply mb-0;
+  }
 }
 
 

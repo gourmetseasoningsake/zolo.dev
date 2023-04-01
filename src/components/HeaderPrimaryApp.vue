@@ -3,9 +3,10 @@ import {defineComponent} from "vue";
 import {useStore} from "@nanostores/vue";
 import {session} from "../stores/session";
 import Section from "./Section.vue";
+import Division from "./Division.vue";
 
 export default defineComponent({
-  components: {Section},
+  components: {Division, Section},
   setup() {
     return {session: useStore(session)};
   },
@@ -39,24 +40,30 @@ export default defineComponent({
       :class="classesBg">
       <div class="absolute inset-0 bg-system-bg opacity-90"></div>
     </div>
-    <Section
+    <Division
       class="flex justify-between relative z-20 pointer-events-auto"
-      neutral>
+      px
+      my>
       <slot name="header-top"></slot>
-    </Section>
-    <Section
+    </Division>
+    <Division
       class="relative z-10 transition-transform origin-bottom duration-200"
       :class="classesHeaderBottom"
-      neutral
-      full
+      my
       divide-after>
-      <Section neutral>
-        <div
+      <Division
+        class="flex justify-between"
+        px
+        my>
+        <Division
           class="transition-transform origin-bottom-left duration-200 pointer-events-auto"
           :class="classesHeaderBottomInner">
-          <slot name="header-bottom"></slot>
-        </div>
-      </Section>
-    </Section>
+          <slot name="header-bottom-left"></slot>
+        </Division>
+        <Division>
+          <slot name="header-bottom-right"></slot>
+        </Division>
+      </Division>
+    </Division>
   </header>
 </template>

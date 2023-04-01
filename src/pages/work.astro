@@ -3,25 +3,24 @@ import "../global.css"
 import LayoutDefault from "../layouts/Default.astro"
 import Heading1 from "../components/Heading1.vue"
 import Posts from "../components/Posts.vue"
+import Division from "../components/Division.vue";
 
 import { workPosts } from "../contents"
-import Section from "../components/Section.vue";
-import Heading1 from "../components/Heading1.vue";
 
 const href = "/work";
 const title = "Jüngste Arbeiten - Jérôme Imfeld";
 const description = "Auswahl der jüngsten Arbeiten von Jérôme Imfeld."
 const preloads = [
- {
+  {
    href: "/assets/JetBrainsMono-VariableFont_wght.woff2",
    as: "font",
    crossorigin: "anonymous",
- },
- {
+  },
+  {
    href: "/assets/JetBrainsMono-Italic-VariableFont_wght.woff2",
    as: "font",
    crossorigin: "anonymous",
- }
+  }
 ];
 ---
 
@@ -30,10 +29,10 @@ const preloads = [
   title={title}
   description={description}
   preloads={preloads}>
-  <Section neutral full divideAfter slot="main">
-    <Section neutral>
+  <Division divide-after slot="main">
+    <Division px my>
       <Heading1>Work</Heading1>
-    </Section>
-  </Section>
+    </Division>
+  </Division>
   <Posts items={workPosts} slot="main" client:load></Posts>
 </LayoutDefault>

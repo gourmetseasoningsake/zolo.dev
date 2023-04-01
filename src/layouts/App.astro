@@ -4,9 +4,10 @@ import NavPrimary from "../components/NavPrimary.vue";
 import MainApp from "../components/MainApp.vue";
 import FooterPrimary from "../components/FooterPrimary.vue";
 import NavSecondary from "../components/NavSecondary.vue";
-import Section from "../components/Section.vue";
+import Content from "../components/Content.vue";
 import Sentinel from "../components/Sentinel.vue";
 import Link from "../components/Link.vue";
+import Logo from "../components/Logo.vue";
 import License from "../components/License.vue";
 
 import {
@@ -52,16 +53,17 @@ const {
         href="/"
         title="Startseite"
         current={href === "/"}
-        slot="header-top">
-        <span class="font-bold" aria-label="Ahoi" role="img">(•_•)ノ</span>
-      </Link>
+        slot="header-top"><Logo/></Link>
       <NavPrimary
         href={href}
         links={navPrimaryItems}
         slot="header-top"/>
-      <div class="contents" slot="header-bottom">
-        <slot name="header"></slot>
-      </div>
+      <Content slot="header-bottom-left">
+        <slot name="header-left"></slot>
+      </Content>
+      <Content slot="header-bottom-right">
+        <slot name="header-right"></slot>
+      </Content>
     </HeaderPrimaryApp>
     <Sentinel sessionKey="sentinelHeaderBelow" client:load/>
     <MainApp>

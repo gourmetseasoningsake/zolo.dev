@@ -1,9 +1,8 @@
 ---
 import "../global.css"
 import LayoutDefault from "../layouts/Default.astro"
-import Link from "../components/Link.vue"
 import Heading1 from "../components/Heading1.vue"
-import Section from "../components/Section.vue"
+import Division from "../components/Division.vue"
 import Paragraph from "../components/Paragraph.vue"
 import HCard from "../components/HCard.vue"
 import HCardEmail from "../components/HCardEmail.vue"
@@ -14,11 +13,11 @@ const href = "/";
 const title = "Web-Entwicklung für kleine Unternehmungen - Jérôme Imfeld";
 const description = "Jérôme Imfeld erarbeitet Lösungen für kleine Unternehmungen, die ihre Internetpräsenz verbessern oder Arbeitsflüsse digitalisieren möchten."
 const preloads = [
- {
+  {
    href: "/assets/JetBrainsMono-VariableFont_wght.woff2",
    as: "font",
    crossorigin: "anonymous",
- }
+  }
 ];
 const jsonLd = [
   {
@@ -48,10 +47,10 @@ const jsonLd = [
   description={description}
   preloads={preloads}
   jsonLd={jsonLd}>
-  <Section neutral slot="main">
+  <Division px my slot="main">
     <Heading1>Ahoi</Heading1>
-  </Section>
-  <Section neutral slot="main">
+  </Division>
+  <Division px my slot="main">
     <Paragraph>
       Ich bin <span lang="fr">Jérôme</span><sup class="text-action-fg" aria-hidden="true">*</sup> Imfeld. Ich bin Web-Entwickler und erarbeite Lösungen für kleine Unternehmungen, die ihre Internetpräsenz verbessern oder Arbeitsflüsse digitalisieren möchten. Ich tue das seit 7 Jahren, als Teil eines bestehenden Teams oder als Lieferant einzelner Sachen.
     </Paragraph>
@@ -89,5 +88,5 @@ const jsonLd = [
       fallback="https://fr-audio.howtopronounce.com/1618555814607933a68bf4f.mp3"
       focus>
     </Speak>
-  </Section>
+  </Division>
 </LayoutDefault>

@@ -4,6 +4,7 @@ import LayoutDefault from "../layouts/Default.astro"
 import Heading1 from "../components/Heading1.vue"
 import Heading2 from "../components/Heading2.vue"
 import Section from "../components/Section.vue"
+import Division from "../components/Division.vue"
 import HCard from "../components/HCard.vue"
 import HCardName from "../components/HCardName.vue"
 import HCardAdr from "../components/HCardAdr.vue"
@@ -19,16 +20,16 @@ const href = "/legal";
 const title = "Rechtliche Informationen - Jérôme Imfeld";
 const description = "Rechtliche Informationen zu dieser Seite und den Dienstleistungen von Jérôme Imfeld."
 const preloads = [
- {
+  {
    href: "/assets/JetBrainsMono-VariableFont_wght.woff2",
    as: "font",
    crossorigin: "anonymous",
- },
- {
+  },
+  {
    href: "/assets/JetBrainsMono-Italic-VariableFont_wght.woff2",
    as: "font",
    crossorigin: "anonymous",
- }
+  }
 ];
 ---
 
@@ -38,10 +39,10 @@ const preloads = [
   title={title}
   description={description}
   preloads={preloads}>
-  <Section neutral slot="main">
+  <Division px my slot="main">
     <Heading1>Rechtliches</Heading1>
-  </Section>
-  <Section slot="main">
+  </Division>
+  <Section px my slot="main">
     <Heading2 visual="h3">Inhaber</Heading2>
     <HCard class="font-thin leading-snug">
       <HCardName>Jérôme Imfeld</HCardName><br>
@@ -59,7 +60,7 @@ const preloads = [
       </HCardEmail>
     </HCard>
   </Section>
-  <Section slot="main">
+  <Section px my slot="main">
     <Heading2 visual="h3">AGB</Heading2>
     <Paragraph>
       Auf <Link
