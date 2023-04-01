@@ -1,7 +1,7 @@
 ---
 import "../global.css"
 import LayoutDefault from "../layouts/Default.astro"
-import Heading1 from "../components/Heading1.vue"
+import Heading from "../components/Heading.vue"
 import Posts from "../components/Posts.vue"
 import Division from "../components/Division.vue";
 
@@ -31,7 +31,7 @@ const preloads = [
   preloads={preloads}>
   <Division divide-after slot="main">
     <Division px my>
-      <Heading1>Work</Heading1>
+      <Heading is="h1">Work</Heading>
     </Division>
   </Division>
   <Posts items={workPosts} slot="main" client:load></Posts>

@@ -9,7 +9,7 @@ import {defineComponent} from "vue";
 import Section from "./Section.vue";
 import Division from "./Division.vue";
 import Content from "./Content.vue";
-import Heading2 from "./Heading2.vue";
+import Heading from "./Heading.vue";
 import Paragraph from "./Paragraph.vue";
 import DataList from "./DataList.vue";
 import Image from "./Image.vue";
@@ -21,7 +21,7 @@ export default defineComponent({
     MediaGallery,
     Section,
     Division,
-    Heading2,
+    Heading,
     Paragraph,
     DataList,
     Image,
@@ -46,7 +46,11 @@ export default defineComponent({
       <Division
         px
         my>
-        <Heading2>{{ item.title }}</Heading2>
+        <Heading
+          is="h2"
+          mb>
+          {{ item.title }}
+        </Heading>
         <Paragraph>{{ item.description }}</Paragraph>
       </Division>
       <Division

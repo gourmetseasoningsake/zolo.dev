@@ -1,8 +1,7 @@
 ---
 import "../global.css"
 import LayoutDefault from "../layouts/Default.astro"
-import Heading1 from "../components/Heading1.vue"
-import Heading2 from "../components/Heading2.vue"
+import Heading from "../components/Heading.vue"
 import Section from "../components/Section.vue"
 import Division from "../components/Division.vue"
 import HCard from "../components/HCard.vue"
@@ -40,10 +39,10 @@ const preloads = [
   description={description}
   preloads={preloads}>
   <Division px my slot="main">
-    <Heading1>Rechtliches</Heading1>
+    <Heading is="h1">Rechtliches</Heading>
   </Division>
   <Section px my slot="main">
-    <Heading2 visual="h3">Inhaber</Heading2>
+    <Heading is="h2" as="h3" mb>Inhaber</Heading>
     <HCard class="font-thin leading-snug">
       <HCardName>Jérôme Imfeld</HCardName><br>
       <HCardAdr>
@@ -61,7 +60,7 @@ const preloads = [
     </HCard>
   </Section>
   <Section px my slot="main">
-    <Heading2 visual="h3">AGB</Heading2>
+    <Heading is="h2" as="h3" mb>AGB</Heading>
     <Paragraph>
       Auf <Link
         href="https://github.com/zolosake/legal/blob/main/AGB.md"

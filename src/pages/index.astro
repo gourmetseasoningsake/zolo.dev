@@ -1,7 +1,7 @@
 ---
 import "../global.css"
 import LayoutDefault from "../layouts/Default.astro"
-import Heading1 from "../components/Heading1.vue"
+import Heading from "../components/Heading.vue"
 import Division from "../components/Division.vue"
 import Paragraph from "../components/Paragraph.vue"
 import HCard from "../components/HCard.vue"
@@ -48,7 +48,7 @@ const jsonLd = [
   preloads={preloads}
   jsonLd={jsonLd}>
   <Division px my slot="main">
-    <Heading1>Ahoi</Heading1>
+    <Heading is="h1">Ahoi</Heading>
   </Division>
   <Division px my slot="main">
     <Paragraph>
