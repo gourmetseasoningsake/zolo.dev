@@ -53,7 +53,10 @@ module.exports = {
 				"scroll-px": "calc(100% + 1px)"
 			},
       spacing: {
-        "h-header": "5.5rem"
+        "h-header-ti": "5.3125rem",
+        "h-header-sm": "5.5rem",
+        "h-header-app-ti": "11.8125rem",
+        "h-header-app-sm": "13.3125rem"
       }
 		}
 	},

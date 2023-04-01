@@ -2,19 +2,30 @@
 NB: Using this template as is emits the warning: [Vue warn]: Extraneous non-props attributes (slot) were passed to
 component but could not be automatically inherited because component renders fragment or text root nodes.
 You can ignore it or add a wrapping div. For more info, see https://github.com/vuejs/core/issues/5933
-NB(210323): added a wrapping div with display: contents
+NB(210323): added a wrapping div with display: contents, @see ./Content.vue
 -->
 <script lang="ts">
 import {defineComponent} from "vue";
 import Section from "./Section.vue";
-import Heading2 from "./Heading2.vue";
+import Division from "./Division.vue";
+import Content from "./Content.vue";
+import Heading from "./Heading.vue";
 import Paragraph from "./Paragraph.vue";
 import DataList from "./DataList.vue";
 import Image from "./Image.vue";
 import MediaGallery from "./MediaGallery.vue";
 
 export default defineComponent({
-  components: {MediaGallery, Section, Heading2, Paragraph, DataList, Image},
+  components: {
+    Content,
+    MediaGallery,
+    Section,
+    Division,
+    Heading,
+    Paragraph,
+    DataList,
+    Image,
+  },
   props: {
     items: {
       type: Array,
@@ -27,28 +38,36 @@ export default defineComponent({
 </script>
 
 <template>
-  <div class="contents">
+  <Content>
     <Section
       v-for="(item, i) in items"
       :key="i"
-      divide-before>
-      <Section
-        neutral
-        full>
-        <Heading2>{{ item.title }}</Heading2>
+      divide-between>
+      <Division
+        px
+        my>
+        <Heading
+          is="h2"
+          mb>
+          {{ item.title }}
+        </Heading>
         <Paragraph>{{ item.description }}</Paragraph>
-      </Section>
-      <MediaGallery
-        v-if="item.media?.length"
-        :title="item.title + ' Galerie'"
-        :items="item.media" />
-      <Section
-        neutral
-        full>
+      </Division>
+      <Division
+        px
+        my>
+        <MediaGallery
+          v-if="item.media?.length"
+          :title="item.title + ' Galerie'"
+          :items="item.media" />
+      </Division>
+      <Division
+        px
+        my>
         <DataList
           :title="item.title + ' Meta'"
           :items="item.meta" />
-      </Section>
+      </Division>
     </Section>
-  </div>
+  </Content>
 </template>

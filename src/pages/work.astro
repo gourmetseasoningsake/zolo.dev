@@ -1,12 +1,9 @@
 ---
 import "../global.css"
 import LayoutDefault from "../layouts/Default.astro"
-import Heading1 from "../components/Heading1.vue"
-import Heading2 from "../components/Heading2.vue"
-import Section from "../components/Section.vue"
-import Paragraph from "../components/Paragraph.vue"
-import Link from "../components/Link.vue"
+import Heading from "../components/Heading.vue"
 import Posts from "../components/Posts.vue"
+import Division from "../components/Division.vue";
 
 import { workPosts } from "../contents"
 
@@ -14,16 +11,16 @@ const href = "/work";
 const title = "Jüngste Arbeiten - Jérôme Imfeld";
 const description = "Auswahl der jüngsten Arbeiten von Jérôme Imfeld."
 const preloads = [
- {
+  {
    href: "/assets/JetBrainsMono-VariableFont_wght.woff2",
    as: "font",
    crossorigin: "anonymous",
- },
- {
+  },
+  {
    href: "/assets/JetBrainsMono-Italic-VariableFont_wght.woff2",
    as: "font",
    crossorigin: "anonymous",
- }
+  }
 ];
 ---
 
@@ -32,8 +29,10 @@ const preloads = [
   title={title}
   description={description}
   preloads={preloads}>
-  <Section neutral slot="main">
-    <Heading1><span lang="en">Work</span></Heading1>
-  </Section>
-  <Posts client:idle items={workPosts} slot="main"></Posts>
+  <Division divide-after slot="main">
+    <Division px my>
+      <Heading is="h1">Work</Heading>
+    </Division>
+  </Division>
+  <Posts items={workPosts} slot="main" client:load></Posts>
 </LayoutDefault>

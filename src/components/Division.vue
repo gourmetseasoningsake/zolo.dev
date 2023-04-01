@@ -67,9 +67,9 @@ export default defineComponent({
 </script>
 
 <template>
-  <section
+  <div
     :class="classes"
     :tabindex="tabindex">
     <slot></slot>
-  </section>
+  </div>
 </template>

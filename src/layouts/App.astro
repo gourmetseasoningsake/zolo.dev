@@ -1,11 +1,13 @@
 ---
-import HeaderPrimary from "../components/HeaderPrimary.vue";
+import HeaderPrimaryApp from "../components/HeaderPrimaryApp.vue";
 import NavPrimary from "../components/NavPrimary.vue";
-import Main from "../components/Main.vue";
+import MainApp from "../components/MainApp.vue";
 import FooterPrimary from "../components/FooterPrimary.vue";
 import NavSecondary from "../components/NavSecondary.vue";
+import Content from "../components/Content.vue";
 import Sentinel from "../components/Sentinel.vue";
 import Link from "../components/Link.vue";
+import Logo from "../components/Logo.vue";
 import License from "../components/License.vue";
 
 import {
@@ -13,7 +15,6 @@ import {
   navSecondaryItems,
   copyLicense
 } from "../contents";
-import Logo from "../components/Logo.vue";
 
 const {
   title,
@@ -46,7 +47,7 @@ const {
     )}
   </head>
   <body class="min-h-screen bg-system-bg font-mono text-sm text-system-fg sm:text-base">
-    <HeaderPrimary client:load>
+    <HeaderPrimaryApp client:load>
       <Link
         class="block text-system-fg"
         href="/"
@@ -57,11 +58,17 @@ const {
         href={href}
         links={navPrimaryItems}
         slot="header-top"/>
-    </HeaderPrimary>
+      <Content slot="header-bottom-left">
+        <slot name="header-left"></slot>
+      </Content>
+      <Content slot="header-bottom-right">
+        <slot name="header-right"></slot>
+      </Content>
+    </HeaderPrimaryApp>
     <Sentinel sessionKey="sentinelHeaderBelow" client:load/>
-    <Main>
+    <MainApp>
       <slot name="main"></slot>
-    </Main>
+    </MainApp>
     <FooterPrimary>
       <License>{copyLicense}</License>
       <slot name="footer"></slot>

@@ -169,20 +169,12 @@
     grid-area: f;
   }
 
-  .divide-before:before {
-    @apply block content-[''] -mx-8 border-t border-system-fg opacity-100;
+  .divide-after:after {
+    @apply block content-[''] -my-px border-t border-system-fg;
   }
 
-  .h1 {
-    @apply mb-8 font-mono font-black text-4xl sm:text-6xl;
-  }
-
-  .h2 {
-    @apply mb-2 font-mono font-medium italic text-2xl sm:text-3xl;
-  }
-
-  .h3 {
-    @apply mb-1 font-mono font-medium italic;
+  .divide-between:not(:last-child):after {
+    @apply block content-[''] -my-px border-t border-system-fg;
   }
 }
 
