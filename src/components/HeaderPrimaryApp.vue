@@ -13,11 +13,6 @@ export default defineComponent({
     pageTop() {
       return this.session.sentinelHeaderBelow;
     },
-    classesHeader() {
-      return {
-        //"backdrop-blur-md": !this.pageTop,
-      };
-    },
     classesHeaderBottom() {
       return {
         "-translate-y-12 sm:-translate-y-16": !this.pageTop,
@@ -31,7 +26,6 @@ export default defineComponent({
     classesBg() {
       return {
         "-translate-y-12 sm:-translate-y-16": !this.pageTop,
-        //"bg-transparent": this.pageTop,
       };
     },
   },
@@ -39,9 +33,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <header
-    class="fixed top-0 z-40 w-full pointer-events-none"
-    :class="classesHeader">
+  <header class="fixed top-0 z-40 w-full pointer-events-none">
     <div
       class="absolute inset-0 z-0 backdrop-blur-md transition-transform origin-bottom duration-200"
       :class="classesBg">
