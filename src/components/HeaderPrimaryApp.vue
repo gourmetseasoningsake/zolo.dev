@@ -2,11 +2,12 @@
 import {defineComponent} from "vue";
 import {useStore} from "@nanostores/vue";
 import {session} from "../stores/session";
-import Section from "./Section.vue";
 import Division from "./Division.vue";
+import Section from "./Section.vue";
+import Content from "./Content.vue";
 
 export default defineComponent({
-  components: {Division, Section},
+  components: {Division, Section, Content},
   setup() {
     return {session: useStore(session)};
   },
@@ -35,11 +36,11 @@ export default defineComponent({
 
 <template>
   <header class="fixed top-0 z-40 w-full pointer-events-none">
-    <div
+    <Division
       class="absolute inset-0 z-0 backdrop-blur-md transition-transform origin-bottom duration-200"
       :class="classesBg">
-      <div class="absolute inset-0 bg-system-bg opacity-90"></div>
-    </div>
+      <Division class="absolute inset-0 bg-system-bg opacity-90"></Division>
+    </Division>
     <Division
       class="flex justify-between relative z-20 pointer-events-auto"
       px
@@ -49,10 +50,9 @@ export default defineComponent({
     <Division
       class="relative z-10 transition-transform origin-bottom duration-200"
       :class="classesHeaderBottom"
-      my
       divide-after>
       <Division
-        class="flex justify-between"
+        class="flex justify-between items-end"
         px
         my>
         <Division
@@ -60,9 +60,9 @@ export default defineComponent({
           :class="classesHeaderBottomInner">
           <slot name="header-bottom-left"></slot>
         </Division>
-        <Division>
+        <Content>
           <slot name="header-bottom-right"></slot>
-        </Division>
+        </Content>
       </Division>
     </Division>
   </header>

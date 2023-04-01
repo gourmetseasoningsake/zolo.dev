@@ -34,7 +34,7 @@ const {
     <meta name="googlebot" content="notranslate">
 
     {preloads.map(({href, as, crossorigin}) => (
-      <link rel="preload" href={href} as={as} {crossorigin}>
+      <link rel="preload" href={href} as={as} crossorigin={crossorigin}>
     ))}
 
     <link rel="icon" href="/assets/favicon.ico" sizes="any">
@@ -51,7 +51,7 @@ const {
         class="block text-system-fg"
         href="/"
         title="Startseite"
-        current={href === "/"}
+        current={false}
         slot="header-top"><Logo/></Link>
       <NavPrimary
         href={href}

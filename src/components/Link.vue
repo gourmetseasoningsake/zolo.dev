@@ -27,6 +27,11 @@ export default defineComponent({
     ariaCurrent() {
       return this.current && "page";
     },
+    classes() {
+      return {
+        underline: this.ariaCurrent,
+      };
+    },
   },
 });
 </script>
@@ -34,6 +39,7 @@ export default defineComponent({
 <template>
   <a
     class="touch-manipulation font-light text-action-fg focus:underline underline-offset-8 decoration-2"
+    :class="classes"
     :href="href"
     :title="title"
     :target="target"
