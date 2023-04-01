@@ -15,22 +15,23 @@ export default defineComponent({
     },
     classesHeader() {
       return {
-        "backdrop-blur-md": !this.pageTop,
+        //"backdrop-blur-md": !this.pageTop,
       };
     },
     classesHeaderBottom() {
       return {
-        "-translate-y-16": !this.pageTop,
+        "-translate-y-12 sm:-translate-y-16": !this.pageTop,
       };
     },
     classesHeaderBottomInner() {
       return {
-        "scale-50": !this.pageTop,
+        "scale-75 sm:scale-50": !this.pageTop,
       };
     },
     classesBg() {
       return {
-        "bg-transparent": this.pageTop,
+        "-translate-y-12 sm:-translate-y-16": !this.pageTop,
+        //"bg-transparent": this.pageTop,
       };
     },
   },
@@ -39,25 +40,27 @@ export default defineComponent({
 
 <template>
   <header
-    class="fixed top-0 z-40 w-full"
+    class="fixed top-0 z-40 w-full pointer-events-none"
     :class="classesHeader">
     <div
-      class="absolute inset-0 z-0 bg-system-bg opacity-90 transition-colors duration-100"
-      :class="classesBg"></div>
+      class="absolute inset-0 z-0 backdrop-blur-md transition-transform origin-bottom duration-200"
+      :class="classesBg">
+      <div class="absolute inset-0 bg-system-bg opacity-90"></div>
+    </div>
     <Section
-      class="flex justify-between relative z-20"
+      class="flex justify-between relative z-20 pointer-events-auto"
       neutral>
       <slot name="header-top"></slot>
     </Section>
     <Section
-      class="relative z-10 transition-transform duration-200"
+      class="relative z-10 transition-transform origin-bottom duration-200"
       :class="classesHeaderBottom"
       neutral
       full
       divide-after>
       <Section neutral>
         <div
-          class="transition-transform duration-200 origin-bottom-left"
+          class="transition-transform origin-bottom-left duration-200 pointer-events-auto"
           :class="classesHeaderBottomInner">
           <slot name="header-bottom"></slot>
         </div>

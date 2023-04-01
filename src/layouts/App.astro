@@ -1,7 +1,7 @@
 ---
 import HeaderPrimaryApp from "../components/HeaderPrimaryApp.vue";
 import NavPrimary from "../components/NavPrimary.vue";
-import Main from "../components/Main.vue";
+import MainApp from "../components/MainApp.vue";
 import FooterPrimary from "../components/FooterPrimary.vue";
 import NavSecondary from "../components/NavSecondary.vue";
 import Section from "../components/Section.vue";
@@ -59,14 +59,14 @@ const {
         href={href}
         links={navPrimaryItems}
         slot="header-top"/>
-      <div slot="header-bottom">
+      <div class="contents" slot="header-bottom">
         <slot name="header"></slot>
       </div>
     </HeaderPrimaryApp>
     <Sentinel sessionKey="sentinelHeaderBelow" client:load/>
-    <Main>
+    <MainApp>
       <slot name="main"></slot>
-    </Main>
+    </MainApp>
     <FooterPrimary>
       <License>{copyLicense}</License>
       <slot name="footer"></slot>
