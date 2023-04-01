@@ -1,5 +1,5 @@
 ---
-import HeaderPrimary from "../components/HeaderPrimary.vue";
+import HeaderPrimaryApp from "../components/HeaderPrimaryApp.vue";
 import NavPrimary from "../components/NavPrimary.vue";
 import Main from "../components/Main.vue";
 import FooterPrimary from "../components/FooterPrimary.vue";
@@ -46,7 +46,7 @@ const {
     )}
   </head>
   <body class="min-h-screen bg-system-bg font-mono text-sm text-system-fg sm:text-base">
-    <HeaderPrimary client:load>
+    <HeaderPrimaryApp client:load>
       <Link
         class="block text-system-fg"
         href="/"
@@ -59,7 +59,10 @@ const {
         href={href}
         links={navPrimaryItems}
         slot="header-top"/>
-    </HeaderPrimary>
+      <div slot="header-bottom">
+        <slot name="header"></slot>
+      </div>
+    </HeaderPrimaryApp>
     <Sentinel sessionKey="sentinelHeaderBelow" client:load/>
     <Main>
       <slot name="main"></slot>

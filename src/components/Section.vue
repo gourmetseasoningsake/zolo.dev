@@ -10,6 +10,10 @@ export default defineComponent({
       type: Boolean,
       default: false,
     },
+    divideAfter: {
+      type: Boolean,
+      default: false,
+    },
     divideBetween: {
       type: Boolean,
       default: false,
@@ -22,8 +26,10 @@ export default defineComponent({
   computed: {
     classes() {
       return {
-        "my-8": !this.divideBetween,
-        "py-px divide-between": this.divideBetween,
+        "my-8": !(this.divideBetween || this.divideAfter),
+        "py-px": this.divideBetween || this.divideAfter,
+        "divide-after": this.divideAfter,
+        "divide-between": this.divideBetween,
         "px-8": !this.full,
         focus: this.focus && this.full,
         "focus-inset": this.focus && !this.full,

@@ -169,6 +169,10 @@
     grid-area: f;
   }
 
+  .divide-after:after {
+    @apply block content-[''] -my-px border-t border-system-fg;
+  }
+
   .divide-between:not(:last-child):after {
     @apply block content-[''] -my-px border-t border-system-fg;
   }

@@ -1,6 +1,6 @@
 ---
 import "../global.css";
-import LayoutDefault from "../layouts/Default.astro";
+import LayoutApp from "../layouts/App.astro";
 import Link from "../components/Link.vue";
 import Heading1 from "../components/Heading1.vue";
 import Section from "../components/Section.vue";
@@ -19,16 +19,16 @@ const preloads = [
 const jsonLd = [];
 ---
 
-<LayoutDefault
+<LayoutApp
   href={href}
   title={title}
   description={description}
   preloads={preloads}
   jsonLd={jsonLd}>
-  <Section neutral slot="main">
+  <Section neutral full slot="header">
     <Heading1>Portal</Heading1>
   </Section>
-  <Section divide-before slot="main">
+  <Section slot="main">
 
   </Section>
-</LayoutDefault>
+</LayoutApp>

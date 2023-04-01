@@ -5,20 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59c169d7-9382-47b2-a579-18b590c60323" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Heading1Dynamic.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/layouts/App.astro" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DataList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DataList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HeaderPrimaryDynamic.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeaderPrimaryDynamic.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MediaGallery.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MediaGallery.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Posts.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Posts.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HeaderPrimary.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeaderPrimary.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HeaderPrimaryDynamic.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeaderPrimaryApp.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Heading1Dynamic.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Section.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Section.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sentinel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sentinel.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/global.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layouts/Default.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Default.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/portal.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/portal.astro" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/work.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/work.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stores/session.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/session.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +80,7 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/src/layouts" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/resources/work" />
@@ -210,7 +210,8 @@
       <workItem from="1680289186364" duration="228000" />
       <workItem from="1680289454748" duration="40000" />
       <workItem from="1680289506118" duration="53000" />
-      <workItem from="1680289567398" duration="7529000" />
+      <workItem from="1680289567398" duration="7862000" />
+      <workItem from="1680338471216" duration="10975000" />
     </task>
     <servers />
   </component>

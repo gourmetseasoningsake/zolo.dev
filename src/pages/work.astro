@@ -1,12 +1,12 @@
 ---
 import "../global.css"
 import LayoutDefault from "../layouts/Default.astro"
-import Sentinel from "../components/Sentinel.vue";
-import Heading1Dynamic from "../components/Heading1Dynamic.vue"
-import Section from "../components/Section.vue"
+import Heading1 from "../components/Heading1.vue"
 import Posts from "../components/Posts.vue"
 
 import { workPosts } from "../contents"
+import Section from "../components/Section.vue";
+import Heading1 from "../components/Heading1.vue";
 
 const href = "/work";
 const title = "Jüngste Arbeiten - Jérôme Imfeld";
@@ -30,12 +30,10 @@ const preloads = [
   title={title}
   description={description}
   preloads={preloads}>
-  <Section class="sticky top-0" neutral slot="main">
-    <Sentinel
-      sessionKey="sentinelHeadingAbove"
-      rootMargin="-120px"
-      client:load/>
-    <Heading1Dynamic defaultText="Work" client:load>Work</Heading1Dynamic>
+  <Section neutral full divideAfter slot="main">
+    <Section neutral>
+      <Heading1>Work</Heading1>
+    </Section>
   </Section>
   <Posts items={workPosts} slot="main" client:load></Posts>
 </LayoutDefault>
