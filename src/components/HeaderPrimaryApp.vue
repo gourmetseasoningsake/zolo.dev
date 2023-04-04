@@ -13,7 +13,7 @@ export default defineComponent({
   },
   computed: {
     pageTop() {
-      return this.session.sentinelHeaderBelow;
+      return this.session.sentinelHeader;
     },
     classesHeaderBottom() {
       return {
@@ -48,15 +48,15 @@ export default defineComponent({
       <slot name="header-top"></slot>
     </Division>
     <Division
-      class="relative z-10 transition-transform origin-bottom duration-200"
+      class="relative z-10 transition-transform origin-bottom duration-200 pointer-events-auto"
       :class="classesHeaderBottom"
       divide-after>
       <Division
-        class="flex justify-between items-end"
+        class="flex items-end"
         px
         my>
         <Division
-          class="transition-transform origin-bottom-left duration-200 pointer-events-auto"
+          class="transition-transform origin-bottom-left duration-200"
           :class="classesHeaderBottomInner">
           <slot name="header-bottom-left"></slot>
         </Division>

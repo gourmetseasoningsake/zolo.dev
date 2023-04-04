@@ -1,0 +1,48 @@
+---
+import "../../global.css";
+import LayoutApp from "../../layouts/App.astro";
+import Heading from "../../components/Heading.vue";
+import Section from "../../components/Section.vue";
+import Division from "../../components/Division.vue";
+import NavApp from "../../components/NavApp.vue";
+import {navPortalItems} from "../../contents";
+
+const preloads = [
+  {
+   href: "/assets/JetBrainsMono-VariableFont_wght.woff2",
+   as: "font",
+   crossorigin: "anonymous",
+  },
+  // {
+  //   href: "/assets/JetBrainsMono-Italic-VariableFont_wght.woff2",
+  //   as: "font",
+  //   crossorigin: "anonymous",
+  // }
+];
+const jsonLd = [];
+
+export async function getStaticPaths() {
+  return navPortalItems.map(({slug, href, title, text}) => {
+    return {
+      params: {slug},
+      props: {href, title, text}
+    }
+  })
+}
+
+const {href, title, description} = Astro.props;
+---
+
+<LayoutApp
+  href={href}
+  title={title}
+  description={description}
+  preloads={preloads}
+  jsonLd={jsonLd}>
+  <Heading is="h1" slot="header-left">Portal</Heading>
+  <Division class="flex items-end px-2" slot="header-right">
+    <NavApp href={href} links={navPortalItems} client:load></NavApp>
+  </Division>
+  <Section slot="main">
+  </Section>
+</LayoutApp>

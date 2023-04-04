@@ -9,7 +9,6 @@ import Sentinel from "../components/Sentinel.vue";
 import Link from "../components/Link.vue";
 import Logo from "../components/Logo.vue";
 import License from "../components/License.vue";
-
 import {
   navPrimaryItems,
   navSecondaryItems,
@@ -45,6 +44,13 @@ const {
     {jsonLd.length > 0 && (
       <script type="application/ld+json" set:html={JSON.stringify(jsonLd)}/>
     )}
+
+    <script>
+      import {session} from "../stores/session";
+      window.addEventListener("popstate", ({state}) => {
+        session.setKey("stateNavApp", state)
+      });
+    </script>
   </head>
   <body class="min-h-screen bg-system-bg font-mono text-sm text-system-fg sm:text-base">
     <HeaderPrimaryApp client:load>
@@ -65,7 +71,7 @@ const {
         <slot name="header-right"></slot>
       </Content>
     </HeaderPrimaryApp>
-    <Sentinel sessionKey="sentinelHeaderBelow" client:load/>
+    <Sentinel sessionKey="sentinelHeader" client:load/>
     <MainApp>
       <slot name="main"></slot>
     </MainApp>
