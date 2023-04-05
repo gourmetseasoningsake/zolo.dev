@@ -30,6 +30,7 @@ export default defineComponent({
       };
     },
   },
+  emits: ["navigate"],
 });
 </script>
 
@@ -39,7 +40,8 @@ export default defineComponent({
     :class="classes"
     :href="href"
     :title="title"
-    :aria-current="ariaCurrent">
+    :aria-current="ariaCurrent"
+    @click.prevent="$emit('navigate')">
     <slot></slot>
   </a>
 </template>

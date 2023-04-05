@@ -5,6 +5,7 @@ import path from "path";
 
 const scopes = makeScopes("./src", {
   exclude: [".DS_Store"],
+  include: ["portal"],
 });
 
 // https://commitlint.js.org/#/reference-configuration

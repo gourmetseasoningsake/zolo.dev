@@ -5,6 +5,7 @@ import Heading from "../../components/Heading.vue";
 import Section from "../../components/Section.vue";
 import Division from "../../components/Division.vue";
 import NavApp from "../../components/NavApp.vue";
+import App from "../../components/App.vue";
 import {navPortalItems} from "../../contents";
 
 const preloads = [
@@ -31,6 +32,7 @@ export async function getStaticPaths() {
 }
 
 const {href, title, description} = Astro.props;
+const initNavItemApp = navPortalItems.reduce((a, b) => b.href === href ? b : a, null)
 ---
 
 <LayoutApp
@@ -40,9 +42,14 @@ const {href, title, description} = Astro.props;
   preloads={preloads}
   jsonLd={jsonLd}>
   <Heading is="h1" slot="header-left">Portal</Heading>
-  <Division class="flex items-end px-2" slot="header-right">
-    <NavApp href={href} links={navPortalItems} client:load></NavApp>
+  <Division class="flex-auto flex justify-end" slot="header-right">
+    <NavApp
+      aria-label="Portal"
+      initNavItemApp={initNavItemApp}
+      links={navPortalItems}
+      client:load/>
   </Division>
   <Section slot="main">
+    <App initNavItemApp={initNavItemApp} client:load/>
   </Section>
 </LayoutApp>

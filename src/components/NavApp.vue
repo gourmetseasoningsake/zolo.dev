@@ -11,9 +11,9 @@ export default defineComponent({
     return {session: useStore(session)};
   },
   props: {
-    href: {
-      type: String,
-      required: false,
+    initNavItemApp: {
+      type: Object as PropType<NavItemApp>,
+      required: true,
     },
     links: {
       type: Array as PropType<NavItemApp[]>,
@@ -21,20 +21,20 @@ export default defineComponent({
         return [];
       },
     },
+    ariaLabel: {
+      type: String,
+    },
   },
   computed: {
     linksApp() {
       return this.links.filter(({slug}) => Boolean(slug));
     },
-    hrefAppRoot() {
-      return this.links.filter(({slug}) => !Boolean(slug))[0];
-    },
     hrefApp() {
-      return this.session.stateNavApp?.href || this.hrefAppRoot;
+      return this.session.stateNavApp?.href || this.initNavItemApp.href;
     },
   },
   methods: {
-    navigate(link: NavItemApp) {
+    onNavigate(link: NavItemApp) {
       history.pushState(link, "", link.href);
       session.setKey("stateNavApp", link);
     },
@@ -43,8 +43,8 @@ export default defineComponent({
 </script>
 
 <template>
-  <nav>
-    <ul class="flex">
+  <nav :aria-label="ariaLabel">
+    <ul class="flex justify-end -mx-2">
       <li
         class="px-1"
         v-for="link in linksApp">
@@ -54,7 +54,7 @@ export default defineComponent({
           :href="link.href"
           :title="link.title"
           :current="link.href === hrefApp"
-          @click.prevent="navigate(link)">
+          @navigate="onNavigate(link)">
           {{ link.text }}
         </LinkApp>
       </li>

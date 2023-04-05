@@ -48,7 +48,7 @@ const {
     <script>
       import {session} from "../stores/session";
       window.addEventListener("popstate", ({state}) => {
-        session.setKey("stateNavApp", state)
+        session.setKey("stateNavApp", state || null)
       });
     </script>
   </head>

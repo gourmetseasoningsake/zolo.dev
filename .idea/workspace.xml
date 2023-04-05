@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="59c169d7-9382-47b2-a579-18b590c60323" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commitlint.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/commitlint.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist" beforeDir="false" afterPath="$PROJECT_DIR$/dist" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/_astro/HeaderPrimary.ec3bb17b.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/_astro/HeaderPrimary.ec3bb17b.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/_astro/HeaderPrimaryApp.679a35c1.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/_astro/HeaderPrimaryApp.679a35c1.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/_astro/session.18bec518.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/_astro/session.18bec518.js" afterDir="false" />
@@ -13,16 +15,11 @@
       <change beforePath="$PROJECT_DIR$/dist/legal/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/legal/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/portal/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/portal/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/work/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/work/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HeaderPrimary.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeaderPrimary.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HeaderPrimaryApp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeaderPrimaryApp.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavSecondary.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavSecondary.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contents.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/contents.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LinkApp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LinkApp.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavApp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavApp.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavPrimary.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavPrimary.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layouts/App.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/App.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/Default.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Default.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/portal.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/portal/[...slug].astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stores/session.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/session.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/portal/[...slug].astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/portal/[...slug].astro" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +68,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "21-add-submenu-to-page-portal",
-    "last_opened_file_path": "/Users/jerome/Projects/Gourmetseasoningsake/zolo.dev/src/pages/portal",
+    "last_opened_file_path": "/Users/jerome/Projects/Gourmetseasoningsake/zolo.dev/src/components",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -85,8 +82,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/pages/portal" />
       <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/src/pages/portal" />
       <recent name="$PROJECT_DIR$/src/layouts" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/public" />
@@ -221,7 +218,8 @@
       <workItem from="1680468234114" duration="10000" />
       <workItem from="1680471635097" duration="2145000" />
       <workItem from="1680513227332" duration="19737000" />
-      <workItem from="1680594359447" duration="20401000" />
+      <workItem from="1680594359447" duration="21193000" />
+      <workItem from="1680679505599" duration="23060000" />
     </task>
     <servers />
   </component>
