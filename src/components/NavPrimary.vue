@@ -16,6 +16,15 @@ export default defineComponent({
       },
     },
   },
+  methods: {
+    isCurrent(linkHref: string): boolean {
+      const href = String(this.href);
+      return (
+        (linkHref === "/" && linkHref === href) ||
+        (linkHref !== "/" && href.startsWith(linkHref))
+      );
+    },
+  },
 });
 </script>
 
@@ -30,7 +39,7 @@ export default defineComponent({
           :key="link.href"
           :href="link.href"
           :title="link.title"
-          :current="link.href === href">
+          :current="isCurrent(link.href)">
           {{ link.text }}
         </Link>
       </li>

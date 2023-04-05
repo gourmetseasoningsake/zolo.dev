@@ -9,7 +9,7 @@ export default defineComponent({
   },
   computed: {
     pageTop() {
-      return this.session.sentinelHeaderBelow;
+      return this.session.sentinelHeader;
     },
     classesHeader() {
       return {

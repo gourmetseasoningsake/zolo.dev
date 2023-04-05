@@ -1,13 +1,14 @@
+import type {NavItemApp} from "../contents";
 import {map} from "nanostores";
 
 export type SessionProps = {
-  sentinelHeaderBelow: boolean;
-  sentinelHeadingAbove: boolean;
+  sentinelHeader: boolean;
+  stateNavApp: NavItemApp | null;
 };
 
 const initSession: SessionProps = {
-  sentinelHeaderBelow: true,
-  sentinelHeadingAbove: true,
+  sentinelHeader: true,
+  stateNavApp: null,
 };
 
 export const session = map(initSession);
