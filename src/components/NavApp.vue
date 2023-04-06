@@ -3,7 +3,7 @@ import {defineComponent, type PropType} from "vue";
 import {useStore} from "@nanostores/vue";
 import {session} from "../stores/session";
 import LinkApp from "./LinkApp.vue";
-import type {NavItemApp} from "../navigation";
+import type {NavItem} from "../navigation";
 
 export default defineComponent({
   components: {LinkApp},
@@ -12,11 +12,11 @@ export default defineComponent({
   },
   props: {
     initNavItemApp: {
-      type: Object as PropType<NavItemApp>,
+      type: Object as PropType<NavItem>,
       required: true,
     },
     links: {
-      type: Array as PropType<NavItemApp[]>,
+      type: Array as PropType<NavItem[]>,
       default() {
         return [];
       },
@@ -34,7 +34,7 @@ export default defineComponent({
     },
   },
   methods: {
-    onNavigate(navItem: NavItemApp) {
+    onNavigate(navItem: NavItem) {
       history.pushState(navItem, "", navItem.path);
       session.setKey("stateNavApp", navItem);
     },

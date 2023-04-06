@@ -12,7 +12,7 @@ import License from "../components/License.vue";
 import {
   copyLicense
 } from "../contents";
-import {navPrimaryItems, navSecondaryItems} from "../navigation";
+import {navItemsHeader, navItemsFooter} from "../navigation";
 
 const {
   title,
@@ -61,7 +61,7 @@ const {
         slot="header-top"><Logo/></Link>
       <NavPrimary
         currentPath={path}
-        links={navPrimaryItems}
+        links={navItemsHeader}
         slot="header-top"/>
       <Content slot="header-bottom-left">
         <slot name="header-left"></slot>
@@ -77,7 +77,7 @@ const {
     <FooterPrimary>
       <License>{copyLicense}</License>
       <slot name="footer"></slot>
-      <NavSecondary currentPath={path} links={navSecondaryItems}/>
+      <NavSecondary currentPath={path} links={navItemsFooter}/>
     </FooterPrimary>
   </body>
 </html>

@@ -1,41 +1,71 @@
-export interface NavItemApp {
+export interface NavItem {
   slug?: string | undefined;
   path: string;
   title?: string;
   text?: string;
-  description?: string;
+  textLang?: string;
+  metaTitle: string;
+  metaDescription: string;
 }
 
-export const navPrimaryItems = [
-  {path: "/", title: "Startseite", text: "Ahoi"},
-  {path: "/work", title: "Jüngste Arbeiten", text: "Work", textLang: "en"},
-  {path: "/portal", title: "Kundenportal", text: "Portal"},
+export const navItemsHeader: NavItem[] = [
+  {
+    path: "/",
+    title: "Startseite",
+    text: "Ahoi",
+    metaTitle: "Startseite",
+    metaDescription: "Startseite",
+  },
+  {
+    path: "/work",
+    title: "Jüngste Arbeiten",
+    text: "Work",
+    textLang: "en",
+    metaTitle: "Jüngste Arbeiter",
+    metaDescription: "Jüngste Arbeiter",
+  },
+  {
+    path: "/portal",
+    title: "Kundenportal",
+    text: "Portal",
+    metaTitle: "Kundenportal",
+    metaDescription: "Kundenportal",
+  },
 ];
 
-export const navSecondaryItems = [
-  {path: "/legal", title: "Rechtliche Informationen", text: "Rechtliches"},
+export const navItemsFooter: NavItem[] = [
+  {
+    path: "/legal",
+    title: "Rechtliche Informationen",
+    text: "Rechtliches",
+    metaTitle: "Rechtliche Informationen",
+    metaDescription: "Rechtliche Informationen",
+  },
 ];
 
-export const navPortalItems: NavItemApp[] = [
+export const navItemsPortal: NavItem[] = [
   {
     slug: undefined,
     path: "/portal",
     title: "Kundenportal",
     text: "Portal",
-    description: "Kundenportal",
+    metaTitle: "Kundenportal",
+    metaDescription: "Kundenportal",
   },
   {
     slug: "finances",
     path: "/portal/finances",
     title: "Kundenportal - Finanzen",
     text: "Finanzen",
-    description: "Kundenportal - Finanzen",
+    metaTitle: "Kundenportal - Finanzen",
+    metaDescription: "Kundenportal - Finanzen",
   },
   {
     slug: "collaborators",
     path: "/portal/collaborators",
     title: "Kundenportal - Beteiligte",
     text: "Beteiligte",
-    description: "Kundenportal - Beteiligte",
+    metaTitle: "Kundenportal - Beteiligte",
+    metaDescription: "Kundenportal - Beteiligte",
   },
 ];

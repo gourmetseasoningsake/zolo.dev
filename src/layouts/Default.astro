@@ -12,7 +12,7 @@ import {
   copyLicense
 } from "../contents";
 import Logo from "../components/Logo.vue";
-import {navPrimaryItems, navSecondaryItems} from "../navigation";
+import {navItemsHeader, navItemsFooter} from "../navigation";
 
 const {
   title,
@@ -54,7 +54,7 @@ const {
         slot="header-top"><Logo/></Link>
       <NavPrimary
         currentPath={path}
-        links={navPrimaryItems}
+        links={navItemsHeader}
         slot="header-top"/>
     </HeaderPrimary>
     <Sentinel sessionKey="sentinelHeader" client:load/>
@@ -64,7 +64,7 @@ const {
     <FooterPrimary>
       <License>{copyLicense}</License>
       <slot name="footer"></slot>
-      <NavSecondary currentPath={path} links={navSecondaryItems}/>
+      <NavSecondary currentPath={path} links={navItemsFooter}/>
     </FooterPrimary>
   </body>
 </html>

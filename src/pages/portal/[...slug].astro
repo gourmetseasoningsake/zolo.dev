@@ -7,7 +7,7 @@ import Division from "../../components/Division.vue";
 import NavApp from "../../components/NavApp.vue";
 import App from "../../components/App.vue";
 
-import {navPortalItems} from "../../navigation";
+import {navItemsPortal} from "../../navigation";
 
 const preloads = [
   {
@@ -24,7 +24,7 @@ const preloads = [
 const jsonLd = [];
 
 export async function getStaticPaths() {
-  return navPortalItems.map(({slug, path, title, text}) => {
+  return navItemsPortal.map(({slug, path, title, text}) => {
     return {
       params: {slug},
       props: {path, title, text}
@@ -33,7 +33,7 @@ export async function getStaticPaths() {
 }
 
 const {path, title, description} = Astro.props;
-const initNavItemApp = navPortalItems.reduce((a, b) => b.path === path ? b : a, null)
+const initNavItemApp = navItemsPortal.reduce((a, b) => b.path === path ? b : a, null)
 ---
 
 <LayoutApp
@@ -47,7 +47,7 @@ const initNavItemApp = navPortalItems.reduce((a, b) => b.path === path ? b : a, 
     <NavApp
       aria-label="Portal"
       initNavItemApp={initNavItemApp}
-      links={navPortalItems}
+      links={navItemsPortal}
       client:load/>
   </Division>
   <Section slot="main">

@@ -3,7 +3,7 @@ import {defineComponent, defineAsyncComponent, PropType} from "vue";
 import {useStore} from "@nanostores/vue";
 import {session} from "../stores/session";
 
-import type {NavItemApp} from "../navigation";
+import type {NavItem} from "../navigation";
 
 // https://vuejs.org/guide/components/async.html#loading-and-error-states
 const Portal = defineAsyncComponent(() => import("./Portal.vue"));
@@ -26,7 +26,7 @@ export default defineComponent({
   },
   props: {
     initNavItemApp: {
-      type: Object as PropType<NavItemApp>,
+      type: Object as PropType<NavItem>,
       required: true,
     },
   },
