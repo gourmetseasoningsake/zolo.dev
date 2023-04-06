@@ -6,8 +6,9 @@ import Section from "../../components/Section.vue";
 import Division from "../../components/Division.vue";
 import NavApp from "../../components/NavApp.vue";
 import App from "../../components/App.vue";
+import {navItemsPortal, makeStaticPathsFn} from "../../navigation";
 
-import {navItemsPortal} from "../../navigation";
+export const getStaticPaths = makeStaticPathsFn(navItemsPortal);
 
 const preloads = [
   {
@@ -22,16 +23,6 @@ const preloads = [
   // }
 ];
 const jsonLd = [];
-
-export async function getStaticPaths() {
-  return navItemsPortal.map(({slug, path, title, text}) => {
-    return {
-      params: {slug},
-      props: {path, title, text}
-    }
-  })
-}
-
 const {path, title, description} = Astro.props;
 const initNavItemApp = navItemsPortal.reduce((a, b) => b.path === path ? b : a, null)
 ---

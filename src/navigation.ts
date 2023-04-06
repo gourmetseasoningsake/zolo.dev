@@ -69,3 +69,17 @@ export const navItemsPortal: NavItem[] = [
     metaDescription: "Kundenportal - Beteiligte",
   },
 ];
+
+export function makeStaticPathsFn(items: NavItem[]) {
+  const staticPaths = items.map(
+    ({slug, path, title, text, textLang, metaTitle, metaDescription}) => {
+      return {
+        params: {slug},
+        props: {path, title, text, textLang, metaTitle, metaDescription},
+      };
+    },
+  );
+  return function () {
+    return staticPaths;
+  };
+}
