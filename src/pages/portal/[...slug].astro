@@ -6,8 +6,10 @@ import Section from "../../components/Section.vue";
 import Division from "../../components/Division.vue";
 import NavApp from "../../components/NavApp.vue";
 import App from "../../components/App.vue";
-import {navPortalItems} from "../../contents";
+import {navGroups, makeStaticPathsFn, type NavItem} from "../../navigation";
 
+export const getStaticPaths = makeStaticPathsFn(navGroups.portal);
+const currentNavItem = Astro.props as NavItem;
 const preloads = [
   {
    href: "/assets/JetBrainsMono-VariableFont_wght.woff2",
@@ -21,35 +23,23 @@ const preloads = [
   // }
 ];
 const jsonLd = [];
-
-export async function getStaticPaths() {
-  return navPortalItems.map(({slug, href, title, text}) => {
-    return {
-      params: {slug},
-      props: {href, title, text}
-    }
-  })
-}
-
-const {href, title, description} = Astro.props;
-const initNavItemApp = navPortalItems.reduce((a, b) => b.href === href ? b : a, null)
 ---
 
 <LayoutApp
-  href={href}
-  title={title}
-  description={description}
+  path={currentNavItem.path}
+  metaTitle={currentNavItem.metaTitle}
+  metaDescription={currentNavItem.metaDescription}
   preloads={preloads}
   jsonLd={jsonLd}>
   <Heading is="h1" slot="header-left">Portal</Heading>
   <Division class="flex-auto flex justify-end" slot="header-right">
     <NavApp
       aria-label="Portal"
-      initNavItemApp={initNavItemApp}
-      links={navPortalItems}
+      initNavItem={currentNavItem}
+      links={navGroups.portal}
       client:load/>
   </Division>
   <Section slot="main">
-    <App initNavItemApp={initNavItemApp} client:load/>
+    <App initNavItem={currentNavItem} client:load/>
   </Section>
 </LayoutApp>

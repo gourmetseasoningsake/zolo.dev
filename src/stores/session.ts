@@ -1,9 +1,9 @@
-import type {NavItemApp} from "../contents";
 import {map} from "nanostores";
+import type {NavItem} from "../navigation";
 
 export type SessionProps = {
   sentinelHeader: boolean;
-  stateNavApp: NavItemApp | null;
+  stateNavApp: NavItem | null;
 };
 
 const initSession: SessionProps = {

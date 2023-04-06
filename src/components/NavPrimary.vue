@@ -5,7 +5,7 @@ import Link from "./Link.vue";
 export default defineComponent({
   components: {Link},
   props: {
-    href: {
+    currentPath: {
       type: String,
       required: false,
     },
@@ -17,11 +17,11 @@ export default defineComponent({
     },
   },
   methods: {
-    isCurrent(linkHref: string): boolean {
-      const href = String(this.href);
+    isCurrentPath(href: string): boolean {
+      const currentPath = String(this.currentPath);
       return (
-        (linkHref === "/" && linkHref === href) ||
-        (linkHref !== "/" && href.startsWith(linkHref))
+        (href === "/" && href === currentPath) ||
+        (href !== "/" && currentPath.startsWith(href))
       );
     },
   },
@@ -36,10 +36,10 @@ export default defineComponent({
         v-for="link in links">
         <Link
           class="block px-1 uppercase"
-          :key="link.href"
-          :href="link.href"
+          :key="link.path"
+          :href="link.path"
           :title="link.title"
-          :current="isCurrent(link.href)">
+          :current-path="isCurrentPath(link.path)">
           {{ link.text }}
         </Link>
       </li>

@@ -1,9 +1,9 @@
 <script lang="ts">
-import type {NavItemApp} from "../contents";
 import {defineComponent, type PropType} from "vue";
 import {useStore} from "@nanostores/vue";
 import {session} from "../stores/session";
 import LinkApp from "./LinkApp.vue";
+import type {NavItem} from "../navigation";
 
 export default defineComponent({
   components: {LinkApp},
@@ -11,12 +11,12 @@ export default defineComponent({
     return {session: useStore(session)};
   },
   props: {
-    initNavItemApp: {
-      type: Object as PropType<NavItemApp>,
+    initNavItem: {
+      type: Object as PropType<NavItem>,
       required: true,
     },
     links: {
-      type: Array as PropType<NavItemApp[]>,
+      type: Array as PropType<NavItem[]>,
       default() {
         return [];
       },
@@ -29,14 +29,14 @@ export default defineComponent({
     linksApp() {
       return this.links.filter(({slug}) => Boolean(slug));
     },
-    hrefApp() {
-      return this.session.stateNavApp?.href || this.initNavItemApp.href;
+    currentPath() {
+      return this.session.stateNavApp?.path || this.initNavItem.path;
     },
   },
   methods: {
-    onNavigate(link: NavItemApp) {
-      history.pushState(link, "", link.href);
-      session.setKey("stateNavApp", link);
+    onNavigate(navItem: NavItem) {
+      history.pushState(navItem, "", navItem.path);
+      session.setKey("stateNavApp", navItem);
     },
   },
 });
@@ -50,10 +50,10 @@ export default defineComponent({
         v-for="link in linksApp">
         <LinkApp
           class="block px-1 uppercase"
-          :key="link.href"
-          :href="link.href"
+          :key="link.path"
+          :href="link.path"
           :title="link.title"
-          :current="link.href === hrefApp"
+          :current-path="link.path === currentPath"
           @navigate="onNavigate(link)">
           {{ link.text }}
         </LinkApp>
