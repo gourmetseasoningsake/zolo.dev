@@ -6,12 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="59c169d7-9382-47b2-a579-18b590c60323" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/App.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/App.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/Default.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Default.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/legal.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/legal.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/portal/[...slug].astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/portal/[...slug].astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/work.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/work.astro" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +53,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "23-separate-and-unify-navigation-data",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/jerome/Projects/Gourmetseasoningsake/zolo.dev/src/components",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -215,7 +209,7 @@
       <workItem from="1680513227332" duration="19737000" />
       <workItem from="1680594359447" duration="21193000" />
       <workItem from="1680679505599" duration="23705000" />
-      <workItem from="1680772157192" duration="16493000" />
+      <workItem from="1680772157192" duration="19857000" />
     </task>
     <servers />
   </component>
