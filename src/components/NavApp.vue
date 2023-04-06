@@ -1,9 +1,9 @@
 <script lang="ts">
-import type {NavItemApp} from "../contents";
 import {defineComponent, type PropType} from "vue";
 import {useStore} from "@nanostores/vue";
 import {session} from "../stores/session";
 import LinkApp from "./LinkApp.vue";
+import type {NavItemApp} from "../navigation";
 
 export default defineComponent({
   components: {LinkApp},

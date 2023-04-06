@@ -1,5 +1,5 @@
-import type {NavItemApp} from "../contents";
 import {map} from "nanostores";
+import type {NavItemApp} from "../navigation";
 
 export type SessionProps = {
   sentinelHeader: boolean;
