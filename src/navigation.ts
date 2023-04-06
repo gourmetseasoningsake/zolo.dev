@@ -13,22 +13,23 @@ export const navItemsHeader: NavItem[] = [
     path: "/",
     title: "Startseite",
     text: "Ahoi",
-    metaTitle: "Startseite",
-    metaDescription: "Startseite",
+    metaTitle: "Web-Entwicklung für kleine Unternehmungen - Jérôme Imfeld",
+    metaDescription:
+      "Jérôme Imfeld erarbeitet Lösungen für kleine Unternehmungen, die ihre Internetpräsenz verbessern oder Arbeitsflüsse digitalisieren möchten.",
   },
   {
     path: "/work",
     title: "Jüngste Arbeiten",
     text: "Work",
     textLang: "en",
-    metaTitle: "Jüngste Arbeiter",
-    metaDescription: "Jüngste Arbeiter",
+    metaTitle: "Jüngste Arbeiten - Jérôme Imfeld",
+    metaDescription: "Auswahl der jüngsten Arbeiten von Jérôme Imfeld.",
   },
   {
     path: "/portal",
     title: "Kundenportal",
     text: "Portal",
-    metaTitle: "Kundenportal",
+    metaTitle: "Kundenportal - Jérôme Imfeld",
     metaDescription: "Kundenportal",
   },
 ];
@@ -69,6 +70,12 @@ export const navItemsPortal: NavItem[] = [
     metaDescription: "Kundenportal - Beteiligte",
   },
 ];
+
+// TODO: if there is no matching nav item in the list, it should return a nav item to an error page
+export function getNavItemByPath(items: NavItem[], path: string): NavItem {
+  const item = items.find((item) => item.path === path);
+  return item!;
+}
 
 export function makeStaticPathsFn(items: NavItem[]) {
   const staticPaths = items.map(

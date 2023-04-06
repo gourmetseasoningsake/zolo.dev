@@ -4,12 +4,10 @@ import LayoutDefault from "../layouts/Default.astro"
 import Heading from "../components/Heading.vue"
 import Posts from "../components/Posts.vue"
 import Division from "../components/Division.vue";
+import {navItemsHeader, getNavItemByPath} from "../navigation";
+import {workPosts} from "../contents"
 
-import { workPosts } from "../contents"
-
-const path = "/work";
-const title = "Jüngste Arbeiten - Jérôme Imfeld";
-const description = "Auswahl der jüngsten Arbeiten von Jérôme Imfeld."
+const currentNavItem = getNavItemByPath(navItemsHeader, "/work");
 const preloads = [
   {
    href: "/assets/JetBrainsMono-VariableFont_wght.woff2",
@@ -25,9 +23,9 @@ const preloads = [
 ---
 
 <LayoutDefault
-  path={path}
-  title={title}
-  description={description}
+  path={currentNavItem.path}
+  title={currentNavItem.metaTitle}
+  description={currentNavItem.metaDescription}
   preloads={preloads}>
   <Division divide-after slot="main">
     <Division px my>

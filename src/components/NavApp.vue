@@ -11,7 +11,7 @@ export default defineComponent({
     return {session: useStore(session)};
   },
   props: {
-    initNavItemApp: {
+    initNavItem: {
       type: Object as PropType<NavItem>,
       required: true,
     },
@@ -30,7 +30,7 @@ export default defineComponent({
       return this.links.filter(({slug}) => Boolean(slug));
     },
     currentPath() {
-      return this.session.stateNavApp?.path || this.initNavItemApp.path;
+      return this.session.stateNavApp?.path || this.initNavItem.path;
     },
   },
   methods: {

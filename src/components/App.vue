@@ -25,14 +25,14 @@ export default defineComponent({
     return {session: useStore(session)};
   },
   props: {
-    initNavItemApp: {
+    initNavItem: {
       type: Object as PropType<NavItem>,
       required: true,
     },
   },
   computed: {
     page() {
-      const stateNavApp = this.session.stateNavApp || this.initNavItemApp;
+      const stateNavApp = this.session.stateNavApp || this.initNavItem;
       return pages[
         String(stateNavApp.slug || "undefined") as keyof typeof pages
       ];

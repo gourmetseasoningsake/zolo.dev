@@ -14,10 +14,9 @@ import HCardCountry from "../components/HCardCountry.vue"
 import HCardEmail from "../components/HCardEmail.vue"
 import Paragraph from "../components/Paragraph.vue"
 import Link from "../components/Link.vue"
+import {navItemsFooter, getNavItemByPath} from "../navigation";
 
-const path = "/legal";
-const title = "Rechtliche Informationen - Jérôme Imfeld";
-const description = "Rechtliche Informationen zu dieser Seite und den Dienstleistungen von Jérôme Imfeld."
+const currentNavItem = getNavItemByPath(navItemsFooter, "/legal");
 const preloads = [
   {
    href: "/assets/JetBrainsMono-VariableFont_wght.woff2",
@@ -33,9 +32,9 @@ const preloads = [
 ---
 
 <LayoutDefault
-  path={path}
-  title={title}
-  description={description}
+  path={currentNavItem.path}
+  title={currentNavItem.metaTitle}
+  description={currentNavItem.metaDescription}
   preloads={preloads}>
   <Division px my slot="main">
     <Heading is="h1">Rechtliches</Heading>

@@ -8,10 +8,9 @@ import HCard from "../components/HCard.vue"
 import HCardEmail from "../components/HCardEmail.vue"
 import HCardLink from "../components/HCardLink.vue"
 import Speak from "../components/Speak.vue"
+import {navItemsHeader, getNavItemByPath} from "../navigation";
 
-const path = "/";
-const title = "Web-Entwicklung für kleine Unternehmungen - Jérôme Imfeld";
-const description = "Jérôme Imfeld erarbeitet Lösungen für kleine Unternehmungen, die ihre Internetpräsenz verbessern oder Arbeitsflüsse digitalisieren möchten."
+const currentNavItem = getNavItemByPath(navItemsHeader, "/");
 const preloads = [
   {
    href: "/assets/JetBrainsMono-VariableFont_wght.woff2",
@@ -28,7 +27,7 @@ const jsonLd = [
     "sameAs": [
        "https://github.com/gourmetseasoningsake"
     ],
-    "description": "Jérôme Imfeld erarbeitet Lösungen für kleine Unternehmungen, die ihre Internetpräsenz verbessern oder Arbeitsflüsse digitalisieren möchten.",
+    "description": currentNavItem.metaDescription,
     "address": {
        "@type": "PostalAddress",
        "addressLocality": "Opfikon",
@@ -40,11 +39,10 @@ const jsonLd = [
 ];
 ---
 
-
 <LayoutDefault
-  path={path}
-  title={title}
-  description={description}
+  path={currentNavItem.path}
+  title={currentNavItem.metaTitle}
+  description={currentNavItem.metaDescription}
   preloads={preloads}
   jsonLd={jsonLd}>
   <Division px my slot="main">
