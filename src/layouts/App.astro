@@ -1,4 +1,12 @@
 ---
+interface Props {
+  path: string,
+  metaTitle: string,
+  metaDescription: string,
+  preloads?: any[],
+  jsonLd?: any[]
+}
+
 import HeaderPrimaryApp from "../components/HeaderPrimaryApp.vue";
 import NavPrimary from "../components/NavPrimary.vue";
 import MainApp from "../components/MainApp.vue";
@@ -13,9 +21,9 @@ import {navGroups} from "../navigation";
 import {copyLicense} from "../contents";
 
 const {
-  title,
   path,
-  description,
+  metaTitle,
+  metaDescription,
   preloads = [],
   jsonLd = [],
 } = Astro.props;
@@ -26,8 +34,8 @@ const {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <title>{title}</title>
-    <meta name="description" content={description}>
+    <title>{metaTitle}</title>
+    <meta name="description" content={metaDescription}>
     <meta name="googlebot" content="notranslate">
 
     {preloads.map(({href, as, crossorigin}) => (
