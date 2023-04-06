@@ -1,3 +1,3 @@
 <template>
-  <div>Finanzen</div>
+  <div>shit</div>
 </template>

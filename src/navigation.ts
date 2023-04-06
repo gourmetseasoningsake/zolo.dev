@@ -95,15 +95,13 @@ export function getNavItemByPath(items: NavItem[], path: string): NavItem {
   return item!;
 }
 
-export function makeStaticPathsFn(items: NavItem[]) {
-  const staticPaths = items.map(
-    ({slug, path, title, text, textLang, metaTitle, metaDescription}) => {
-      return {
-        params: {slug},
-        props: {path, title, text, textLang, metaTitle, metaDescription},
-      };
-    },
-  );
+export function makeStaticPathsFn(navItems: NavItem[]) {
+  const staticPaths = navItems.map((navItem) => {
+    return {
+      params: {slug: navItem.slug},
+      props: navItem,
+    };
+  });
   return function () {
     return staticPaths;
   };
