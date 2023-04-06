@@ -16,7 +16,7 @@ import {navPrimaryItems, navSecondaryItems} from "../navigation";
 
 const {
   title,
-  href,
+  path,
   description,
   preloads = [],
   jsonLd = [],
@@ -53,7 +53,7 @@ const {
         current={false}
         slot="header-top"><Logo/></Link>
       <NavPrimary
-        href={href}
+        currentPath={path}
         links={navPrimaryItems}
         slot="header-top"/>
     </HeaderPrimary>
@@ -64,7 +64,7 @@ const {
     <FooterPrimary>
       <License>{copyLicense}</License>
       <slot name="footer"></slot>
-      <NavSecondary href={href} links={navSecondaryItems}/>
+      <NavSecondary currentPath={path} links={navSecondaryItems}/>
     </FooterPrimary>
   </body>
 </html>

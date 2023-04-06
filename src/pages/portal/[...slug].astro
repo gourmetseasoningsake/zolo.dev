@@ -24,20 +24,20 @@ const preloads = [
 const jsonLd = [];
 
 export async function getStaticPaths() {
-  return navPortalItems.map(({slug, href, title, text}) => {
+  return navPortalItems.map(({slug, path, title, text}) => {
     return {
       params: {slug},
-      props: {href, title, text}
+      props: {path, title, text}
     }
   })
 }
 
-const {href, title, description} = Astro.props;
-const initNavItemApp = navPortalItems.reduce((a, b) => b.href === href ? b : a, null)
+const {path, title, description} = Astro.props;
+const initNavItemApp = navPortalItems.reduce((a, b) => b.path === path ? b : a, null)
 ---
 
 <LayoutApp
-  href={href}
+  path={path}
   title={title}
   description={description}
   preloads={preloads}

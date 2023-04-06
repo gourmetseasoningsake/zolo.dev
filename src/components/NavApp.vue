@@ -29,14 +29,14 @@ export default defineComponent({
     linksApp() {
       return this.links.filter(({slug}) => Boolean(slug));
     },
-    hrefApp() {
-      return this.session.stateNavApp?.href || this.initNavItemApp.href;
+    currentPath() {
+      return this.session.stateNavApp?.path || this.initNavItemApp.path;
     },
   },
   methods: {
-    onNavigate(link: NavItemApp) {
-      history.pushState(link, "", link.href);
-      session.setKey("stateNavApp", link);
+    onNavigate(navItem: NavItemApp) {
+      history.pushState(navItem, "", navItem.path);
+      session.setKey("stateNavApp", navItem);
     },
   },
 });
@@ -50,10 +50,10 @@ export default defineComponent({
         v-for="link in linksApp">
         <LinkApp
           class="block px-1 uppercase"
-          :key="link.href"
-          :href="link.href"
+          :key="link.path"
+          :href="link.path"
           :title="link.title"
-          :current="link.href === hrefApp"
+          :current-path="link.path === currentPath"
           @navigate="onNavigate(link)">
           {{ link.text }}
         </LinkApp>

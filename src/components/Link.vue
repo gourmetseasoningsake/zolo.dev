@@ -18,14 +18,14 @@ export default defineComponent({
       type: String,
       required: false,
     },
-    current: {
+    currentPath: {
       type: Boolean,
       required: false,
     },
   },
   computed: {
     ariaCurrent() {
-      return this.current && "page";
+      return this.currentPath && "page";
     },
     classes() {
       return {

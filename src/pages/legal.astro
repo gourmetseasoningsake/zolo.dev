@@ -15,7 +15,7 @@ import HCardEmail from "../components/HCardEmail.vue"
 import Paragraph from "../components/Paragraph.vue"
 import Link from "../components/Link.vue"
 
-const href = "/legal";
+const path = "/legal";
 const title = "Rechtliche Informationen - Jérôme Imfeld";
 const description = "Rechtliche Informationen zu dieser Seite und den Dienstleistungen von Jérôme Imfeld."
 const preloads = [
@@ -32,9 +32,8 @@ const preloads = [
 ];
 ---
 
-
 <LayoutDefault
-  href={href}
+  path={path}
   title={title}
   description={description}
   preloads={preloads}>
