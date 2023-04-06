@@ -6,9 +6,9 @@ import Section from "../../components/Section.vue";
 import Division from "../../components/Division.vue";
 import NavApp from "../../components/NavApp.vue";
 import App from "../../components/App.vue";
-import {navItemsPortal, makeStaticPathsFn, type NavItem} from "../../navigation";
+import {navGroups, makeStaticPathsFn, type NavItem} from "../../navigation";
 
-export const getStaticPaths = makeStaticPathsFn(navItemsPortal);
+export const getStaticPaths = makeStaticPathsFn(navGroups.portal);
 const currentNavItem = Astro.props as NavItem;
 const preloads = [
   {
@@ -36,7 +36,7 @@ const jsonLd = [];
     <NavApp
       aria-label="Portal"
       initNavItem={currentNavItem}
-      links={navItemsPortal}
+      links={navGroups.portal}
       client:load/>
   </Division>
   <Section slot="main">

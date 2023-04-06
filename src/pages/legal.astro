@@ -14,9 +14,9 @@ import HCardCountry from "../components/HCardCountry.vue"
 import HCardEmail from "../components/HCardEmail.vue"
 import Paragraph from "../components/Paragraph.vue"
 import Link from "../components/Link.vue"
-import {navItemsFooter, getNavItemByPath} from "../navigation";
+import {navGroups, getNavItemByPath} from "../navigation";
 
-const currentNavItem = getNavItemByPath(navItemsFooter, "/legal");
+const currentNavItem = getNavItemByPath(navGroups.footer, "/legal");
 const preloads = [
   {
    href: "/assets/JetBrainsMono-VariableFont_wght.woff2",

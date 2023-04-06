@@ -8,9 +8,9 @@ import HCard from "../components/HCard.vue"
 import HCardEmail from "../components/HCardEmail.vue"
 import HCardLink from "../components/HCardLink.vue"
 import Speak from "../components/Speak.vue"
-import {navItemsHeader, getNavItemByPath} from "../navigation";
+import {navGroups, getNavItemByPath} from "../navigation";
 
-const currentNavItem = getNavItemByPath(navItemsHeader, "/");
+const currentNavItem = getNavItemByPath(navGroups.header, "/");
 const preloads = [
   {
    href: "/assets/JetBrainsMono-VariableFont_wght.woff2",

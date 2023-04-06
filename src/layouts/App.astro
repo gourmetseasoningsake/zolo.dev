@@ -9,10 +9,8 @@ import Sentinel from "../components/Sentinel.vue";
 import Link from "../components/Link.vue";
 import Logo from "../components/Logo.vue";
 import License from "../components/License.vue";
-import {
-  copyLicense
-} from "../contents";
-import {navItemsHeader, navItemsFooter} from "../navigation";
+import {navGroups} from "../navigation";
+import {copyLicense} from "../contents";
 
 const {
   title,
@@ -61,7 +59,7 @@ const {
         slot="header-top"><Logo/></Link>
       <NavPrimary
         currentPath={path}
-        links={navItemsHeader}
+        links={navGroups.header}
         slot="header-top"/>
       <Content slot="header-bottom-left">
         <slot name="header-left"></slot>
@@ -77,7 +75,7 @@ const {
     <FooterPrimary>
       <License>{copyLicense}</License>
       <slot name="footer"></slot>
-      <NavSecondary currentPath={path} links={navItemsFooter}/>
+      <NavSecondary currentPath={path} links={navGroups.footer}/>
     </FooterPrimary>
   </body>
 </html>
