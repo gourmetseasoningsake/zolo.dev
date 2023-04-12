@@ -2,7 +2,7 @@
 .astro/
 
 # dependencies
-/node_modules/
+node_modules/
 
 # env
 .env*
@@ -14,7 +14,8 @@
 pnpm-debug.log*
 
 # temp
-/temp_dist/
-/public/resources/images
-/resources/
-/src/transition.js
+temp_dist/
+public/resources/images
+resources/
+src/transition.js
+content/
