@@ -23,7 +23,7 @@ export default defineComponent({
     },
     classes() {
       return {
-        "font-black text-4xl sm:text-6xl": this.appearance === "h1",
+        "font-extrabold text-4xl sm:text-6xl": this.appearance === "h1",
         "font-medium italic text-2xl sm:text-3xl": this.appearance === "h2",
         "font-medium italic": this.appearance === "h3",
         "mb-8": this.mb && this.appearance === "h1",

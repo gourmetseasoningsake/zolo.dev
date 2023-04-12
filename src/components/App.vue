@@ -1,9 +1,8 @@
 <script lang="ts">
-import {defineComponent, defineAsyncComponent, PropType} from "vue";
+import type {NavItem} from "../navigation";
+import {defineComponent, defineAsyncComponent, type PropType} from "vue";
 import {useStore} from "@nanostores/vue";
 import {session} from "../stores/session";
-
-import type {NavItem} from "../navigation";
 
 // https://vuejs.org/guide/components/async.html#loading-and-error-states
 const Portal = defineAsyncComponent(() => import("./Portal.vue"));
@@ -16,13 +15,15 @@ const PortalCollaborators = defineAsyncComponent(
 const pages = {
   finances: PortalFinances,
   collaborators: PortalCollaborators,
-  undefined: Portal,
+  default: Portal,
 };
 
 export default defineComponent({
   components: {Portal, PortalFinances, PortalCollaborators},
   setup() {
-    return {session: useStore(session)};
+    return {
+      session: useStore(session),
+    };
   },
   props: {
     initNavItem: {
@@ -33,9 +34,7 @@ export default defineComponent({
   computed: {
     page() {
       const stateNavApp = this.session.stateNavApp || this.initNavItem;
-      return pages[
-        String(stateNavApp.slug || "undefined") as keyof typeof pages
-      ];
+      return pages[(stateNavApp.slug || "default") as keyof typeof pages];
     },
   },
 });

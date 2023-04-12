@@ -12,22 +12,19 @@ export default defineComponent({
     return {session: useStore(session)};
   },
   computed: {
-    pageTop() {
-      return this.session.sentinelHeader;
-    },
     classesHeaderBottom() {
       return {
-        "-translate-y-12 sm:-translate-y-16": !this.pageTop,
+        "-translate-y-12 sm:-translate-y-16": !this.session.sentinelHeader,
       };
     },
     classesHeaderBottomInner() {
       return {
-        "scale-75 sm:scale-50": !this.pageTop,
+        "scale-75 sm:scale-50": !this.session.sentinelHeader,
       };
     },
     classesBg() {
       return {
-        "-translate-y-12 sm:-translate-y-16": !this.pageTop,
+        "-translate-y-12 sm:-translate-y-16": !this.session.sentinelHeader,
       };
     },
   },

@@ -6,12 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="59c169d7-9382-47b2-a579-18b590c60323" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/App.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/App.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/Default.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Default.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/legal.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/legal.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/portal/[...slug].astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/portal/[...slug].astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/work.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/work.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist" beforeDir="false" afterPath="$PROJECT_DIR$/dist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Heading.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Heading.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +23,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -53,25 +50,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "23-separate-and-unify-navigation-data",
-    "last_opened_file_path": "/Users/jerome/Projects/Gourmetseasoningsake/zolo.dev/src/components",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "pnpm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/jerome/Projects/Gourmetseasoningsake/zolo.dev/node_modules/prettier",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;25-add-data-fetcher&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jerome/Projects/Gourmetseasoningsake/zolo.dev/src/components&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;pnpm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/jerome/Projects/Gourmetseasoningsake/zolo.dev/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components" />
@@ -215,7 +212,20 @@
       <workItem from="1680513227332" duration="19737000" />
       <workItem from="1680594359447" duration="21193000" />
       <workItem from="1680679505599" duration="23705000" />
-      <workItem from="1680772157192" duration="16493000" />
+      <workItem from="1680772157192" duration="22388000" />
+      <workItem from="1680812057784" duration="12452000" />
+      <workItem from="1680876198893" duration="35000" />
+      <workItem from="1680876405089" duration="173000" />
+      <workItem from="1680881099550" duration="2763000" />
+      <workItem from="1680891464603" duration="578000" />
+      <workItem from="1680904021382" duration="1937000" />
+      <workItem from="1680976314482" duration="30000" />
+      <workItem from="1680976358679" duration="632000" />
+      <workItem from="1681159318975" duration="3379000" />
+      <workItem from="1681208486906" duration="1010000" />
+      <workItem from="1681236494355" duration="31000" />
+      <workItem from="1681252222586" duration="479000" />
+      <workItem from="1681330682423" duration="207000" />
     </task>
     <servers />
   </component>

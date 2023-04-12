@@ -22,6 +22,9 @@ devDependencies:
   '@commitlint/types':
     specifier: ^17.4.4
     version: 17.4.4
+  '@nanostores/query':
+    specifier: ^0.0.5
+    version: 0.0.5(nanostores@0.7.4)
   '@nanostores/vue':
     specifier: ^0.7.0
     version: 0.7.0(nanostores@0.7.4)(vue@3.2.47)
@@ -936,6 +939,16 @@ packages:
 
   /@ljharb/has-package-exports-patterns@0.0.2:
     resolution: {integrity: sha512-4/RWEeXDO6bocPONheFe6gX/oQdP/bEpv0oL4HqjPP5DCenBSt0mHgahppY49N0CpsaqffdwPq+TlX9CYOq2Dw==}
+    dev: true
+
+  /@nanostores/query@0.0.5(nanostores@0.7.4):
+    resolution: {integrity: sha512-8z5c5PXrpdNzFGG6pBIzn81hXJYjGBO6ed34UGN3N53bBZonuI2RAwtBOiwcinE5lTwRf2FcVScxQEnRIA1I4Q==}
+    engines: {node: ^14.0.0 || ^16.0.0 || >=18.0.0}
+    peerDependencies:
+      nanostores: ^0.7.0
+    dependencies:
+      nanoevents: 7.0.1
+      nanostores: 0.7.4
     dev: true
 
   /@nanostores/vue@0.7.0(nanostores@0.7.4)(vue@3.2.47):
@@ -3339,6 +3352,11 @@ packages:
       any-promise: 1.3.0
       object-assign: 4.1.1
       thenify-all: 1.6.0
+    dev: true
+
+  /nanoevents@7.0.1:
+    resolution: {integrity: sha512-o6lpKiCxLeijK4hgsqfR6CNToPyRU3keKyyI6uwuHRvpRTbZ0wXw51WRgyldVugZqoJfkGFrjrIenYH3bfEO3Q==}
+    engines: {node: ^14.0.0 || ^16.0.0 || >=18.0.0}
     dev: true
 
   /nanoid@3.3.4:
