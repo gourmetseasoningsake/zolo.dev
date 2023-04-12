@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="59c169d7-9382-47b2-a579-18b590c60323" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PortalFinances.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PortalFinances.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/portal/[...slug].astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/portal/[...slug].astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist" beforeDir="false" afterPath="$PROJECT_DIR$/dist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Heading.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Heading.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +23,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -220,7 +221,11 @@
       <workItem from="1680904021382" duration="1937000" />
       <workItem from="1680976314482" duration="30000" />
       <workItem from="1680976358679" duration="632000" />
-      <workItem from="1681159318975" duration="2945000" />
+      <workItem from="1681159318975" duration="3379000" />
+      <workItem from="1681208486906" duration="1010000" />
+      <workItem from="1681236494355" duration="31000" />
+      <workItem from="1681252222586" duration="479000" />
+      <workItem from="1681330682423" duration="207000" />
     </task>
     <servers />
   </component>
