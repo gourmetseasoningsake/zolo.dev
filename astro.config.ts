@@ -16,22 +16,19 @@ export default defineConfig({
       ? "https://zolo.dev"
       : "https://localhost:3000",
   trailingSlash: "ignore", // default
-  build: {
-    format: "directory", // default
-  },
   server: {
     host: false, // default
     port: 3000, // default
   },
-  vite: {
-    server: {
-      open: true,
-      https: {
-        key: "/Users/jerome/.localssl/localhost+2-key.pem",
-        cert: "/Users/jerome/.localssl/localhost+2.pem",
-      },
-    },
-  },
+  // vite: {
+  //   server: {
+  //     open: true,
+  //     https: {
+  //       key: "/Users/jerome/.localssl/localhost+2-key.pem",
+  //       cert: "/Users/jerome/.localssl/localhost+2.pem",
+  //     },
+  //   },
+  // },
   integrations: [
     vue(),
     tailwind(),
