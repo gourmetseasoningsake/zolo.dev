@@ -2,12 +2,15 @@ import {defineConfig} from "astro/config";
 import vue from "@astrojs/vue";
 import tailwind from "@astrojs/tailwind";
 import sitemap from "@astrojs/sitemap";
+import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
 export default defineConfig({
+  output: "server",
+  adapter: cloudflare({mode: "advanced" /* default */}),
   srcDir: "./src", // default
   publicDir: "./public", // default
-  outDir: "./temp_dist",
+  outDir: "./dist", // default
   site:
     process.env.NODE_ENV === "production"
       ? "https://zolo.dev"
@@ -33,7 +36,11 @@ export default defineConfig({
     vue(),
     tailwind(),
     sitemap({
-      filter: (page) => page !== "https://zolo.dev/portal/",
+      customPages: [
+        "https://zolo.dev",
+        "https://zolo.dev/work",
+        "https://zolo.dev/legal",
+      ],
     }),
   ],
 });
