@@ -20,15 +20,19 @@ export default defineConfig({
     host: false, // default
     port: 3000, // default
   },
-  // vite: {
-  //   server: {
-  //     open: true,
-  //     https: {
-  //       key: "/Users/jerome/.localssl/localhost+2-key.pem",
-  //       cert: "/Users/jerome/.localssl/localhost+2.pem",
-  //     },
-  //   },
-  // },
+  ...(process.env.NODE_ENV === "production"
+    ? {}
+    : {
+        vite: {
+          server: {
+            open: true,
+            https: {
+              key: "/Users/jerome/.localssl/localhost+2-key.pem",
+              cert: "/Users/jerome/.localssl/localhost+2.pem",
+            },
+          },
+        },
+      }),
   integrations: [
     vue(),
     tailwind(),

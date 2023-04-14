@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59c169d7-9382-47b2-a579-18b590c60323" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/astro.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -229,7 +228,7 @@
       <workItem from="1681380211100" duration="4000" />
       <workItem from="1681420800646" duration="1394000" />
       <workItem from="1681458793688" duration="2172000" />
-      <workItem from="1681462650138" duration="11068000" />
+      <workItem from="1681462650138" duration="11234000" />
     </task>
     <servers />
   </component>
