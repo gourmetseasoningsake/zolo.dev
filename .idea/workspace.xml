@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59c169d7-9382-47b2-a579-18b590c60323" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.dev.vars" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/resources/pdf/AGB-J-Imfeld-180722.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/resources/pdf/AGB-J-Imfeld-231222.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/clean-dist.mjs" beforeDir="false" />
-    </list>
+    <list default="true" id="59c169d7-9382-47b2-a579-18b590c60323" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -237,7 +226,7 @@
       <workItem from="1681380211100" duration="4000" />
       <workItem from="1681420800646" duration="1394000" />
       <workItem from="1681458793688" duration="2172000" />
-      <workItem from="1681462650138" duration="6903000" />
+      <workItem from="1681462650138" duration="7527000" />
     </task>
     <servers />
   </component>
