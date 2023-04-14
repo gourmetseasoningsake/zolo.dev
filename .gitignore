@@ -13,9 +13,9 @@ node_modules/
 # logs
 pnpm-debug.log*
 
+# cloudflare
+.dev.vars
+
 # temp
-temp_dist/
-public/resources/images
 resources/
 src/transition.js
-content/

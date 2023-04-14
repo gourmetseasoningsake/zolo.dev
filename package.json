@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "astro dev",
     "dev:clean": "astro dev --force",
-    "build": "node scripts/clean-dist.mjs && astro build && shopt -s dotglob && cp -rf temp_dist/* dist && rm -rf temp_dist",
-    "deploy:prod": "pnpm build && cd dist && git add -A && git commit -m \"chore: deploy\" && git push && cd -",
+    "build": "astro build",
     "preview": "astro preview",
     "prepare": "husky install"
   },
@@ -35,6 +34,7 @@
     "tailwindcss": "^3.3.1",
     "vite": "^4.2.1",
     "vue": "^3.2.47",
+    "wrangler": "^2.15.1",
     "yaml": "^2.2.1"
   },
   "dependencies": {
