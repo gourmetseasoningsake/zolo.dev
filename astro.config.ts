@@ -2,9 +2,12 @@ import {defineConfig} from "astro/config";
 import vue from "@astrojs/vue";
 import tailwind from "@astrojs/tailwind";
 import sitemap from "@astrojs/sitemap";
+import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
 export default defineConfig({
+  output: "server",
+  adapter: cloudflare(),
   srcDir: "./src", // default
   publicDir: "./public", // default
   outDir: "./temp_dist",

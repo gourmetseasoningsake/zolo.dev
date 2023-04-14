@@ -36,5 +36,8 @@
     "vite": "^4.2.1",
     "vue": "^3.2.47",
     "yaml": "^2.2.1"
+  },
+  "dependencies": {
+    "@astrojs/cloudflare": "^6.2.2"
   }
 }
