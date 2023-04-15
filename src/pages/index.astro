@@ -5,6 +5,8 @@ import Heading from "../components/Heading.vue"
 import Division from "../components/Division.vue"
 import Paragraph from "../components/Paragraph.vue"
 import HCard from "../components/HCard.vue"
+import HCardFname from "../components/HCardFname.vue"
+import HCardLname from "../components/HCardLname.vue"
 import HCardEmail from "../components/HCardEmail.vue"
 import HCardLink from "../components/HCardLink.vue"
 import Speak from "../components/Speak.vue"
@@ -48,13 +50,13 @@ const jsonLd = [
   <Division px my slot="main">
     <Heading is="h1">Ahoi</Heading>
   </Division>
-  <Division px my slot="main">
-    <Paragraph>
-      Ich bin <span lang="fr">Jérôme</span><sup class="text-action-fg" aria-hidden="true">*</sup> Imfeld. Ich bin Web-Entwickler und erarbeite Lösungen für kleine Unternehmungen, die ihre Internetpräsenz verbessern oder Arbeitsflüsse digitalisieren möchten. Ich tue das seit 7 Jahren, als Teil eines bestehenden Teams oder als Lieferant einzelner Sachen.
-    </Paragraph>
-  </Division>
-  <Division px my slot="main">
-    <HCard>
+  <HCard slot="main">
+    <Division px my>
+      <Paragraph>
+        Ich bin <HCardFname lang="fr">Jérôme</HCardFname><sup class="text-action-fg" aria-hidden="true">*</sup> <HCardLname>Imfeld</HCardLname>. Ich bin Web-Entwickler und erarbeite Lösungen für kleine Unternehmungen, die ihre Internetpräsenz verbessern oder Arbeitsflüsse digitalisieren möchten. Ich tue das seit 7 Jahren, als Teil eines bestehenden Teams oder als Lieferant einzelner Sachen.
+      </Paragraph>
+    </Division>
+    <Division px my>
       <HCardEmail
         class="block my-2 sm:my-1"
         email="ahoi@zolo.dev"
@@ -78,15 +80,15 @@ const jsonLd = [
         focus>
         <span lang="en">github</span>: <span lang="en">gourmetseasoningsake</span>
       </HCardLink>
-    </HCard>
-    <Speak
-      client:load
-      class="block"
-      text="Jérôme"
-      placeholder="*: /ʒe.ʁom/"
-      lang="fr-FR"
-      fallback="https://fr-audio.howtopronounce.com/1618555814607933a68bf4f.mp3"
-      focus>
-    </Speak>
-  </Division>
+      <Speak
+        client:load
+        class="block"
+        text="Jérôme"
+        placeholder="*: /ʒe.ʁom/"
+        lang="fr-FR"
+        fallback="https://fr-audio.howtopronounce.com/1618555814607933a68bf4f.mp3"
+        focus>
+      </Speak>
+    </Division>
+  </HCard>
 </LayoutDefault>
