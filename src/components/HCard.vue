@@ -1,5 +1,5 @@
 <template>
-  <div class="h-card leading-relaxed">
+  <div class="h-card">
     <slot></slot>
   </div>
 </template>
