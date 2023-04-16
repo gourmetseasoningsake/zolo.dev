@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59c169d7-9382-47b2-a579-18b590c60323" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/pages/index.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/contents.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/contents.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +54,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "35-setup-web-sign-in-for-real",
+    "git-widget-placeholder": "37-incorrect-content",
     "last_opened_file_path": "/Users/jerome/Projects/Gourmetseasoningsake/zolo.dev/src/components",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -231,6 +231,7 @@
       <workItem from="1681462650138" duration="14549000" />
       <workItem from="1681588438831" duration="547000" />
       <workItem from="1681591570939" duration="1642000" />
+      <workItem from="1681647937695" duration="1504000" />
     </task>
     <servers />
   </component>

@@ -1,4 +1,4 @@
-export const copyLicense = `CC BY-NC-ND 2017-${new Date().getFullYear()}`;
+export const copyLicense = `CC BY-NC-ND 2017-2023`;
 
 export const workPosts = [
   {
