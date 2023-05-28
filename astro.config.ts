@@ -6,7 +6,10 @@ import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
 export default defineConfig({
-  output: "server",
+  output: "hybrid",
+  experimental: {
+    hybridOutput: true,
+  },
   adapter: cloudflare({mode: "advanced" /* default */}),
   srcDir: "./src", // default
   publicDir: "./public", // default
@@ -37,11 +40,7 @@ export default defineConfig({
     vue(),
     tailwind(),
     sitemap({
-      customPages: [
-        "https://zolo.dev",
-        "https://zolo.dev/work",
-        "https://zolo.dev/legal",
-      ],
+      customPages: ["https://zolo.dev", "https://zolo.dev/work"],
     }),
   ],
 });

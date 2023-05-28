@@ -32,6 +32,10 @@
     font-optical-sizing: auto;
   }
 
+  astro-static-slot {
+    display: contents;
+  }
+
   /* light mode */
   @media (prefers-color-scheme: light) {
     :root {
