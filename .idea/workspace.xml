@@ -6,7 +6,38 @@
   <component name="ChangeListManager">
     <list default="true" id="59c169d7-9382-47b2-a579-18b590c60323" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/Default.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Default.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_astro/App.06489e7f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_astro/Content.8931b1a1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_astro/HeaderPrimary.f814818c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_astro/HeaderPrimaryApp.ddc6b9c2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_astro/NavApp.5d83d20f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_astro/Portal.66c87a08.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_astro/PortalCollaborators.e1212b83.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_astro/PortalFinances.ef517534.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_astro/Posts.ca3ef1d8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_astro/Sentinel.0064b562.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_astro/Speak.86629850.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_astro/_plugin-vue_export-helper.c27b6911.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_astro/client.5770ef1d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_astro/hoisted.32c7d019.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_astro/index.564129f6.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_astro/index.c02d682e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_astro/runtime-core.esm-bundler.40fa80ba.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_astro/runtime-dom.esm-bundler.8143f40a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_astro/session.4de64880.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_routes.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_worker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/JetBrainsMono-Italic-VariableFont_wght.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/JetBrainsMono-VariableFont_wght.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/android-chrome-192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/android-chrome-512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/apple-touch-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/favicon-dark.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/favicon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/sitemap-0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/sitemap-index.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,7 +270,8 @@
       <workItem from="1682113348520" duration="1503000" />
       <workItem from="1682175619684" duration="603000" />
       <workItem from="1684367068504" duration="300000" />
-      <workItem from="1685267187347" duration="3096000" />
+      <workItem from="1685267187347" duration="3499000" />
+      <workItem from="1685524710312" duration="348000" />
     </task>
     <servers />
   </component>
