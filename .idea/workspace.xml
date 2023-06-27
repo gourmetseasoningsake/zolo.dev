@@ -6,38 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="59c169d7-9382-47b2-a579-18b590c60323" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/_astro/App.06489e7f.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/_astro/Content.8931b1a1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/_astro/HeaderPrimary.f814818c.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/_astro/HeaderPrimaryApp.ddc6b9c2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/_astro/NavApp.5d83d20f.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/_astro/Portal.66c87a08.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/_astro/PortalCollaborators.e1212b83.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/_astro/PortalFinances.ef517534.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/_astro/Posts.ca3ef1d8.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/_astro/Sentinel.0064b562.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/_astro/Speak.86629850.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/_astro/_plugin-vue_export-helper.c27b6911.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/_astro/client.5770ef1d.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/_astro/hoisted.32c7d019.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/_astro/index.564129f6.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/_astro/index.c02d682e.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/_astro/runtime-core.esm-bundler.40fa80ba.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/_astro/runtime-dom.esm-bundler.8143f40a.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/_astro/session.4de64880.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/_routes.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/_worker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/JetBrainsMono-Italic-VariableFont_wght.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/JetBrainsMono-VariableFont_wght.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/android-chrome-192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/android-chrome-512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/apple-touch-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/favicon-dark.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/favicon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/sitemap-0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/sitemap-index.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +40,9 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="udajzano" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -86,26 +61,27 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/jerome/Projects/Gourmetseasoningsake/zolo.dev/src/components&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;39-incorporate-api&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jerome/Projects/Gourmetseasoningsake/zolo.dev/functions/api&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;pnpm&quot;,
     &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/jerome/Projects/Gourmetseasoningsake/zolo.dev/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.codegpt.configuration&quot;,
+    &quot;settings.editor.splitter.proportion&quot;: &quot;0.23677249&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/jerome/Projects/Gourmetseasoningsake/zolo.dev/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/functions/api" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/pages/portal" />
       <recent name="$PROJECT_DIR$/src/layouts" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/pages/portal" />
@@ -271,7 +247,23 @@
       <workItem from="1682175619684" duration="603000" />
       <workItem from="1684367068504" duration="300000" />
       <workItem from="1685267187347" duration="3499000" />
-      <workItem from="1685524710312" duration="348000" />
+      <workItem from="1685524710312" duration="2363000" />
+      <workItem from="1685536783319" duration="1993000" />
+      <workItem from="1685562172050" duration="5927000" />
+      <workItem from="1685898662922" duration="15000" />
+      <workItem from="1686253119375" duration="1110000" />
+      <workItem from="1686519258608" duration="3000" />
+      <workItem from="1686603975221" duration="5000" />
+      <workItem from="1686952550147" duration="97000" />
+      <workItem from="1686987102199" duration="9000" />
+      <workItem from="1687129235690" duration="332000" />
+      <workItem from="1687129585457" duration="150000" />
+      <workItem from="1687129741673" duration="492000" />
+      <workItem from="1687130242098" duration="699000" />
+      <workItem from="1687158618419" duration="10000" />
+      <workItem from="1687812907482" duration="444000" />
+      <workItem from="1687813377316" duration="3853000" />
+      <workItem from="1687858865912" duration="756000" />
     </task>
     <servers />
   </component>
@@ -279,7 +271,9 @@
     <option name="version" value="3" />
   </component>
   <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="package.json" />
     <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.sql" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
