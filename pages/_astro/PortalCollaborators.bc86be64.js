@@ -1,0 +1,1 @@
+import{_ as e}from"./_plugin-vue_export-helper.c27b6911.js";import{o,c as r}from"./runtime-core.esm-bundler.43d46e38.js";const t={};function c(a,n){return o(),r("div",null,"Beteiligte")}const _=e(t,[["render",c]]);export{_ as default};

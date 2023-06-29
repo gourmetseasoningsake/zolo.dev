@@ -1,8 +1,8 @@
 /** @type {import("tailwindcss").Config} */
-module.exports = {
-	content: ["./src/**/*.{astro,html,js,jsx,md,svelte,ts,tsx,vue}"],
-	theme: {
-		fontFamily: {
+export default {
+  content: ["./src/**/*.{astro,html,js,jsx,md,svelte,ts,tsx,vue}"],
+  theme: {
+    fontFamily: {
       sans: [
         `ui-sans-serif`,
         `system-ui`,
@@ -25,10 +25,10 @@ module.exports = {
         `Cambria`,
         `"Times New Roman"`,
         `Times`,
-        `serif`
+        `serif`,
       ],
       mono: [
-				`"JetBrains Mono"`,
+        `"JetBrains Mono"`,
         `ui-monospace`,
         `SFMono-Regular`,
         `Menlo`,
@@ -39,31 +39,29 @@ module.exports = {
         `monospace`,
       ],
     },
-		extend: {
-			colors: {
-				"system-bg": "var(--system-bg)",
-				"system-fg": "var(--system-fg)",
-        "action-fg": "var(--action-fg)"
-			},
-      height: {
-        "screen-px": "calc(100vh + 1px)"
+    extend: {
+      colors: {
+        "system-bg": "var(--system-bg)",
+        "system-fg": "var(--system-fg)",
+        "action-fg": "var(--action-fg)",
       },
-			minHeight: {
+      height: {
         "screen-px": "calc(100vh + 1px)",
-				"scroll-px": "calc(100% + 1px)"
-			},
+      },
+      minHeight: {
+        "screen-px": "calc(100vh + 1px)",
+        "scroll-px": "calc(100% + 1px)",
+      },
       spacing: {
         "h-header-ti": "5.3125rem",
         "h-header-sm": "5.5rem",
         "h-header-app-ti": "11.8125rem",
-        "h-header-app-sm": "13.3125rem"
-      }
-		}
-	},
-	plugins: [],
-}
-
-
+        "h-header-app-sm": "13.3125rem",
+      },
+    },
+  },
+  plugins: [],
+};
 
 // sm	640px	@media (min-width: 640px) { ... }
 // md	768px	@media (min-width: 768px) { ... }

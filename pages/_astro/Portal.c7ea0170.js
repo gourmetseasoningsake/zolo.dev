@@ -1,1 +1,0 @@
-import{_ as o}from"./_plugin-vue_export-helper.c27b6911.js";import{o as r,c as e}from"./runtime-core.esm-bundler.c9e40ef5.js";const t={};function c(n,a){return r(),e("div",null,"Portal")}const l=o(t,[["render",c]]);export{l as default};
