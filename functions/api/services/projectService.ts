@@ -22,8 +22,7 @@ export function getAllProjectItems(ctx: Context<Bindings>) {
 
 export async function createOrUpdateProject(ctx: Context<Bindings>) {
   const organization = await ctx.env.GithubFetcher.getOrganization("zolosake");
-  const result_ =
-    githubRepositoriesAndCollaboratorsFromOrganization(organization);
+  // const result_ = githubRepositoriesAndCollaboratorsFromOrganization(organization);
 
   // 1. create or update Collaborators
   // ...

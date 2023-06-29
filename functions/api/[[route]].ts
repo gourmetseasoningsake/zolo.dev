@@ -51,7 +51,7 @@ app.use("/project/*", async (ctx, next) => {
   })(ctx, next);
 });
 
-app.use("/ping", (ctx) => ctx.text("GET 200 /ping"));
-app.get("/project/items", ProjectController.getAllProjectItems);
+app.get("/ping", (ctx) => ctx.text("GET /api/ping"));
 app.post("/project", ProjectController.createOrUpdateProject);
+app.get("/project/items", ProjectController.getAllProjectItems);
 export const onRequest = handle(app);
