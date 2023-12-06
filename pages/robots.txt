@@ -1,0 +1,23 @@
+User-agent: *
+Disallow: /portal
+
+User-agent: AhrefsBot
+Crawl-delay: 10
+Disallow: /portal
+
+User-agent: AhrefsSiteAudit
+Crawl-delay: 10
+Disallow: /portal
+
+User-agent: adsbot-google
+Crawl-delay: 10
+Disallow: /portal
+
+User-agent: Pinterest
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: Nutch
+Disallow: /
