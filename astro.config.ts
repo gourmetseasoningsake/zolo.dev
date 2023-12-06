@@ -7,9 +7,9 @@ import cloudflare from "@astrojs/cloudflare";
 // https://astro.build/config
 export default defineConfig({
   output: "hybrid",
-  experimental: {
-    hybridOutput: true,
-  },
+  // experimental: {
+  //   hybridOutput: true,
+  // },
   adapter: cloudflare({mode: "advanced" /* default */}),
   srcDir: "./src", // default
   publicDir: "./public", // default
