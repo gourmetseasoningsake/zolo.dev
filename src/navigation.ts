@@ -24,15 +24,15 @@ export const navItems: NavItem[] = [
     metaDescription:
       "Jérôme Imfeld erarbeitet Lösungen für kleine Unternehmungen, die ihre Internetpräsenz verbessern oder Arbeitsflüsse digitalisieren möchten.",
   },
-  {
-    navGroups: ["header"],
-    path: "/work",
-    title: "Jüngste Arbeiten",
-    text: "Work",
-    textLang: "en",
-    metaTitle: "Jüngste Arbeiten - Jérôme Imfeld",
-    metaDescription: "Auswahl der jüngsten Arbeiten von Jérôme Imfeld.",
-  },
+  // {
+  //   navGroups: ["header"],
+  //   path: "/work",
+  //   title: "Jüngste Arbeiten",
+  //   text: "Work",
+  //   textLang: "en",
+  //   metaTitle: "Jüngste Arbeiten - Jérôme Imfeld",
+  //   metaDescription: "Auswahl der jüngsten Arbeiten von Jérôme Imfeld.",
+  // },
   {
     navGroups: ["header"],
     path: "/portal",
