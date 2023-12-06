@@ -37,7 +37,7 @@ export default defineConfig({
     vue(),
     tailwind(),
     sitemap({
-      customPages: ["https://zolo.dev", "https://zolo.dev/work"],
+      filter: (page) => page !== "https://zolo.dev/",
     }),
   ],
 });
