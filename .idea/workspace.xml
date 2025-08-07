@@ -5,10 +5,188 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59c169d7-9382-47b2-a579-18b590c60323" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.husky/commit-msg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/astro.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.npmrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierrc.cjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.wrangler/state/v3/d1/a3cadf25-4976-4cfb-a015-f5a13c36f2e5/db.sqlite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.wrangler/state/v3/d1/a3cadf25-4976-4cfb-a015-f5a13c36f2e5/db.sqlite-shm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.wrangler/state/v3/d1/a3cadf25-4976-4cfb-a015-f5a13c36f2e5/db.sqlite-wal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/commitlint.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_astro/App.3rYpmV-r.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_astro/HeaderPrimary.QW4cmUjG.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_astro/HeaderPrimaryApp.84zbqhLH.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_astro/NavApp.ND2ipEtD.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_astro/Portal.eADYmRzL.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_astro/PortalCollaborators.AGdyW951.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_astro/PortalFinances.-1oBmBVe.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_astro/Sentinel.GkftLlZv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_astro/Speak.wg2k6Vzy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_astro/_plugin-vue_export-helper.x3n3nnut.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_astro/client.G6apIOkF.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_astro/hoisted.gZEehIBZ.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_astro/index.-8IjPuEj.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_astro/index.5MbBbfn4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_astro/runtime-core.esm-bundler.m-93qoea.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_astro/runtime-dom.esm-bundler._QxlGT3R.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_astro/session.gQbCuShR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_routes.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_worker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/JetBrainsMono-Italic-VariableFont_wght.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/JetBrainsMono-VariableFont_wght.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/android-chrome-192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/android-chrome-512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/apple-touch-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/favicon-dark.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/favicon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/legal/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/portal/collaborators/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/portal/finances/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/portal/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/sitemap-0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/sitemap-index.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/[[path]].js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/api/[[route]].ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/api/controllers/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/api/controllers/projectController.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/api/db/database.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/api/db/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/api/db/milestone.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/api/db/projectItem.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/api/db/repository.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/api/middlewares/cloudflare.vnd.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/api/middlewares/github.vnd.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/api/middlewares/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/api/middlewares/projectMiddleware.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/api/middlewares/verifier.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/api/services/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/api/services/projectService.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/api/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/api/types/github.gql.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/api/types/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/api/utils/cookie.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/api/utils/fetcher.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/api/utils/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/api/utils/str.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_astro/App.RQP1fynV.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_astro/Content.hvAUfi4Z.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_astro/HeaderPrimary.C4CNqgwH.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_astro/HeaderPrimaryApp.MfqqNmkA.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_astro/NavApp.nNnVmIE1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_astro/Portal.3kWe69Xo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_astro/PortalCollaborators.zWD4fBaA.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_astro/PortalFinances.1JdGeq2a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_astro/Posts.20iiFiwS.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_astro/Sentinel.8ChwlMey.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_astro/Speak.M7HRlzn2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_astro/_plugin-vue_export-helper.x3n3nnut.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_astro/client.RKZNFuuc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_astro/hoisted.gZEehIBZ.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_astro/index.-8IjPuEj.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_astro/index.QSHRmXAZ.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_astro/runtime-core.esm-bundler.OJhPVcFL.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_astro/runtime-dom.esm-bundler.JSwtZFkN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_astro/session.gQbCuShR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_routes.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/assets/JetBrainsMono-Italic-VariableFont_wght.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/assets/JetBrainsMono-VariableFont_wght.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/assets/android-chrome-192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/assets/android-chrome-512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/assets/apple-touch-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/assets/favicon-dark.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/assets/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/assets/favicon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/legal/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/portal/collaborators/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/portal/finances/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/portal/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/sitemap-0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/sitemap-index.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/work/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/JetBrainsMono-Italic-VariableFont_wght.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/JetBrainsMono-VariableFont_wght.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/android-chrome-192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/android-chrome-512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/apple-touch-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/favicon-dark.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/favicon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/work/customer-map/work-customer-map-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/work/customer-map/work-customer-map-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/work/customer-map/work-customer-map-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/work/customer-map/work-customer-map-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/image-variants.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Button.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DataList.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Division.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FooterPrimary.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HCard.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HCardAdr.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HCardCountry.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HCardEmail.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HCardFname.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HCardLink.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HCardLname.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HCardLocality.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HCardName.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HCardStreet.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HCardZip.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HeaderPrimary.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HeaderPrimaryApp.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Heading.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/IconFlorin.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/IconPerson2.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Image.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/License.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Link.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LinkApp.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Logo.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainApp.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MediaGallery.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavApp.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavPrimary.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavSecondary.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Paragraph.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Portal.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PortalCollaborators.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PortalFinances.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Posts.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Section.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sentinel.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Speak.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/contents.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/env.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/global.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/App.astro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Default.astro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/navigation.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.astro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/legal.astro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/portal/[...slug].astro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stores/fetcher.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stores/finances.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stores/session.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/random.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrangler.toml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,12 +226,11 @@
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2DURhxCqaY25oGgcAucP16ynlv6" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -63,9 +240,10 @@
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;39-incorporate-api&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/jerome/Projects/Gourmetseasoningsake/zolo.dev&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jerome/Zolosake/zolo.dev&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -74,7 +252,7 @@
     &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/jerome/Projects/Gourmetseasoningsake/zolo.dev/node_modules/prettier&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;settings.codegpt.configuration&quot;,
     &quot;settings.editor.splitter.proportion&quot;: &quot;0.23677249&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/jerome/Projects/Gourmetseasoningsake/zolo.dev/node_modules/typescript/lib&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/jerome/Zolosake/zolo.dev/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -96,6 +274,13 @@
     <key name="es6.move.members.recent.items">
       <recent name="$PROJECT_DIR$/src/navigation.ts" />
     </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-WS-251.26927.40" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -278,6 +463,8 @@
       <workItem from="1692660452197" duration="1978000" />
       <workItem from="1693125616310" duration="3000" />
       <workItem from="1701819951083" duration="427000" />
+      <workItem from="1754604326433" duration="1558000" />
+      <workItem from="1754605896494" duration="152000" />
     </task>
     <servers />
   </component>
